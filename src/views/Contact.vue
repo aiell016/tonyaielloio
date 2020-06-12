@@ -1,16 +1,16 @@
 <template>
-  <div class="contact">
+  <div class="contact" v-responsive>
     <h1>Contact</h1>
 
 <div class="center">
                <h4>Contact me</h4>
                <br />
 </div>
-<div class="center">
+<div class="center" v-responsive>
 
             <a href="tel:2626710703"><img src = "../assets/call.png"></a>
 </div>
-<div class="center">
+<div class="center" v-responsive>
             <br />
             <p >Thank you for visiting my site and wanting to talk!<br /><br />
               Please use the button above to place a call to my voicemail.<br /><br />
