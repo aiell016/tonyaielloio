@@ -31,7 +31,9 @@
 
     </p>
 </span>
-<img src="../assets/1211.jpg" v-responsive>
+<div v-responsive>
+<img src="../assets/1080ball.jpg" height=30% width=30%>
+</div>
     <br /> <br />
     <p>My favorite undergraduate courses included Artificial Intelligence, Astronomy, Calculus, Data Structures, Discrete Math, and Physics 
     </p>

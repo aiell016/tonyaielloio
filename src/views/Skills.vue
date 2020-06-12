@@ -42,7 +42,7 @@
 </p>
 
 </span>
-<img src="../assets/1211vortex.png" v-responsive>
+<img src="../assets/1211vortex.png" height=50% width=50% v-responsive>
   </div>
 </template>
 
