@@ -33,14 +33,14 @@
                 Enter the project to make a donation.  Your support is appreciated. <br /> <br />
                 <div v-responsive>
                     <a href="https://missiongotyoursix.org" target="new">
-                    <img  class="contain" src="../assets/six1.png" style="width:1582px;height:735px;" v-responsive>
+                    <img  class="contain" src="../assets/six1.png" width=50% height=50% v-responsive>
                     </a>
                 </div>
             <br /> 
             <hr />
             <div v-responsive>
                 <a href="https://missiongotyoursix.org" target="new">
-                <img  class="contain" src="../assets/six2.png" style="width:1582px;height:735px;" v-responsive>
+                <img  class="contain" src="../assets/six2.png"  width=50% height=50%  v-responsive>
                 </a>
             </div>
             <br />
@@ -76,7 +76,7 @@
             </p>
                 <div >
                     <a href="https://www.ccsc.org/midwest" target="new">
-                    <img  class="contain" src="../assets/ccscmw2019.png" style="width:1580px;height:638px;" v-responsive >
+                    <img  class="contain" src="../assets/ccscmw2019.png"  width=50% height=50%  v-responsive >
                     </a>
                 </div>
             <br /> 
@@ -112,13 +112,13 @@
             <br /> <br />
                 <div>
                     <a href="http://annemorsehambrock.net" target="new">
-                    <img  class="contain" src="../assets/anne1.png" style="width:1578px;height:736px;" v-responsive>
+                    <img  class="contain" src="../assets/anne1.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
                 <div>
                     <a href="http://annemorsehambrock.net" target="new">
-                    <img  class="contain" src="../assets/anne2.png" style="width:1582px;height:679px;" v-responsive>
+                    <img  class="contain" src="../assets/anne2.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -155,30 +155,30 @@
             <p class="pad">
                 The next team to take over this project rewrote the app using Angular.<br /> <br />
             </p>
-                <div class="floatright">
+                <div v-responsive>
                     <a href="https://deployotr.aiello.io" target="new">
-                    <img  class="scale-down" src="../assets/otr3.png" style="width:500px;height:400px;" v-responsive>
+                    <img  class="scale-down" src="../assets/otr3.png"  v-responsive>
                     </a>
                 </div>
                 <br />
 
-                <div class="floatleft" v-responsive>
+                <div  v-responsive>
                     <a href="https://deployotr.aiello.io" target="new">
-                    <img  class="scale-down" src="../assets/otr1.png" style="width:500px;height:400px;" v-responsive>
+                    <img  class="scale-down" src="../assets/otr1.png"  v-responsive>
                     </a>
                 </div>
                 <br />
 
-                <div class="floatnone" v-responsive>
+                <div  v-responsive>
                     <a href="https://deployotr.aiello.io" target="new">
-                    <img  class="scale-down" src="../assets/otr2.png" style="width:300px;height:400px;" v-responsive>
+                    <img  class="scale-down" src="../assets/otr2.png"  v-responsive>
                     </a>
                 </div>
                 <br />
 
-                <div class="floatnone" v-responsive>
+                <div  v-responsive>
                     <a href="https://deployotr.aiello.io" target="new">
-                    <img  class="scale-down" src="../assets/otrss.png" style="width:800px;height:400px;" v-responsive>
+                    <img  class="scale-down" src="../assets/otrss.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
                 <br /> 
@@ -209,7 +209,7 @@
             </p>
             <div class="floatnone" v-responsive>
                 <a href="https://volga.aiello.io" target="new">
-                <img  class="contain" src="../assets/volga1.png" style="width:1068px;height:765px;" v-responsive>
+                <img  class="contain" src="../assets/volga1.png"  width=50% height=50%  v-responsive>
                 </a>
             </div>
             <br /> 
@@ -241,7 +241,7 @@
             </p>
                 <div >
                     <a href="https://appfactoryuwp.com" target="new">
-                    <img  class="contain" src="../assets/appfactory.png" style="width:1586px;height:775px;" v-responsive>
+                    <img  class="contain" src="../assets/appfactory.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -269,7 +269,7 @@
             </p>
                 <div >
                     <a href="https://ccscmw2018.aiello.io" target="new">
-                    <img  class="contain" src="../assets/ccscmw2018.png" style="width:1582px;height:739px;" v-responsive>
+                    <img  class="contain" src="../assets/ccscmw2018.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -294,7 +294,7 @@
             </p>
                 <div >
                     <a href="https://gearblabs.aiello.io" target="new">
-                    <img  class="contain" src="../assets/gear.png" style="width:1905px;height:923px;" v-responsive>
+                    <img  class="contain" src="../assets/gear.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -328,7 +328,7 @@
             </p>
                 <div v-responsive>
                     <a href="https://rainbow-of-dreams.com" target="new">
-                    <img  class="contain" src="../assets/rainbow.png" style="width:1581px;height:773px;" v-responsive>
+                    <img  class="contain" src="../assets/rainbow.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -360,7 +360,7 @@
             </p>
                 <div>
                     <a href="https://hr0.aiello.io" target="new">
-                    <img  class="contain" src="../assets/chi.png" style="width:1582px;height:749px;" v-responsive>
+                    <img  class="contain" src="../assets/chi.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -392,7 +392,7 @@
             </p>
                 <div>
                     <a href="https://djtonya.net" target="new">
-                    <img  class="contain" src="../assets/ssdjtonyanet-1024x433.jpg" style="width:1024px;height:433px;" v-responsive>
+                    <img  class="contain" src="../assets/ssdjtonyanet-1024x433.jpg"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -426,7 +426,7 @@
             </p>
                 <div v-responsive>
                     <a href="https://savethetigers.aiello.io" target="new">
-                    <img  class="contain" src="../assets/bengal.png" style="width:947px;height:919px;" v-responsive>
+                    <img  class="contain" src="../assets/bengal.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br />
@@ -466,7 +466,7 @@
             </p>
                 <div v-responsive>
                     <a href="https://barnaclebuds.aiello.io" target="new">
-                    <img  class="contain" src="../assets/barnacle.jpg" style="width:562px;height:700px;" v-responsive>
+                    <img  class="contain" src="../assets/barnacle.jpg"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -500,7 +500,7 @@
             </p>
                 <div v-responsive>
                     <a href="http://naturesbestshea.weebly.com/" target="new">
-                    <img  class="contain" src="../assets/natures.png" style="width:900px;height:456px;" v-responsive>
+                    <img  class="contain" src="../assets/natures.png"  width=50% height=50%  v-responsive>
                     </a>
                 </div>
             <br /> 
