@@ -14,7 +14,7 @@
 
 
 
-    <img src="../assets/logo.jpg">
+    <img src="../assets/team2.jpg" v-responsive>
 
 
  </div>
