@@ -1,29 +1,29 @@
 <template>
-    <div class="about">
+    <div class="about" v-responsive>
         <h1>Projects</h1>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Introduction</h4>
         </div>
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
 
-            <div> 
+            <div v-responsive> 
                 <p>
-                    Here are some of the projects that I've completed, with a brief description.<br /> <br />
+                    Here are some of the projects that we have completed, with a brief description.<br /> <br />
                     Clicking on an image or link will open the full project or app in a new tab or window.<br /> <br /> <br />
                 </p>
             </div>
         </div>
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Non Profit Veterans Organization</h4>
         </div>
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://missiongotyoursix.org" target="new">
             <h4>Mission Got Your Six</h4>
             </a>
         </div>
         <br />
-        <div >
+        <div v-responsive>
             <p class="pad">
                 The Mission Got Your Six project is a website project for a local, non-profit, veteran's organization.<br /> <br />
                 Their slogans, "#Never Alone,  #22", are ones that they hope will raise awareness of the fact that 22 veterans commit suicide each year.<br /> <br />
@@ -31,16 +31,16 @@
                 The organization offers networking opportunities by hosting activites, softball games, and social events. <br /> <br />
                 Fundraising and donations are important components, and are greatly appreciated, accepted, and needed in order to offer this support for our Heroes.<br /> <br />
                 Enter the project to make a donation.  Your support is appreciated. <br /> <br />
-                <div >
+                <div v-responsive>
                     <a href="https://missiongotyoursix.org" target="new">
-                    <img  class="contain" src="../assets/six1.png" style="width:1582px;height:735px;">
+                    <img  class="contain" src="../assets/six1.png" style="width:1582px;height:735px;" v-responsive>
                     </a>
                 </div>
             <br /> 
             <hr />
-            <div>
+            <div v-responsive>
                 <a href="https://missiongotyoursix.org" target="new">
-                <img  class="contain" src="../assets/six2.png" style="width:1582px;height:735px;">
+                <img  class="contain" src="../assets/six2.png" style="width:1582px;height:735px;" v-responsive>
                 </a>
             </div>
             <br />
@@ -55,19 +55,19 @@
 
 
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Conference Website</h4>
         </div>
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://www.ccsc.org/midwest" target="new">
             <h4>Consortium For Computing Sciences in Colleges Website 2019</h4>
             </a>
         </div>
         <div>
             <p class="pad">
-                This conference website design and build was assigned to me during the early spring of 2018 by the App Factory
+                This conference website design and build was assigned during the early spring of 2018 by the App Factory
                 Director, Dr. Zaid Altahat. <br /> <br />
-                I've continued the project for 2 years and designed the current 2019 conference. <br /> <br />
+                We've continued the project for 2 years and designed the current 2019 conference. <br /> <br />
                 This 2019 website covers one of several of these conferences that occur frequently in various regions of the United States.<br /> <br />
                 The conference offers workshops, classes, discussions, panels, and other activities. <br /> <br />
                 The website offers guides, registration, maps, and information about the conference.<br /> <br />
@@ -76,7 +76,7 @@
             </p>
                 <div >
                     <a href="https://www.ccsc.org/midwest" target="new">
-                    <img  class="contain" src="../assets/ccscmw2019.png" style="width:1580px;height:638px;">
+                    <img  class="contain" src="../assets/ccscmw2019.png" style="width:1580px;height:638px;" v-responsive >
                     </a>
                 </div>
             <br /> 
@@ -88,11 +88,11 @@
 
 
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Artist Website</h4>
         </div>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="http://annemorsehambrock.net" target="new">
             <h4>Anne Morse-Hambrock</h4>
             </a>
@@ -112,13 +112,13 @@
             <br /> <br />
                 <div>
                     <a href="http://annemorsehambrock.net" target="new">
-                    <img  class="contain" src="../assets/anne1.png" style="width:1578px;height:736px;">
+                    <img  class="contain" src="../assets/anne1.png" style="width:1578px;height:736px;" v-responsive>
                     </a>
                 </div>
             <br /> 
                 <div>
                     <a href="http://annemorsehambrock.net" target="new">
-                    <img  class="contain" src="../assets/anne2.png" style="width:1582px;height:679px;">
+                    <img  class="contain" src="../assets/anne2.png" style="width:1582px;height:679px;" v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -134,10 +134,10 @@
 
 
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>VueJS Application</h4>
         </div>
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://deployotr.aiello.io" target="new">
             <h4>On The Radar</h4>
             </a>
@@ -157,28 +157,28 @@
             </p>
                 <div class="floatright">
                     <a href="https://deployotr.aiello.io" target="new">
-                    <img  class="scale-down" src="../assets/otr3.png" style="width:500px;height:400px;">
+                    <img  class="scale-down" src="../assets/otr3.png" style="width:500px;height:400px;" v-responsive>
                     </a>
                 </div>
                 <br />
 
-                <div class="floatleft">
+                <div class="floatleft" v-responsive>
                     <a href="https://deployotr.aiello.io" target="new">
-                    <img  class="scale-down" src="../assets/otr1.png" style="width:500px;height:400px;">
+                    <img  class="scale-down" src="../assets/otr1.png" style="width:500px;height:400px;" v-responsive>
                     </a>
                 </div>
                 <br />
 
-                <div class="floatnone">
+                <div class="floatnone" v-responsive>
                     <a href="https://deployotr.aiello.io" target="new">
-                    <img  class="scale-down" src="../assets/otr2.png" style="width:300px;height:400px;">
+                    <img  class="scale-down" src="../assets/otr2.png" style="width:300px;height:400px;" v-responsive>
                     </a>
                 </div>
                 <br />
 
-                <div class="floatnone">
+                <div class="floatnone" v-responsive>
                     <a href="https://deployotr.aiello.io" target="new">
-                    <img  class="scale-down" src="../assets/otrss.png" style="width:800px;height:400px;">
+                    <img  class="scale-down" src="../assets/otrss.png" style="width:800px;height:400px;" v-responsive>
                     </a>
                 </div>
                 <br /> 
@@ -186,10 +186,10 @@
         <hr />
         <br />
         <br />
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>E-Commerce</h4>
         </div>
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://volga.aiello.io" target="new">
             <h4>Project Volga</h4>
             </a>
@@ -207,9 +207,9 @@
                 This is before I’ve had design classes. I’m just saying. <br /> <br />   
 
             </p>
-            <div class="floatnone">
+            <div class="floatnone" v-responsive>
                 <a href="https://volga.aiello.io" target="new">
-                <img  class="contain" src="../assets/volga1.png" style="width:1068px;height:765px;">
+                <img  class="contain" src="../assets/volga1.png" style="width:1068px;height:765px;" v-responsive>
                 </a>
             </div>
             <br /> 
@@ -218,11 +218,11 @@
         <br />
         <br />
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Business Website</h4>
         </div>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://appfactoryuwp.com" target="new">
             <h4>App Factory Website</h4>
             </a>
@@ -241,7 +241,7 @@
             </p>
                 <div >
                     <a href="https://appfactoryuwp.com" target="new">
-                    <img  class="contain" src="../assets/appfactory.png" style="width:1586px;height:775px;">
+                    <img  class="contain" src="../assets/appfactory.png" style="width:1586px;height:775px;" v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -250,10 +250,10 @@
         <br />
         <br />
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Conference Website</h4>
         </div>
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://ccscmw2018.aiello.io" target="new">
             <h4>Consortium For Computing Sciences in Colleges Website 2018</h4>
             </a>
@@ -269,7 +269,7 @@
             </p>
                 <div >
                     <a href="https://ccscmw2018.aiello.io" target="new">
-                    <img  class="contain" src="../assets/ccscmw2018.png" style="width:1582px;height:739px;">
+                    <img  class="contain" src="../assets/ccscmw2018.png" style="width:1582px;height:739px;" v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -278,11 +278,11 @@
         <br />
         <br />
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Blog</h4>
         </div>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://gearblabs.aiello.io" target="new">
             <h4>Gear Blabs Website</h4>
             </a>
@@ -294,7 +294,7 @@
             </p>
                 <div >
                     <a href="https://gearblabs.aiello.io" target="new">
-                    <img  class="contain" src="../assets/gear.png" style="width:1905px;height:923px;">
+                    <img  class="contain" src="../assets/gear.png" style="width:1905px;height:923px;" v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -307,11 +307,11 @@
 
 
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>E-Commerce</h4>
         </div>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://rainbow-of-dreams.com" target="new">
             <h4>Rainbow of Dreams Gifts</h4>
             </a>
@@ -326,9 +326,9 @@
                 Rainbow of Dreams website is a WordPress based content management system (CMS). <br /> <br /> 
                 A WooCommerce e-commerce package is also installed to facilitate online shoppping through the website store front.<br /> <br /> 
             </p>
-                <div >
+                <div v-responsive>
                     <a href="https://rainbow-of-dreams.com" target="new">
-                    <img  class="contain" src="../assets/rainbow.png" style="width:1581px;height:773px;">
+                    <img  class="contain" src="../assets/rainbow.png" style="width:1581px;height:773px;" v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -340,11 +340,11 @@
 
 
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Event Website</h4>
         </div>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://hr0.aiello.io" target="new">
             <h4>Chi Steppin</h4>
             </a>
@@ -360,7 +360,7 @@
             </p>
                 <div>
                     <a href="https://hr0.aiello.io" target="new">
-                    <img  class="contain" src="../assets/chi.png" style="width:1582px;height:749px;">
+                    <img  class="contain" src="../assets/chi.png" style="width:1582px;height:749px;" v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -377,11 +377,11 @@
 
 
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>DJ Website</h4>
         </div>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://djtonya.net" target="new">
             <h4>DJ TONYA</h4>
             </a>
@@ -392,7 +392,7 @@
             </p>
                 <div>
                     <a href="https://djtonya.net" target="new">
-                    <img  class="contain" src="../assets/ssdjtonyanet-1024x433.jpg" style="width:1024px;height:433px;">
+                    <img  class="contain" src="../assets/ssdjtonyanet-1024x433.jpg" style="width:1024px;height:433px;" v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -402,16 +402,16 @@
         <br />
 
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Conservation Website</h4>
         </div>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://savethetigers.aiello.io/" target="new">
             <h4>Save The Tigers!</h4>
             </a>
         </div>
-        <div>
+        <div v-responsive>
             <p class="pad">
                 Did you know that only 3,200 Bengal Tigers are left in the whole world? <br /> <br /> 
                 The Bengal tiger is an endangered species that we must protect today. <br /> <br /> 
@@ -424,9 +424,9 @@
                 All of the code such as HTML and CSS are all written from scratch--it's not a prebuilt content 
                 management system. <br /> <br /> 
             </p>
-                <div>
+                <div v-responsive>
                     <a href="https://savethetigers.aiello.io" target="new">
-                    <img  class="contain" src="../assets/bengal.png" style="width:947px;height:919px;">
+                    <img  class="contain" src="../assets/bengal.png" style="width:947px;height:919px;" v-responsive>
                     </a>
                 </div>
             <br />
@@ -446,17 +446,17 @@
 
 
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>Restaurant Website</h4>
         </div>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="https://djtonya.net" target="new">
             <h4>Barnacle Buds</h4>
             </a>
         </div>
         <div>
-            <p class="pad">
+            <p class="pad" v-responsive>
                 This website project was originally designed in our Art 377 Web Design class at the university.<br /> <br /> 
                 We had to select an individual restaurant, not a chain, and create an updated look and design, using our digital design skillset.<br /> <br /> 
                 I chose a friend's restaurant, Barnacle Buds located in Bay View, just minutes south of downtown Milwaukee off of South KK Avenue.<br /> <br /> 
@@ -464,9 +464,9 @@
                 All artwork and icons have been done by hand.<br /> <br /> 
     
             </p>
-                <div>
+                <div v-responsive>
                     <a href="https://barnaclebuds.aiello.io" target="new">
-                    <img  class="contain" src="../assets/barnacle.jpg" style="width:562px;height:700px;">
+                    <img  class="contain" src="../assets/barnacle.jpg" style="width:562px;height:700px;" v-responsive>
                     </a>
                 </div>
             <br /> 
@@ -482,11 +482,11 @@
 
 
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <h4>E-Commerce Website</h4>
         </div>
 
-        <div class="centercontent">
+        <div class="centercontent" v-responsive>
             <a href="http://naturesbestshea.weebly.com/" target="new">
             <h4>Natures Best Shea Butter</h4>
             </a>
@@ -498,9 +498,9 @@
                 Our specifications were to build an E-commerce website that fits all of her products. <br /> <br /> 
                 This is one of our first website projects for a client, and our first website team project from my time as an undergraduate.<br /> <br />  
             </p>
-                <div>
+                <div v-responsive>
                     <a href="http://naturesbestshea.weebly.com/" target="new">
-                    <img  class="contain" src="../assets/natures.png" style="width:900px;height:456px;">
+                    <img  class="contain" src="../assets/natures.png" style="width:900px;height:456px;" v-responsive>
                     </a>
                 </div>
             <br /> 

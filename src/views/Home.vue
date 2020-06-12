@@ -1,10 +1,10 @@
 <template>
 
-  <div class="home">
+  <div class="home" v-responsive>
     <HelloWorld msg="Welcome" />
     <h1>Welcome</h1>
 
-        <div>
+        <div v-responsive>
 
           <p> Thank you for visiting my site.  This is a portfolio website and a collection of projects. <br /><br />
             Please take a look around and let me know what you think. <br /> <br />

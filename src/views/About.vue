@@ -1,25 +1,37 @@
 <template>
-  <div class="about">
+  <div class="about" v-responsive>
     <h1>About</h1>
-<span class="left">
+<span class="left" v-responsive>
     <p>
-      I am a 2018 graduate from the University of Wisconsin--Parkside
+      I will graduate from the University of Wisconsin - Parkside this December, 2020
+      
       <ul>
-        <li>Bachelor of Science Degree in Computer Science</li>
-        <li>Web Development Minor</li>
-      </ul>
-      Certificates
-      <ul>
-        <li>Unix System Administration</li>
+        <li>Master of Science Computer Information Systems - December, 2020</li> 
+        <ul> <br />
+        <li>Specialization: Secure Software Development</li> <br />
+        <li>Face Recognition</li>
+        </ul> 
+        </ul>
+
+        <ul>
+        <li>Bachelor of Science Degree Computer Science - Spring 2018</li>
+        <br />
+        <ul>
+        <li>Web Development Minor</li> <br />
+      
+      <b>Certificates </b> <br />
+    <br />
+        <li>Unix System Administration</li> <br />
         <li>Cyber Security</li>
       </ul>
-
-      I am currently enrolled as a graduate student for the fall 2019 term.<br />
-      My concentration is Software Development, and my current Graduate GPA is 4.0. <br />
+        </ul>
+        
+        
+        
 
     </p>
 </span>
-<img src="../assets/1211.jpg">
+<img src="../assets/1211.jpg" v-responsive>
     <br /> <br />
     <p>My favorite undergraduate courses included Artificial Intelligence, Astronomy, Calculus, Data Structures, Discrete Math, and Physics 
     </p>
