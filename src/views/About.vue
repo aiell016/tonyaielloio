@@ -25,18 +25,16 @@
         <li>Cyber Security</li>
       </ul>
         </ul>
-        
-        
-        
 
+    My favorite undergraduate courses included Artificial Intelligence, Astronomy, Calculus, Data Structures, Discrete Math, and Physics 
+     
+    
     </p>
 </span>
 <div v-responsive>
 <img src="../assets/1080ball.jpg" height=80% width=80%>
 </div>
-    <br /> <br />
-    <p>My favorite undergraduate courses included Artificial Intelligence, Astronomy, Calculus, Data Structures, Discrete Math, and Physics 
-    </p>
+    
   </div>
 </template>
 
