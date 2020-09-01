@@ -14,15 +14,15 @@
     "core-js": "^2.6.11",
     "pug": "^2.0.4",
     "pug-plain-loader": "^1.0.0",
-    "vue": "^2.6.11",
-    "vue-loader": "^15.9.2",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.3",
     "vue-parallax": "^1.1.1",
-    "vue-router": "^3.3.3"
+    "vue-router": "^3.4.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.1",
     "@vue/cli-plugin-eslint": "^3.12.1",
-    "@vue/cli-service": "^4.4.4",
+    "@vue/cli-service": "^4.5.4",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
@@ -30,7 +30,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-parallax": "^1.1.1",
-    "vue-template-compiler": "^2.6.11",
-    "webpack": "^4.43.0"
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^4.44.1"
   }
 }

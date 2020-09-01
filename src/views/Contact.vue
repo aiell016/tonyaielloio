@@ -14,17 +14,17 @@
             <br />
             <p >Thank you for visiting my site and wanting to talk!<br /><br />
               Please use the button above to place a call to my voicemail.<br /><br />
-              Please speak clearly and leave your message. <br /><br />
-              The artificial intelligence needs to hear you clearly, so it can transcribe and email the text of your message. <br /><br />
+              Please speak clearly for the AI to understand your message. <br /><br />
               I'll return your call as soon as I am able to.<br />
          
               <br /><br />
               Thanks!
               <br /><br />
 
-              Tony
-              </p>
+              Tony <br /> <br />
+               <a href = "https://github.com/aiell016" target="new">https://github.com/aiell016</a> <br />
 
+              </p>
              </div>
     
   </div>
