@@ -22,6 +22,9 @@
               <br /><br />
 
               Tony <br /> <br />
+
+              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="anthony-aiello-2021" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/anthony-aiello-2021?trk=profile-badge">Anthony A.</a></div>
+              <br />
                <a href = "https://github.com/aiell016" target="new">https://github.com/aiell016</a> <br />
 
               </p>
