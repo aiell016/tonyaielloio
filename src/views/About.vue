@@ -3,10 +3,9 @@
     <h1>About</h1>
 <span class="left" v-responsive>
     <p>
-      I will graduate from the University of Wisconsin - Parkside this December, 2020
       
       <ul>
-        <li>Master of Science Computer Information Systems - December, 2020</li> 
+        <li>Master of Science Computer Information Systems - May, 2021</li> 
         <ul> <br />
         <li>Specialization: Secure Software Development</li> <br />
         <li>Face Recognition</li>
