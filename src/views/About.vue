@@ -2,11 +2,9 @@
   <div class="about" v-responsive>
     <h1>About</h1>
 
-  
-
     <div class="left" v-responsive>
     
-<p ><b>Education</b>
+<p ><b>Anthony's Education</b>
 <br /> <br /><b>University of Wisconsin - Parkside </b> <br />
 <ul>
 <li><b>Master of Science in Computer and Information Systems - May, 2018 to May, 2021</b></li> <br />
@@ -24,13 +22,25 @@
      
     
     </p>
+    <p > <br />This site was developed using <a href = "https://vuejs.org" target = "new" >Vue JS</a> and <a href = "https://vuetifyjs.com" target = "new" >Vuetify</a>  
+with <a href = "https://nodejs.org" target="new">Node JS</a>  
+<br />based on a <b>Model - View - Control</b> structure,
+<br /> with a responsive, mobile-friendly design.<br />
+</p>
+
+
+  </div>
 
 <div v-responsive>
 <img src="../assets/1080ball.jpg" height=80% width=80%>
 </div>
     
+        
+
+
   </div>
-  </div>
+
+  
 </template>
 
 <style scoped>

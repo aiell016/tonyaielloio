@@ -9,8 +9,8 @@
 
             <div v-responsive> 
                 <p>
-                    Here are some of the projects that we have completed, with a brief description.<br /> <br />
-                    Clicking on an image or link will open the full project or app in a new tab or window.<br /> <br /> <br />
+                    Here is just a small fraction of the projects that I have completed, either with a team, or solo. Each has a brief description.<br /> <br />
+                    Clicking on an image or link will open the full project or app in a new tab or window for you to explore.<br /> <br /> <br />
                 </p>
             </div>
         </div>
@@ -48,10 +48,6 @@
         <hr />
         <br />
         <br />
-
-
-
-
 
 
 

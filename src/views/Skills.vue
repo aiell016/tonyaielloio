@@ -1,6 +1,13 @@
 <template>
 <div class="left" v-responsive>
-  <p><br /> 
+  <p>
+
+  I love to code! My most recent project had me programming a microcontroller in C. I have written tons of code in many different languages and for many different projects.
+  I have also spent a lot of time using JIRA and Kanban boards, writing user stories, client requirements, tasks, and time estimations.
+  I continuiusly use the Agile process of software development in all of my projects because it is efficient, well-tested, and best practices, easy for adapting to change.
+  
+<br /> <br />
+
 
 <b>Skills</b> <br />
 <ul>
