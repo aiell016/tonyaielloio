@@ -3,8 +3,11 @@
   <p>
 
   I love to code! My most recent project had me programming a microcontroller in C. I have written tons of code in many different languages and for many different projects.
-  I have also spent a lot of time using JIRA and Kanban boards, writing user stories, client requirements, tasks, and time estimations.
+  I have also spent a lot of time using JIRA and Kanban boards, writing user stories, client requirements, tasks, time estimations, team management processes.
   I continuiusly use the Agile process of software development in all of my projects because it is efficient, well-tested, and best practices, easy for adapting to change.
+  When you have a reputation for doing a good job, people want to be on your team.  I am very familiar with that feeling, and I'm pretty sure it will continue.
+
+  This is what I have been trained for, skilled at, and what I can deliver.  
   
 <br /> <br />
 
