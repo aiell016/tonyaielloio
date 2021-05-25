@@ -15,6 +15,13 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  
+
+  mounted() {
+  let linkedinScript = document.createElement('script')
+  linkedinScript.setAttribute('src', 'https://platform.linkedin.com/badges/js/profile.js' )
+  document.head.appendChild(linkedinScript)
   }
 }
 </script>

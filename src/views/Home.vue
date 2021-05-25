@@ -4,18 +4,27 @@
     <HelloWorld msg="Welcome" />
     <h1>Welcome</h1>
 
-        <div v-responsive>
+        <div v-responsive >
 
-          <p> Thank you for visiting my site.  This is a portfolio website and a collection of projects. <br /><br />
-            Please take a look around and let me know what you think. <br /> <br />
-            If you're interested in my work, I left a contact page available that you may use. <br /> <br />
+          <p> <br />Thank you for visiting my site.
+           <br /> This is a portfolio website with a collection of live web-based projects.<br />
+          <br />Please take a look around and let me know what you think.
+          <br />If you're interested in my work, I left a contact page available that you may use.
           </p>
         </div>
 
+        <div v-responsive>
 
+          <p > <br />This site was developed using <a href = "https://vuejs.org" target = "new" >Vue JS</a> and <a href = "https://vuetifyjs.com" target = "new" >Vuetify</a>  
+          with <a href = "https://nodejs.org" target="new">Node JS</a>  
+          <br />based on a <b>Model - View - Control</b> structure,
+          <br /> with a responsive, mobile-friendly design.<br />
+          </p>
+        </div>
 
-    <img src="../assets/team2.jpg" height=80% width=80% v-responsive>
-
+<div v-responsive>
+    <img src="../assets/team2.jpg" height=80% width=80% >
+</div>
 
  </div>
 
@@ -40,6 +49,15 @@
 }
 
 
+.p {
+    display: flex;
+    justify-content: left;
+}
 
+.left {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
 
 </style>

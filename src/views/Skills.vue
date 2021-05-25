@@ -1,21 +1,6 @@
 <template>
-<div class="skills" v-responsive>
-  <p><br /> </p>
-<b>Education</b>
-<span class="left" >
-<p><b>University of Wisconsin - Parkside </b> <br />
-<ul>
-<li>Master of Science in Computer Information Systems - December 2020</li> <br />
-<ul>
-  <li>Specialization in Software Development, Cyber Security</li> 
-</ul> <br />
-<li>Bachelor of Science in Computer Science - Spring 2018</li> <br />
-<ul>
-<li>Web Development Minor</li>
-<li>Cyber Security Certificate</li>
-<li>Unix System Administration Certificate</li> 
-</ul>
-</ul>
+<div class="left" v-responsive>
+  <p><br /> 
 
 <b>Skills</b> <br />
 <ul>
@@ -41,7 +26,7 @@
 </ul>
 </p>
 
-</span>
+
 <img src="../assets/1211vortex.png" height=50% width=50% v-responsive>
   </div>
 </template>

@@ -1,39 +1,35 @@
 <template>
   <div class="about" v-responsive>
     <h1>About</h1>
-<span class="left" v-responsive>
-    <p>
-      
-      <ul>
-        <li>Master of Science Computer Information Systems - May, 2021</li> 
-        <ul> <br />
-        <li>Specialization: Secure Software Development</li> <br />
-        <li>Face Recognition</li>
-        </ul> 
-        </ul>
 
-        <ul>
-        <li>Bachelor of Science Degree Computer Science - Spring 2018</li>
-        <br />
-        <ul>
-        <li>Web Development Minor</li> <br />
-      
-      <b>Certificates </b> <br />
-    <br />
-        <li>Unix System Administration</li> <br />
-        <li>Cyber Security</li>
-      </ul>
-        </ul>
+  
 
-    My favorite undergraduate courses included Artificial Intelligence, Astronomy, Calculus, Data Structures, Discrete Math, and Physics 
+    <div class="left" v-responsive>
+    
+<p ><b>Education</b>
+<br /> <br /><b>University of Wisconsin - Parkside </b> <br />
+<ul>
+<li><b>Master of Science in Computer and Information Systems - May, 2018 to May, 2021</b></li> <br />
+<ul>
+  <li>Specialization in Software Development, Cyber Security</li> 
+</ul> <br />
+<li><b>Bachelor of Science in Computer Science - September, 2011 to May, 2018</b></li> <br />
+<ul>
+<li>Web Development Minor</li>
+<li>Cyber Security Certificate</li>
+<li>Unix System Administration Certificate</li> 
+</ul>
+</ul>
+    My favorite undergraduate courses included Artificial Intelligence, Astronomy, Calculus, Data Structures, and Physics
      
     
     </p>
-</span>
+
 <div v-responsive>
 <img src="../assets/1080ball.jpg" height=80% width=80%>
 </div>
     
+  </div>
   </div>
 </template>
 
@@ -41,7 +37,7 @@
 
 .left {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     text-align: left;
 }
 

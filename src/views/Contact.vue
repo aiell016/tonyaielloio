@@ -12,32 +12,52 @@
 </div>
 <div class="center" v-responsive>
             <br />
-            <p >Thank you for visiting my site and wanting to talk!<br /><br />
-              Please use the button above to place a call to my voicemail.<br /><br />
-              Please speak clearly for the AI to understand your message. <br /><br />
-              I'll return your call as soon as I am able to.<br />
-         
+            <p >Thank you for visiting my site and wanting to discuss more!<br />
+              I left a few ways to reach me.
               <br /><br />
-              Thanks!
+              Thank you!
               <br /><br />
 
-              Tony <br /> <br />
+              Anthony <br /> <br />
 
-              <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="anthony-aiello-2021" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/anthony-aiello-2021?trk=profile-badge">Anthony A.</a></div>
               <br />
-               <a href = "https://github.com/aiell016" target="new">https://github.com/aiell016</a> <br />
+               <a href = "https://github.com/aiell016" target="new">Github</a> <br />
+               <br />
 
-              </p>
+                <a href = "https://www.linkedin.com/in/anthony-aiello-2021" target = "new">Linkedin</a> <br /><br />
+                <a href="mailto:anthony2021@aiello.io" target = "new">Email</a><br /><br />
+
+                </p>
+   
              </div>
+
+              
     
   </div>
 </template>
 
+<script>
 
+export default {
+  
+  mounted() {
+  let linkedinScript = document.createElement('script')
+  linkedinScript.setAttribute('src', 'https://platform.linkedin.com/badges/js/profile.js' )
+  document.head.appendChild(linkedinScript)
+  }
+  
+}
+</script>
 
 <style scoped>
 
 .center {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+#center {
     display: flex;
     justify-content: center;
     text-align: left;
