@@ -9,7 +9,7 @@
           <p> <br />Thank you for visiting my portfolio site.
            <br />There exists a collection of live web-based projects here.<br />
           <br />
-          <br />If you're interested in my work, I left a contact page available that you may use.
+          <br />If you're interested in more, feel free to send a message.
           <br />Thank you for your visit!
           <br />- Anthony -
           </p>
