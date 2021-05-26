@@ -1,14 +1,14 @@
 <template>
-<div class="left" v-responsive>
+<div class="left w-50" v-responsive >
   <p>
 
 
 
 <b>Skills</b> <br />
 <ul>
-<li>Ability to lead and manage IT projects using project management principles</li>
+<li>Proven abilities to lead and manage IT projects using project management principles</li>
 <li>Specify, design, develop, and implement modern enterprise systems for an organization</li>
-<li>Design, develop, test, and implement software using industry leading practices, agile, scrum</li>
+<li>Design, develop, test, and implement software using industry leading practices, Agile, Scrum</li>
 <li>Develop information technology technical solutions</li>
 <li>Design and implement organizational and IT control mechanisms for reliable and secure information systems</li>
 <li>AWS Educate, Git, JIRA, MS Teams, WebEx, Collaborate </li>
@@ -28,8 +28,10 @@
 </ul>
 </p>
 
+<div class="w-50" v-responsive>
+<img src="../assets/1211vortex.png" height=90% width=90% v-responsive>
+  </div>
 
-<img src="../assets/1211vortex.png" height=50% width=50% v-responsive>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
 
-  <div class="home" v-responsive>
+  <div class="home w-5" v-responsive>
     <HelloWorld msg="Welcome" />
     <h1>Welcome</h1>
 
@@ -17,7 +17,7 @@
         </div>
 
 
-<div v-responsive>
+<div class = "w-5" v-responsive>
     <img src="../assets/team2.jpg" height=80% width=80% >
 </div>
 
