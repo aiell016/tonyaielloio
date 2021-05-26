@@ -4,7 +4,17 @@
 
     <div class="left" v-responsive>
     
-<p ><b>Anthony's Education</b>
+<p >
+
+  <b>I love to code! </b> My most recent project had me programming a microcontroller in <b>C</b>. I have written tons of code in many different languages and for many different projects.
+  I have also spent a lot of time using JIRA and Kanban boards, writing user stories, client requirements, tasks, time estimations, team management processes.
+  I continuiusly use the Agile process of software development in all of my projects because it is efficient, well-tested, best practice, and easy for adapting to change.
+  
+  Here is a small demo of what I can deliver.  
+  
+<br /> <br />
+
+<b>Anthony's Education</b>
 <br /> <br /><b>University of Wisconsin - Parkside </b> <br />
 <ul>
 <li><b>Master of Science in Computer and Information Systems - May, 2018 to May, 2021</b></li> <br />
