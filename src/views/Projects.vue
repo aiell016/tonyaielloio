@@ -305,7 +305,7 @@
         </div>
 
         <div class="centercontent" v-responsive>
-            <a href="https://rainbow-of-dreams.com" target="new">
+            <a href="https://rainbow-of-dreams.aiello.io" target="new">
             <h4>Rainbow of Dreams Gifts</h4>
             </a>
         </div>
@@ -318,9 +318,10 @@
                 The owners, Pat and Patrick Shay sell boutique goods and unique items that are found at one of the many shows they attend.<br /> <br /> 
                 Rainbow of Dreams website is a WordPress based content management system (CMS). <br /> <br /> 
                 A WooCommerce e-commerce package is also installed to facilitate online shoppping through the website store front.<br /> <br /> 
+                Update 5-27-2021: Pat & Pat Shay have merged this business with a brick and mortar store in Racine, Wiscnsin, called the Racine Marian Center. <br /> <br />
             </p>
                 <div v-responsive>
-                    <a href="https://rainbow-of-dreams.com" target="new">
+                    <a href="https://rainbow-of-dreams.aiello.io" target="new">
                     <img  class="contain" src="../assets/rainbow.png"  width=90% height=90%  v-responsive>
                     </a>
                 </div>
