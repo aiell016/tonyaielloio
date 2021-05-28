@@ -6,10 +6,7 @@
                <h4>Contact me</h4>
                <br />
 </div>
-<div class="center" v-responsive>
 
-            <a href="tel:2626710703"><img src = "../assets/call.png"></a>
-</div>
 <div class="center" v-responsive>
             <br />
             <p >Thank you for visiting my site and wanting to discuss more!<br />
