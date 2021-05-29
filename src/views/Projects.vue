@@ -51,6 +51,60 @@
 
 
 
+ <div class="centercontent" v-responsive>
+            <h4>Early ECommerce</h4>
+        </div>
+
+        <div class="centercontent" v-responsive>
+            <a href="http://professionaldjstore.com" target="new">
+            <h4>Professional DJ Store</h4>
+            </a>
+        </div>
+        <br />
+        <br />
+
+        <div>
+            <p class="pad">
+                This website is one of the very first E commerce sites we built for the Bay View store front on Lincoln and Howell Avenue 
+                when the company still existed.  The original Custom Designed Lighting, Sound & Video, a Division of Custom Electronics, Inc.
+                was located at 2326 S Kinnickinnick Ave, (South KK), in Milwaukee, Wisconsin until circa 2000, when the owner, Mark Burmek,
+                took in a partner investor, Mitchell Novelty Company, also of Milwaukee. Mark moved the company to occupy a space across the street,
+                to 2273 S Howell Avenue in Milwaukee until August, 2011, when Ralph Senior of Mitchell Novelty decided to merge companies
+                into the headquarters for MNCO, in Milwaukee. Mark Burmek never advertised for his business, Custom Designed, and he was very
+                successfull not only with his business, but his mentorship helped others open their own similar companies.  Custom Designed performed much
+                of the designing, wiring, and installing lighting fixtures, speaker systems, and sound systems in many of the large nightclubs and
+                sports bars in Milwaukee. <br /> <br />
+
+                I decided to keep this site live and running to show everything that our web design instructor said not to do can be found here in this site.
+                Things like script font, drop shadow, saturated coloring, and other such elements can be found here. 
+                This was one of the sites I designed in the way back, early days, before any formal UX design training.
+                 <br /> <br />  
+            </p>
+            <br /> <br />
+                <div>
+                    <a href="http://professionaldjstore.com" target="new">
+                    <img  class="contain" src="../assets/cdlsv.png"  width=90% height=90%  v-responsive>
+                    </a>
+                </div>
+            <br /> 
+                <div>
+                    <a href="professionaldjstore.com" target="new">
+                    <img  class="contain" src="../assets/cdlsv2.png"  width=90% height=90%  v-responsive>
+                    </a>
+                </div>
+            <br /> 
+        </div>
+        <hr />
+        <br />
+        <br />
+
+
+
+
+
+
+
+
         <div class="centercontent" v-responsive>
             <h4>Conference Website</h4>
         </div>
