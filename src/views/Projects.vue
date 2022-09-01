@@ -405,7 +405,7 @@
                 The weekend event is private, and advanced ticket purchase is suggested.  <br /> <br /> 
             </p>
                 <div>
-                    <a href="https://hr0.aiello.io" target="new">
+                    <a href="https://chisteppin.com" target="new">
                     <img  class="contain" src="../assets/chi.png"  width=90% height=90%  v-responsive>
                     </a>
                 </div>
