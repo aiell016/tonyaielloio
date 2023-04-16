@@ -18,11 +18,11 @@
               Anthony <br /> <br />
 
               <br />
-               <a href = "https://github.com/aiell016" target="new">Github</a> <br />
+               <a href = "https://github.com/aiell016" >Github</a> <br />
                <br />
 
-                <a href = "https://www.linkedin.com/in/anthony-aiello-2021" target = "new">Linkedin</a> <br /><br />
-                <a href="mailto:anthony2021@aiello.io" target = "new">Email</a><br /><br />
+                <a href = "https://www.linkedin.com/in/anthonyaiello2023" >Linkedin</a> <br /><br />
+                <a href="mailto:anthony@aiello.io" >Email</a><br /><br />
 
                 </p>
    
