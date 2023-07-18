@@ -109,7 +109,41 @@
             <h4>Conference Website</h4>
         </div>
         <div class="centercontent" v-responsive>
-            <a href="https://www.ccsc.org/midwest" target="new">
+            <a href="https://ccscmw2018.aiello.io" target="new">
+            <h4>Consortium For Computing Sciences in Colleges Website 2018</h4>
+            </a>
+        </div>
+        <div>
+            <p class="pad">
+                This conference website design and build was assigned during the early spring of 2018 by the App Factory
+                Director, Dr. Zaid Altahat. <br /> <br />
+                We've continued the project for 2 years and designed following the 2018 conference. <br /> <br />
+                This 2018 website covers one of several of these conferences that occur frequently in various regions of the United States.<br /> <br />
+                The conference offers workshops, classes, discussions, panels, and other activities. <br /> <br />
+                The website offers guides, registration, maps, and information about the conference.<br /> <br />
+                This conference also gives scholars a chance for submitting a paper for conference publication in IEEE,<br /> <br />
+                The Institute of Electrical and Electronic Engineers, (sometimes just called I-Triple-E).<br /> <br />
+            </p>
+                <div >
+                    <a href="https://ccscmw2018.aiello.io" target="new">
+                    <img  class="contain" src="../assets/ccscmw2018.png"  width=90% height=90% v-responsive >
+                    </a>
+                </div>
+            <br /> 
+        </div>
+        <hr />
+        <br />
+        <br />
+
+
+
+
+
+        <div class="centercontent" v-responsive>
+            <h4>Conference Website</h4>
+        </div>
+        <div class="centercontent" v-responsive>
+            <a href="https://ccscmw2019.aiello.io" target="new">
             <h4>Consortium For Computing Sciences in Colleges Website 2019</h4>
             </a>
         </div>
@@ -125,7 +159,7 @@
                 The Institute of Electrical and Electronic Engineers, (sometimes just called I-Triple-E).<br /> <br />
             </p>
                 <div >
-                    <a href="https://www.ccsc.org/midwest" target="new">
+                    <a href="https://ccscmw2019.aiello.io" target="new">
                     <img  class="contain" src="../assets/ccscmw2019.png"  width=90% height=90% v-responsive >
                     </a>
                 </div>
@@ -136,7 +170,31 @@
         <br />
 
 
-
+        <div class="centercontent" v-responsive>
+            <a href="https://ccscmwtwenty.aiello.io" target="new">
+            <h4>Consortium For Computing Sciences in Colleges Website 2020</h4>
+            </a>
+        </div>
+        <div>
+            <p class="pad">
+                
+                We've continued the project for 2 years and designed the 2020 conference. <br /> <br />
+                This 2020 website covers one of several of these conferences that occur frequently in various regions of the United States.<br /> <br />
+                The conference offers workshops, classes, discussions, panels, and other activities. <br /> <br />
+                The website offers guides, registration, maps, and information about the conference.<br /> <br />
+                This conference also gives scholars a chance for submitting a paper for conference publication in IEEE,<br /> <br />
+                The Institute of Electrical and Electronic Engineers, (sometimes just called I-Triple-E).<br /> <br />
+            </p>
+                <div >
+                    <a href="https://ccscmwtwenty.aiello.io" target="new">
+                    <img  class="contain" src="../assets/ccscmw20.png"  width=90% height=90% v-responsive >
+                    </a>
+                </div>
+            <br /> 
+        </div>
+        <hr />
+        <br />
+        <br />
 
         <div class="centercontent" v-responsive>
             <h4>Artist Website</h4>
@@ -273,7 +331,7 @@
         </div>
 
         <div class="centercontent" v-responsive>
-            <a href="https://appfactoryuwp.com" target="new">
+            <a href="https://afw.aiello.io" target="new">
             <h4>App Factory Website</h4>
             </a>
         </div>
@@ -391,7 +449,7 @@
         </div>
 
         <div class="centercontent" v-responsive>
-            <a href="https://hr0.aiello.io" target="new">
+            <a href="https://chi.aiello.io" target="new">
             <h4>Chi Steppin</h4>
             </a>
         </div>
@@ -405,7 +463,7 @@
                 The weekend event is private, and advanced ticket purchase is suggested.  <br /> <br /> 
             </p>
                 <div>
-                    <a href="https://chisteppin.com" target="new">
+                    <a href="https://chi.aiello.io" target="new">
                     <img  class="contain" src="../assets/chi.png"  width=90% height=90%  v-responsive>
                     </a>
                 </div>
@@ -481,7 +539,7 @@
         </div>
 
         <div class="centercontent" v-responsive>
-            <a href="https://djtonya.net" target="new">
+            <a href="https://barnaclebuds.aiello.io" target="new">
             <h4>Barnacle Buds</h4>
             </a>
         </div>
