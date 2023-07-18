@@ -290,7 +290,7 @@
                  
             </p>
                 <div >
-                    <a href="https://appfactoryuwp.com" target="new">
+                    <a href="https://afw.aiello.io" target="new">
                     <img  class="contain" src="../assets/appfactory.png"  width=90% height=90%  v-responsive>
                     </a>
                 </div>
