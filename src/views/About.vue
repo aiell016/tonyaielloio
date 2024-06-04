@@ -6,9 +6,9 @@
     
 <p >
 
-  <b>I love to code! </b> My most recent project had me programming a microcontroller in <b>C</b>. I have written tons of code in many different languages and for many different projects.
+  <b>I love to code! </b> My last class project before graduation had me programming a microcontroller in <b>C</b>. I have written tons of code in many different languages and for many different projects.
   I have also spent a lot of time using JIRA and Kanban boards, writing user stories, client requirements, tasks, time estimations, team management processes.
-  I continuiusly use the Agile process of software development in all of my projects because it is efficient, well-tested, best practice, and easy for adapting to change.
+  I use the Agile process of software development in all of my projects because it is efficient, well-tested, best practice, and easy for adapting to change.
  </p>
   
 <br /> <br />
