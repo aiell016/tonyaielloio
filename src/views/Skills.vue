@@ -29,7 +29,7 @@
 </p>
 
 <div class="w-50" v-responsive>
-<img src="../assets/1211vortex.png" height=90% width=90% v-responsive>
+<img src="../assets/s.jpg" height=90% width=90% v-responsive>
   </div>
 
   </div>

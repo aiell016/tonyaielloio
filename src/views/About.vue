@@ -49,6 +49,11 @@ with <a href = "https://nodejs.org" target="new">Node JS</a>
     
         
 
+<div class="w-3" v-responsive ><p>
+  Some of my favorite scenes are sunrises at the lakefront of Lake Michigan. This is from downtown Racine, Wisconsin, on my way to work. </p>
+<img src="../assets/sun.jpg" height=80% width=80%>
+</div>
+    
 
   </div>
 

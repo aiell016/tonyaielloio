@@ -18,7 +18,7 @@
 
 
 <div class = "w-5" v-responsive>
-    <img src="../assets/team2.jpg" height=80% width=80% >
+    <img src="../assets/study.jpg" height=80% width=80% >
 </div>
 
  </div>

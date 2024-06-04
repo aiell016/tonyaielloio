@@ -10,7 +10,8 @@
             <div v-responsive> 
                 <p>
                     Here is just a small fraction of the projects that I have completed, either with a team, or solo. Each has a brief description.<br /> <br />
-                    Clicking on an image or link will open the full project or app in a new tab or window for you to explore.<br /> <br /> <br />
+                    Clicking on an image or link will open the full project or app in a new tab or window for you to explore. <br /> <br />
+                    Some of the projects have ended and their live sites have been removed.<br /> <br /> <br />
                 </p>
             </div>
         </div>

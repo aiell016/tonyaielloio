@@ -21,7 +21,7 @@
                <a href = "https://github.com/aiell016" >Github</a> <br />
                <br />
 
-                <a href = "https://www.linkedin.com/in/anthonyaiello2023" >Linkedin</a> <br /><br />
+                <a href = "https://www.linkedin.com/in/anthonyaiello2024" >Linkedin</a> <br /><br />
                 <a href="mailto:anthony@aiello.io" >Email</a><br /><br />
 
                 </p>
