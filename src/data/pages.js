@@ -3,7 +3,7 @@ const siteUrl = 'https://tony.aiello.io'
 const pages = {
   '/': {
     title: 'Anthony Aiello | Software, Teaching & AI Research',
-    heading: 'Anthony Aiello',
+    heading: 'Welcome to Tony Aiello’s portfolio!',
     description: 'Explore Anthony Aiello’s AI learning-assistant research, faculty publications, CS and MIS classrooms, and software projects in Wisconsin.'
   },
   '/projects': {
