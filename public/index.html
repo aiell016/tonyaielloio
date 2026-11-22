@@ -32,6 +32,18 @@
             <%- paper.authors.join(', ') %>. <cite><%- paper.venue %></cite>, <%- paper.year %>, pp. <%- paper.pages %>.</li>
         <% } %></ol>
         <% } %>
+        <% if (opts.conferenceReviews.length) { %>
+        <section id="peer-review" aria-labelledby="peer-review-title">
+          <h2 id="peer-review-title">Conference peer review</h2>
+          <p>I’ve served as a paper reviewer for conferences in engineering education and computing.</p>
+          <% for (const group of opts.conferenceReviews) { %>
+          <h3><%- group.year %></h3>
+          <ul><% for (const conference of group.conferences) { %>
+            <li><a href="<%- conference.url %>" aria-label="<%- conference.name %>, <%- group.year %>"><%- conference.name %></a></li>
+          <% } %></ul>
+          <% } %>
+        </section>
+        <% } %>
         <p>Enable JavaScript to explore the galleries and classroom examples.</p>
         <nav aria-label="Portfolio"><a href="/">Home</a> · <a href="/projects">Projects</a> · <a href="/teaching">Teaching</a> · <a href="/research">Research &amp; publications</a> · <a href="/about">About</a> · <a href="/skills">Skills</a> · <a href="/contact">Contact</a></nav>
         <p><a href="<%- opts.profile.linkedIn %>">Anthony Aiello on LinkedIn</a></p>

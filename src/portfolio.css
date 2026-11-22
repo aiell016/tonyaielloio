@@ -176,6 +176,8 @@ details[open] summary { margin-bottom: .35rem; }
 .degree.service-row { grid-template-columns: minmax(9.5rem, .6fr) minmax(0, 1.6fr); }
 .service-row p { margin-top: 0; }
 .service-history { padding: 0; margin: 0; list-style: none; }
+.review-year { margin-top: 1.5rem; }
+.review-year h3 { margin-bottom: .65rem; }
 .service-history li + li { margin-top: .6rem; }
 .service-history strong { margin-right: .5rem; }
 .contact-list p { margin-bottom: .65rem; max-width: 56ch; }

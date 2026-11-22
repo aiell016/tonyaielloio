@@ -9,6 +9,7 @@
       <nav class="teaching-index" aria-label="Research sections">
         <router-link to="#aiela">The chatbot study</router-link>
         <router-link to="#publications">Faculty publications</router-link>
+        <router-link to="#peer-review">Conference peer review</router-link>
         <router-link to="#collaborations">Research collaborations</router-link>
         <router-link to="#doctoral-plans">My doctoral plans</router-link>
       </nav>
@@ -38,6 +39,18 @@
             </li>
           </ol>
         </section>
+        <section id="peer-review" tabindex="-1" aria-labelledby="peer-review-title">
+          <h2 id="peer-review-title">Conference peer review</h2>
+          <p>I’ve served as a paper reviewer for conferences in engineering education and computing.</p>
+          <div v-for="group in conferenceReviews" :key="group.year" class="review-year">
+            <h3>{{ group.year }}</h3>
+            <ul class="service-history">
+              <li v-for="conference in group.conferences" :key="conference.url">
+                <a :href="conference.url" :aria-label="conference.name + ', ' + group.year">{{ conference.name }}</a>
+              </li>
+            </ul>
+          </div>
+        </section>
         <section id="collaborations" tabindex="-1" aria-labelledby="collaborations-title">
           <h2 id="collaborations-title">Collaborative research in computing education</h2>
           <h3>CUE-T · Broadening participation in computing</h3>
@@ -60,8 +73,9 @@
 </template>
 <script>
 import publications from '../data/publications.json'
+import conferenceReviews from '../data/conference-reviews.json'
 export default {
   name: 'PortfolioResearch',
-  data() { return { publications } }
+  data() { return { publications, conferenceReviews } }
 }
 </script>
