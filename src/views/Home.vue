@@ -4,7 +4,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Software developer &amp; educator</p>
         <h1 id="home-title">From code to the <em>classroom.</em></h1>
-        <p>I’m Tony Aiello, a computer science lecturer at UW–Parkside. I build software, design hands-on courses in computer science and management information systems, and study what happens when a student asks a chatbot for help.</p>
+        <p>I’m Tony Aiello, a computer science lecturer at UW–Parkside. I build software, design hands-on courses in computer science and management information systems, and supervise independent studies.</p>
         <div class="actions">
           <router-link to="/research" class="button primary">Research &amp; publications</router-link>
           <router-link to="/projects" class="button secondary">Explore projects</router-link>
@@ -17,7 +17,7 @@
     </section>
     <section class="research-feature" aria-labelledby="home-research-title">
       <div><p class="eyebrow">Featured research · IEEE SoutheastCon 2025</p><h2 id="home-research-title">Who do students turn to when they get stuck?</h2></div>
-      <div><p>I joined ten colleagues to study AIELA, an AI-Enhanced Learning Assistant. Students tried a web-based chatbot during class and told us where it helped with a worksheet and when they wanted a human learning assistant to talk through a concept.</p><router-link to="/research#aiela" class="text-link">Meet the 11 authors and explore the findings</router-link></div>
+      <div><p>I managed the independent study on AIELA, an AI-Enhanced Learning Assistant. Students tried the chatbot during class and described when it helped with a worksheet and when they wanted a human learning assistant to talk through a concept.</p><router-link to="/research#aiela" class="text-link">Meet the 11 authors and explore the findings</router-link></div>
     </section>
     <section aria-labelledby="featured-title" class="section">
       <div class="section-head"><h2 id="featured-title">Selected work</h2><router-link to="/projects" class="text-link">View project archive</router-link></div>

@@ -16,7 +16,7 @@ const pages = {
   },
   '/research': {
     title: 'AI Chatbots & Faculty Publications | Anthony Aiello', heading: 'Research & publications',
-    description: 'Read Anthony Aiello’s three IEEE publications, meet the 11 coauthors of the 2025 AIELA chatbot study, and explore his computing education research collaborations.'
+    description: 'Meet the 11 authors of the AIELA chatbot study, learn how Anthony Aiello managed the independent study, and read the three IEEE papers he coauthored.'
   },
   '/about': {
     title: 'About Anthony Aiello | Developer & Educator', heading: 'About Anthony',
