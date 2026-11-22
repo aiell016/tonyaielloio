@@ -4,7 +4,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Software developer &amp; educator</p>
         <h1 id="home-title">From code to the <em>classroom.</em></h1>
-        <p>I’m Tony Aiello, a computer science lecturer at UW–Parkside. I build software, design hands-on courses in computer science and management information systems, and supervise independent studies.</p>
+        <p>Welcome! I’m Tony Aiello, and I’m glad you stopped by. As a lecturer at UW–Parkside, I design hands-on courses in computer science and management information systems and supervise independent studies. Come explore the software I’ve built, <router-link to="/teaching#java">try a Java exercise from my classroom</router-link>, or meet the team behind our chatbot study.</p>
         <div class="actions">
           <router-link to="/research" class="button primary">Research &amp; publications</router-link>
           <router-link to="/projects" class="button secondary">Explore projects</router-link>
