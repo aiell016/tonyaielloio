@@ -26,7 +26,7 @@ The **Portfolio CI and deployment** workflow runs `npm ci`, `npm run lint`, and 
 
 3. Merge the portfolio change into `master`, or open [the workflow](https://github.com/aiell016/tonyaielloio/actions/workflows/portfolio.yml), select **Run workflow**, and choose **master**. You can use the same button after saving or updating credentials.
 
-The upload verifies the IONOS host key and confirms the SFTP directory serves the portfolio by fetching a temporary file from the public domain. It uploads assets before HTML, keeps existing files outside the build, and checks the published home page, teaching page, and Project Volga against the build. To roll back a content change, revert its commit on `master` and let that build deploy.
+The upload verifies the IONOS host key and confirms the SFTP directory serves the portfolio by fetching a temporary file from the public domain. It uploads assets before HTML, keeps existing files outside the build, and checks the published home, research, teaching, and Project Volga pages against the build. To roll back a content change, revert its commit on `master` and let that build deploy.
 
 ## Manual publishing on Apache
 
@@ -35,3 +35,5 @@ The upload verifies the IONOS host key and confirms the SFTP directory serves th
 ## Update the portfolio
 
 Edit project descriptions, links, and screenshot descriptions in `src/data/projects.json`. Put web-ready images in `public/media/`. Course examples are in `src/views/Teaching.vue`. Titles and descriptions for the main pages are in `src/data/pages.js`.
+
+The faculty bibliography, course list, and permanent LinkedIn address are in `src/data/publications.json`, `src/data/courses.json`, and `src/data/profile.js`.

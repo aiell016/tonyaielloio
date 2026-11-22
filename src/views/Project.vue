@@ -11,6 +11,9 @@
         <router-link v-if="project.teaching" :to="{ path: '/teaching', hash: '#' + project.teaching.id }" class="text-link">{{ project.teaching.label }}</router-link>
       </div>
     </div>
+    <section class="project-context" aria-labelledby="project-focus">
+      <h2 id="project-focus">{{ project.detail.title }}</h2><p>{{ project.detail.body }}</p>
+    </section>
     <section class="gallery" aria-labelledby="screenshots">
       <div class="section-head"><h2 id="screenshots">Original screenshots</h2></div>
       <div class="gallery-grid">
@@ -22,10 +25,21 @@
         </figure>
       </div>
     </section>
+    <nav v-if="related" class="related-project" aria-label="Related work">
+      <p class="eyebrow">Related project</p><router-link :to="'/projects/' + related.slug">{{ related.title }}</router-link>
+    </nav>
   </div>
   <not-found v-else />
 </template>
 <script>
 import NotFound from './NotFound.vue'
-export default { name: 'ProjectDetail', components: { NotFound }, props: { project: Object } }
+import projects from '../data/projects.json'
+export default {
+  name: 'ProjectDetail',
+  components: { NotFound },
+  props: { project: Object },
+  computed: {
+    related() { return this.project && projects.find(item => item.slug === this.project.detail.related) }
+  }
+}
 </script>

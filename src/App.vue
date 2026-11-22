@@ -18,20 +18,24 @@
       <div class="wrap footer-inner">
         <span class="footer-name">Anthony Aiello</span>
         <span class="footer-location">Racine, Wisconsin</span>
+        <a :href="profile.linkedIn" aria-label="Anthony Aiello on LinkedIn">LinkedIn</a>
         <a href="mailto:anthony@aiello.io">anthony@aiello.io</a>
       </div>
     </footer>
   </div>
 </template>
 <script>
+import profile from './data/profile'
 export default {
   name: 'PortfolioApp',
   data() {
     return {
       menuOpen: false,
+      profile,
       navigation: [
         { path: '/', label: 'Home' }, { path: '/projects', label: 'Projects' },
-        { path: '/teaching', label: 'Teaching' }, { path: '/about', label: 'About' },
+        { path: '/teaching', label: 'Teaching' }, { path: '/research', label: 'Research' },
+        { path: '/about', label: 'About' },
         { path: '/skills', label: 'Skills' }, { path: '/contact', label: 'Contact' }
       ]
     }

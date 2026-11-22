@@ -3,8 +3,14 @@
     <header class="page-intro">
       <p class="eyebrow">Software &amp; web design</p>
       <h1>Project archive</h1>
-      <p>Some projects began as coursework. Others started when a local business owner, artist, or nonprofit needed a website. Each entry describes my part and preserves the original design.</p>
+      <p>Some projects began as coursework. Others started when a local business owner, artist, or nonprofit needed a website. These 14 case studies keep the original screenshots alongside the decisions behind the work.</p>
     </header>
+    <section class="archive-paths" aria-labelledby="later-work">
+      <h2 id="later-work">Projects after graduation</h2>
+      <div><router-link to="/research#aiela">AIELA chatbot research</router-link><p>From a Raspberry Pi prototype to an 11-author study of how students used a web assistant in class.</p></div>
+      <div><router-link to="/teaching">Classroom &amp; course design</router-link><p>Java tracing exercises, a Linux administration lab, and community-client work in undergraduate and graduate courses.</p></div>
+    </section>
+    <h2 class="archive-heading">Software &amp; web projects</h2>
     <nav aria-label="Filter projects" class="filters">
       <router-link v-for="filter in filters" :key="filter.value"
         :to="{ name: 'projects', query: filter.value ? { group: filter.value } : {} }"
@@ -14,7 +20,7 @@
     </nav>
     <p class="result-count" aria-live="polite">{{ visibleProjects.length }} projects</p>
     <section aria-label="Project gallery" class="cards archive-cards">
-      <project-card v-for="project in visibleProjects" :key="project.slug" :project="project" heading="h2" />
+      <project-card v-for="project in visibleProjects" :key="project.slug" :project="project" heading="h3" />
     </section>
   </div>
 </template>
