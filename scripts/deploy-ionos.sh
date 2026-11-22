@@ -69,8 +69,7 @@ put dist/.htaccess -o .htaccess
 put dist/index.html -o index.html"
 
 for route in '' 'teaching/' 'projects/project-volga/'; do
-  fetch_page "$site/${route}?verify=$proof"
-  if ! cmp -s "dist/${route}index.html" "$work/response"; then
+  if ! fetch_page "$site/${route}?verify=$proof" || ! cmp -s "dist/${route}index.html" "$work/response"; then
     echo "The public URL $site/$route did not return its tested build." >&2
     exit 1
   fi

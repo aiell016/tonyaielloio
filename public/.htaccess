@@ -2,11 +2,12 @@ Options -MultiViews
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
 RewriteEngine On
+RewriteBase /
 
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://tony.aiello.io%{REQUEST_URI} [R=301,L]
 
-# Serve a route's built HTML directly, including visits from bookmarks and résumés.
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME}/index.html -f
-RewriteRule ^(.+?)/?$ $1/index.html [END]
+# Apache serves the built directories through DirectoryIndex. Send explicit
+# index.html links to the same URL that Vue Router uses for the page.
+RewriteCond %{THE_REQUEST} \s/+[^?\s]*index\.html[?\s]
+RewriteRule ^((?:[a-zA-Z0-9_-]+/)*)index\.html$ /$1 [R=301,L]
