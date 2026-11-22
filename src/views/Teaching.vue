@@ -65,7 +65,7 @@
         </section>
         <section id="advising" tabindex="-1" aria-labelledby="advising-title">
           <h2 id="advising-title">Graduate advising &amp; independent work</h2>
-          <p>I advise domestic and international MS CIS students on course choices, internships, and independent studies. A problem a student encounters at work can become a question they investigate over a semester of independent study.</p>
+          <p>I advise domestic and international MS CIS students on course choices, internships, and independent studies.</p>
           <p>Starting in summer 2024, I managed the program in an interim role while our department searched for a director with a terminal degree. I’m glad to welcome Dr. Chen as our new program director and help with the transition.</p>
           <div class="source-links"><a href="https://www.uwp.edu/learn/programs/mscis/">Explore the MS CIS program</a><router-link to="/contact">Contact me about advising</router-link></div>
         </section>
