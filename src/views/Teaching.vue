@@ -19,13 +19,9 @@
         <section id="java" tabindex="-1" aria-labelledby="java-title">
           <p class="eyebrow">CSCI 241 · Computer Science I</p>
           <h2 id="java-title">Inside the first Java lab</h2>
-          <p>In discussion, I give students a small piece of Java and ask them to trace it on paper. They compare values with a partner before we run the program together. When two people predict different outputs, we have a specific line of code to talk about.</p>
-          <p>In fall 2026, we used both BlueJ and Visual Studio Code (VS Code) for our Java labs in Computer Science I.</p>
-          <div class="example">
-            <h3>Try a loop trace</h3><p>Write down the value of <code>total</code> after each pass. What appears on the last line of the console?</p>
-            <java-trace />
-            <details><summary>Check your trace</summary><p>The running totals are <strong>1, 3, and 6</strong>. The print statement runs once, after the loop, so the console shows <strong>6</strong>.</p></details>
-          </div>
+          <p>Most students prefer to work on their own laptops, so they bring them to our first lab. Anyone without a laptop can complete all the coursework on a lab computer with the software already installed.</p>
+          <p>On the laptops, we install the Java Runtime Environment (JRE), the Java Development Kit (JDK), and the ACM graphics library. We also install Visual Studio Code (VS Code) and BlueJ, the two development environments we used in fall 2026. Students need a ZIP utility such as 7-Zip or WinRAR.</p>
+          <p>To check the setup, students compile <code>Doodle.java</code> and <code>DoodleDriver.java</code>, then run the lab using the steps for their development environment. A successful run confirms that their computer has the software they need for the rest of the course.</p>
           <router-link to="/projects/project-volga" class="text-link">See Project Volga, my first site after CS I</router-link>
         </section>
         <section id="accessible-materials" tabindex="-1" aria-labelledby="accessibility-title">
@@ -45,6 +41,7 @@
         </section>
         <section id="learning-assistants" tabindex="-1" aria-labelledby="assistants-title">
           <h2 id="assistants-title">Learning assistants &amp; gamification</h2>
+          <p>In discussion, I give students a small piece of Java and ask them to trace it on paper. They compare values with a partner before we run the program together. When two people predict different outputs, we have a specific line of code to talk about.</p>
           <p>During a code trace, I can hear the person speaking, but I also want to know what’s happening at the tables. A learning assistant can sit with a pair, ask how they arrived at a value, and help them find the line where their answers diverge. Our spring 2024 pilot gave us a way to study that kind of support.</p>
           <p>I use game elements, too. In Computer Science I, I bring physical Bitcoin-themed tokens into class and hold extra practice sessions such as CS1 Power Hour. Students get another chance to explain a solution out loud and try it with different inputs.</p>
           <router-link to="/research#aiela-2024" class="text-link">Read our learning-assistant pilot paper</router-link>
@@ -74,11 +71,9 @@
   </div>
 </template>
 <script>
-import JavaTrace from '../components/JavaTrace.vue'
 import courseGroups from '../data/courses.json'
 export default {
   name: 'TeachingPortfolio',
-  components: { JavaTrace },
   data() { return { courseGroups } }
 }
 </script>

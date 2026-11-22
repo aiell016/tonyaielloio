@@ -4,7 +4,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Software developer &amp; educator</p>
         <h1 id="home-title">From code to the <em>classroom.</em></h1>
-        <p>Welcome! I’m Tony Aiello, and I’m glad you stopped by. As a lecturer at UW–Parkside, I design hands-on courses in computer science and management information systems and supervise independent studies. Come explore the software I’ve built, <router-link to="/teaching#java">try a Java exercise from my classroom</router-link>, or meet the team behind our chatbot study.</p>
+        <p>Welcome! I’m Tony Aiello, and I’m glad you stopped by. As a lecturer at UW–Parkside, I design hands-on courses in computer science and management information systems and supervise independent studies. Come explore the software I’ve built, <router-link to="/teaching#java">see how we get started in Computer Science I</router-link>, or meet the team behind our chatbot study.</p>
         <div class="actions">
           <router-link to="/research" class="button primary">Research &amp; publications</router-link>
           <router-link to="/projects" class="button secondary">Explore projects</router-link>
@@ -25,8 +25,8 @@
         <project-card :project="volga" />
         <article class="work-card">
           <router-link :to="{ path: '/teaching', hash: '#java' }" class="card-link">
-            <div class="card-visual teaching-art" aria-hidden="true"><java-trace /></div>
-            <div class="card-copy"><p class="eyebrow">Teaching · Computer science</p><h3 class="card-title">Inside the first Java lab</h3><p>Students predict what a program will print, compare their reasoning, then run it. Try a short trace from the classroom example.</p></div>
+            <p class="card-visual teaching-art">CSCI 241</p>
+            <div class="card-copy"><p class="eyebrow">Computer Science I</p><h3 class="card-title">Inside the first Java lab</h3><p>Students set up Java and run the Doodle lab to check that their laptops are ready for the course.</p></div>
           </router-link>
         </article>
         <project-card :project="mission" />
@@ -43,10 +43,9 @@
 <script>
 import projects from '../data/projects.json'
 import ProjectCard from '../components/ProjectCard.vue'
-import JavaTrace from '../components/JavaTrace.vue'
 export default {
   name: 'PortfolioHome',
-  components: { ProjectCard, JavaTrace },
+  components: { ProjectCard },
   data() {
     return { volga: projects.find(p => p.slug === 'project-volga'), mission: projects.find(p => p.slug === 'mission-got-your-six') }
   }
