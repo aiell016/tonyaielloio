@@ -1,29 +1,18 @@
-# TonyAielloio
+# Anthony Aiello’s portfolio
 
-## Project setup
-```
-npm install
-```
+A Vue portfolio of software projects, community websites, and course design in computer science and management information systems.
 
-### Compiles and hot-reloads for development
-```
+```sh
+npm ci
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Use `npm run lint` to check the source. `npm test` builds the production site and checks that every route has an entry document, that its JavaScript bundles exist, and that every project screenshot has a description and a corresponding image.
 
-### Run your tests
-```
-npm run test
-```
+## Publish on Apache
 
-### Lints and fixes files
-```
-npm run lint
-```
+`npm run build` writes the deployable site to `dist/`. Publish its contents, including `.htaccess`, at the document root for `tony.aiello.io`. The production output contains an HTML document for every project and main page. Open `/projects` and refresh a project detail page to check direct navigation after deployment.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Update the portfolio
+
+Edit project descriptions, links, and screenshot descriptions in `src/data/projects.json`. Put web-ready images in `public/media/`. Course examples are in `src/views/Teaching.vue`. Titles and descriptions for the main pages are in `src/data/pages.js`.

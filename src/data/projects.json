@@ -1,0 +1,363 @@
+[
+  {
+    "slug": "project-volga",
+    "title": "Project Volga",
+    "group": "Applications",
+    "intro": "The online bookstore I built across two semesters, starting right after Computer Science I.",
+    "story": "In Web Concepts I, I built the storefront visitors would see. In Web Concepts II, I connected it to the back end. I named it after a river in the tradition of another online bookstore. Watching the two halves finally work together is one of my favorite memories from those courses.",
+    "links": [
+      {
+        "label": "Explore the bookstore",
+        "url": "https://volga.aiello.io/"
+      }
+    ],
+    "images": [
+      {
+        "file": "volga-bookstore.webp",
+        "caption": "Original bookstore",
+        "alt": "The Volga Book Store homepage with book covers, a category menu, and the shopping cart.",
+        "width": 1068,
+        "height": 765
+      }
+    ],
+    "teaching": {
+      "id": "java",
+      "label": "How I teach Computer Science I"
+    }
+  },
+  {
+    "slug": "on-the-radar",
+    "title": "On the Radar",
+    "group": "Applications",
+    "intro": "A course-planning prototype that uses a radar chart to show which requirements a student’s course choices cover.",
+    "story": "I worked on the team that built the Vue version for students, advisors, and department administrators. We used MongoDB, Express, Vue, and Node.js. A later team continued the project in Angular. These screenshots preserve the version our team worked on.",
+    "links": [
+      {
+        "label": "Open the planning prototype",
+        "url": "https://deployotr.aiello.io/"
+      }
+    ],
+    "images": [
+      {
+        "file": "radar-planner.webp",
+        "caption": "Academic planning view",
+        "alt": "Desktop dashboard showing a radar chart next to the course-planning controls.",
+        "width": 1578,
+        "height": 580
+      },
+      {
+        "file": "radar-add-course.webp",
+        "caption": "Add a course",
+        "alt": "Mobile form with fields for adding a course to the planner.",
+        "width": 169,
+        "height": 300
+      },
+      {
+        "file": "radar-course-list.webp",
+        "caption": "Course list",
+        "alt": "Mobile course list with expandable rows for individual courses.",
+        "width": 169,
+        "height": 300
+      },
+      {
+        "file": "radar-edit-account.webp",
+        "caption": "Edit an account",
+        "alt": "Mobile account-editing dialog over the planning application.",
+        "width": 169,
+        "height": 300
+      }
+    ]
+  },
+  {
+    "slug": "mission-got-your-six",
+    "title": "Mission Got Your Six",
+    "group": "Client & community",
+    "intro": "A community website for a veteran-led organization supporting veterans and first responders.",
+    "story": "Nick needed a domain, hosting, and a website to tell people about the mission. I volunteered in 2018, and former classmates helped build the site. It launched in June 2019. I have continued to donate the hosting, domain, and time to maintain it.",
+    "links": [
+      {
+        "label": "Visit Mission Got Your Six",
+        "url": "https://missiongotyoursix.org/"
+      }
+    ],
+    "images": [
+      {
+        "file": "mission-home.webp",
+        "caption": "Original homepage",
+        "alt": "Mission Got Your Six homepage featuring the organization’s name and a parachutist in flight.",
+        "width": 1582,
+        "height": 735
+      },
+      {
+        "file": "mission-programs.webp",
+        "caption": "Original site design",
+        "alt": "An interior view of the early site with its navigation and military imagery.",
+        "width": 1584,
+        "height": 735
+      }
+    ]
+  },
+  {
+    "slug": "ccsc-midwest",
+    "title": "CCSC Midwest conferences",
+    "group": "Client & community",
+    "intro": "Three editions of the Midwest computing conference website, from 2018 through 2020.",
+    "story": "In spring 2018 I took on the first site for the Consortium for Computing Sciences in Colleges Midwest conference. Our work continued across three events. Each edition brought together the program, calls for papers, registration, and directions for a different host campus.",
+    "links": [
+      {
+        "label": "View the 2019 conference archive",
+        "url": "https://ccscmw2019.aiello.io/"
+      },
+      {
+        "label": "View the 2020 conference archive",
+        "url": "https://ccscmwtwenty.aiello.io/"
+      }
+    ],
+    "images": [
+      {
+        "file": "ccsc-2018.webp",
+        "caption": "2018 conference",
+        "alt": "The 2018 Midwest Conference homepage with a campus photograph behind the conference title.",
+        "width": 1582,
+        "height": 739
+      },
+      {
+        "file": "ccsc-2019.webp",
+        "caption": "2019 conference",
+        "alt": "The 2019 conference homepage featuring Benedictine University.",
+        "width": 1580,
+        "height": 638
+      },
+      {
+        "file": "ccsc-2020.webp",
+        "caption": "2020 conference",
+        "alt": "The 2020 Midwest Conference header and calls for submissions.",
+        "width": 1600,
+        "height": 751
+      }
+    ]
+  },
+  {
+    "slug": "natures-best",
+    "title": "Nature’s Best Shea Butter",
+    "group": "Client & community",
+    "intro": "An early MIS team project building a storefront for a local entrepreneur.",
+    "story": "Our MIS 220 team worked with a client who needed a place to present her shea butter products. We organized her catalog in Weebly. It was one of my first chances to design around what a real business owner needed. I now bring community projects into Systems Analysis and Design.",
+    "links": [
+      {
+        "label": "Visit the storefront",
+        "url": "https://naturesbestshea.weebly.com/"
+      }
+    ],
+    "images": [
+      {
+        "file": "natures-best.webp",
+        "caption": "Original storefront",
+        "alt": "Nature’s Best Online Store with a shea butter product photograph and the founder’s introduction.",
+        "width": 900,
+        "height": 456
+      }
+    ],
+    "teaching": {
+      "id": "systems-analysis",
+      "label": "How I teach Systems Analysis and Design"
+    }
+  },
+  {
+    "slug": "anne-morse-hambrock",
+    "title": "Anne Morse-Hambrock",
+    "group": "Client & community",
+    "intro": "A portfolio and music storefront for a harpist, writer, humorist, and performer.",
+    "story": "The project brought several parts of Anne’s work into one site. Visitors could explore her music, buy recordings, and inquire about performances. The screenshots show the design I worked on, and the link leads to her current website.",
+    "links": [
+      {
+        "label": "Visit Anne’s current website",
+        "url": "https://annemorsehambrock.net/"
+      }
+    ],
+    "images": [
+      {
+        "file": "anne-home.webp",
+        "caption": "Artist homepage",
+        "alt": "Anne Morse-Hambrock’s original homepage with a harp beside her name.",
+        "width": 1578,
+        "height": 736
+      },
+      {
+        "file": "anne-music.webp",
+        "caption": "Music catalog",
+        "alt": "A grid of Anne’s recordings in the original online music catalog.",
+        "width": 1582,
+        "height": 679
+      }
+    ]
+  },
+  {
+    "slug": "app-factory",
+    "title": "The App Factory website",
+    "group": "Client & community",
+    "intro": "An undergraduate software engineering project documenting apps built by student development teams.",
+    "story": "The site began in Software Engineering I and II. We used WordPress on a Linux, Apache, MySQL, and PHP stack in an Amazon EC2 instance. The archive includes project screenshots and profiles of the people who worked on them.",
+    "links": [
+      {
+        "label": "Visit the site archive",
+        "url": "https://afw.aiello.io/"
+      }
+    ],
+    "images": [
+      {
+        "file": "app-factory.webp",
+        "caption": "Team website",
+        "alt": "The archived App Factory homepage with student team members and project navigation.",
+        "width": 1068,
+        "height": 522
+      }
+    ]
+  },
+  {
+    "slug": "professional-dj-store",
+    "title": "Professional DJ Store",
+    "group": "Web design",
+    "intro": "One of the first online stores I designed for a Milwaukee sound and lighting business.",
+    "story": "Custom Designed Lighting, Sound & Video supplied the clubs and venues where this gear went to work. This storefront predates my formal UX training. The script logo, drop shadows, and dense product listings are part of why I kept it. They make a good starting point for a conversation about how web design has changed.",
+    "links": [],
+    "images": [
+      {
+        "file": "dj-store-home.webp",
+        "caption": "Store homepage",
+        "alt": "The early DJ storefront uses a script masthead and columns of lighting and sound equipment.",
+        "width": 888,
+        "height": 914
+      },
+      {
+        "file": "dj-store-catalog.webp",
+        "caption": "Equipment catalog",
+        "alt": "The original catalog view with product photographs, prices, and cart buttons.",
+        "width": 957,
+        "height": 935
+      }
+    ]
+  },
+  {
+    "slug": "dj-tonya",
+    "title": "DJ Tonya’s mix archive",
+    "group": "Web design",
+    "intro": "My collection of music video mixes, mixtapes, and footage from the DJ booth.",
+    "story": "I started working as a DJ in 1980 and still make new video mixes. This site gives the recordings a home. The screenshot preserves an earlier design, while the current archive brings together mixes and footage from La Cage and Milwaukee PrideFest.",
+    "links": [
+      {
+        "label": "Visit the mix archive",
+        "url": "https://djtonya.net/"
+      }
+    ],
+    "images": [
+      {
+        "file": "dj-tonya.webp",
+        "caption": "Earlier archive design",
+        "alt": "An earlier DJ Tonya homepage with a concert crowd and stage lights across the header.",
+        "width": 1024,
+        "height": 433
+      }
+    ]
+  },
+  {
+    "slug": "barnacle-buds",
+    "title": "Barnacle Bud’s",
+    "group": "Web design",
+    "intro": "A hand-coded restaurant website with original artwork and icons for a web design course.",
+    "story": "Our Art 377 brief asked us to redesign an independent restaurant’s website. I chose a friend’s restaurant in Bay View. I made the artwork and icons by hand and wrote the HTML and CSS for the site.",
+    "links": [
+      {
+        "label": "Explore the class project",
+        "url": "https://barnaclebuds.aiello.io/"
+      }
+    ],
+    "images": [
+      {
+        "file": "barnacle-buds.webp",
+        "caption": "Restaurant design",
+        "alt": "The restaurant design pairs a waterside photograph with a menu and food photography.",
+        "width": 562,
+        "height": 700
+      }
+    ]
+  },
+  {
+    "slug": "gear-blabs",
+    "title": "Gear Blabs",
+    "group": "Web design",
+    "intro": "My first WordPress blog, built around the sound and lighting equipment I knew from live shows.",
+    "story": "For Art 477, I had to design a blog to a set of specifications. I used sound systems, stage lighting, and shows as the subject. That gave me a familiar collection of material to organize while learning a new publishing tool.",
+    "links": [
+      {
+        "label": "Visit the blog archive",
+        "url": "https://gearblabs.aiello.io/"
+      }
+    ],
+    "images": [
+      {
+        "file": "gear-blabs.webp",
+        "caption": "Blog homepage",
+        "alt": "Gear Blabs homepage with live-stage photography behind an audio and lighting article.",
+        "width": 1600,
+        "height": 775
+      }
+    ]
+  },
+  {
+    "slug": "rainbow-of-dreams",
+    "title": "Rainbow of Dreams Gifts",
+    "group": "Client & community",
+    "intro": "A WordPress and WooCommerce storefront for a Racine gift and craft-fair business.",
+    "story": "Pat and Patrick Shay sold gifts at regional shows. The website gave their products a browsable catalog and online storefront. In 2021, the owners joined their business with the Racine Marian Center. This screenshot preserves the earlier shop.",
+    "links": [],
+    "images": [
+      {
+        "file": "rainbow-gifts.webp",
+        "caption": "Gift catalog",
+        "alt": "The archived Rainbow of Dreams storefront with photographs of gifts arranged in a product grid.",
+        "width": 1581,
+        "height": 773
+      }
+    ]
+  },
+  {
+    "slug": "chi-steppin",
+    "title": "Chi Steppin",
+    "group": "Client & community",
+    "intro": "An event website for a weekend of Chicago-style stepping and dance instruction.",
+    "story": "The organizers needed one place to explain the event, introduce the dance lessons, and share weekend details with attendees. The original design is preserved here.",
+    "links": [],
+    "images": [
+      {
+        "file": "chi-steppin.webp",
+        "caption": "Event homepage",
+        "alt": "The Chi Steppin event homepage with a bright navigation bar and venue photographs.",
+        "width": 1582,
+        "height": 749
+      }
+    ]
+  },
+  {
+    "slug": "save-the-tigers",
+    "title": "Save the Tigers!",
+    "group": "Web design",
+    "intro": "A conservation website with original visual assets, written from scratch in HTML and CSS.",
+    "story": "For this Art 377 project, I researched the Bengal tiger and turned the findings into a short educational website. I made the graphics in Illustrator and Photoshop, then implemented the design by hand.",
+    "links": [
+      {
+        "label": "Explore the class project",
+        "url": "https://savethetigers.aiello.io/"
+      }
+    ],
+    "images": [
+      {
+        "file": "save-the-tigers.webp",
+        "caption": "Conservation website",
+        "alt": "The Bengal Tiger Foundation class project with tiger photographs and illustrated navigation.",
+        "width": 947,
+        "height": 919
+      }
+    ]
+  }
+]
