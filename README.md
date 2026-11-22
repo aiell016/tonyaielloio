@@ -36,4 +36,4 @@ The upload verifies the IONOS host key and confirms the SFTP directory serves th
 
 Edit project descriptions, links, and screenshot descriptions in `src/data/projects.json`. Put web-ready images in `public/media/`. Course examples are in `src/views/Teaching.vue`. Titles and descriptions for the main pages are in `src/data/pages.js`.
 
-The faculty bibliography, course list, and permanent LinkedIn address are in `src/data/publications.json`, `src/data/courses.json`, and `src/data/profile.js`.
+The faculty bibliography, course list, and public contact address are in `src/data/publications.json`, `src/data/courses.json`, and `src/data/profile.js`.

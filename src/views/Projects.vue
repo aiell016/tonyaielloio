@@ -3,12 +3,12 @@
     <header class="page-intro">
       <p class="eyebrow">Software &amp; web design</p>
       <h1>Project archive</h1>
-      <p>Some projects began as coursework. Others started when a local business owner, artist, or nonprofit needed a website. These 14 case studies keep the original screenshots alongside the decisions behind the work.</p>
+      <p>Some projects began as coursework. Others started when a local business owner, artist, or nonprofit needed a website. These 14 case studies describe the decisions behind the work. Many include screenshots of the original sites.</p>
     </header>
     <section class="archive-paths" aria-labelledby="later-work">
       <h2 id="later-work">Projects after graduation</h2>
       <div><router-link to="/research#aiela">AIELA chatbot research</router-link><p>From a Raspberry Pi prototype to an 11-author study of how students used a web assistant in class.</p></div>
-      <div><router-link to="/teaching">Classroom &amp; course design</router-link><p>Java tracing exercises, the Linux courses I co-teach with Matt, our computer science lab manager, and community-client projects.</p></div>
+      <div><router-link to="/teaching">Classroom &amp; course design</router-link><p>Java tracing exercises, the Linux courses I co-teach with our computer science lab manager, and community-client projects.</p></div>
     </section>
     <h2 class="archive-heading">Software &amp; web projects</h2>
     <nav aria-label="Filter projects" class="filters">

@@ -17,7 +17,7 @@
       </nav>
       <div class="teaching-cases">
         <section id="java" tabindex="-1" aria-labelledby="java-title">
-          <p class="eyebrow">CSCI 241 · Computer Science I</p>
+          <p class="eyebrow">Computer Science I</p>
           <h2 id="java-title">Inside the first Java lab</h2>
           <p>Most students prefer to work on their own laptops, so they bring them to our first lab. Anyone without a laptop can complete all the coursework on a lab computer with the software already installed.</p>
           <p>On the laptops, we install the Java Runtime Environment (JRE), the Java Development Kit (JDK), and the ACM graphics library. We also install Visual Studio Code (VS Code) and BlueJ, the two development environments we used in fall 2026. Students need a ZIP utility such as 7-Zip or WinRAR.</p>
@@ -27,11 +27,11 @@
         <section id="accessible-materials" tabindex="-1" aria-labelledby="accessibility-title">
           <h2 id="accessibility-title">Accessible lab materials</h2>
           <p>The lab instructions we share online need to work for students who use a screen reader or navigate with a keyboard.</p>
-          <p>The U.S. Department of Justice’s web and mobile accessibility rule under Title II of the Americans with Disabilities Act (ADA) uses the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA as its standard. UW System Administrative Policy 655 applies that standard to digital course materials and takes effect April 26, 2027.</p>
-          <div class="source-links"><a href="https://www.wisconsin.edu/uw-policies/uw-system-administrative-policies/accessibility-of-web-content-and-mobile-applications/">UW System Administrative Policy 655</a><a href="https://www.ada.gov/resources/2024-03-08-web-rule/">U.S. Department of Justice guide to the rule</a></div>
+          <p>The U.S. Department of Justice’s web and mobile accessibility rule under Title II of the Americans with Disabilities Act (ADA) uses the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA as its standard.</p>
+          <div class="source-links"><a href="https://www.ada.gov/resources/2024-03-08-web-rule/">U.S. Department of Justice guide to the rule</a></div>
         </section>
         <section id="systems-analysis" tabindex="-1" aria-labelledby="mis-title">
-          <p class="eyebrow">MIS 425 / CIS 625 · Systems Analysis &amp; Design</p>
+          <p class="eyebrow">Systems Analysis &amp; Design</p>
           <h2 id="mis-title">From a client conversation to a requirement</h2>
           <p>My first MIS client project was a team-built storefront for a local entrepreneur. Now I design community projects that put my students on the other side of that conversation. They listen for the business problem, document what the system must do, and check their interpretation with the partner.</p>
           <div class="example"><h3>Example client brief</h3><blockquote>“Sometimes the same volunteer signs up twice for one shift.”</blockquote>
@@ -54,17 +54,16 @@
             <h3>{{ group.area }}</h3>
             <dl class="course-list">
               <div v-for="course in group.courses" :key="course[0]">
-                <dt v-bind="course[0] === 'CSCI 275' ? { id: 'linux', tabindex: -1 } : {}"><span>{{ course[0] }}</span>{{ course[1] }}</dt><dd>{{ course[2] }}</dd>
+                <dt v-bind="course[0] === 'Linux Concepts and Scripting' ? { id: 'linux', tabindex: -1 } : {}">{{ course[0] }}</dt><dd>{{ course[1] }}</dd>
               </div>
             </dl>
           </div>
-          <a href="https://www.uwp.edu/faculty-and-staff/aielloa/" class="text-link">UW–Parkside faculty teaching record</a>
         </section>
         <section id="advising" tabindex="-1" aria-labelledby="advising-title">
           <h2 id="advising-title">Graduate advising &amp; independent work</h2>
           <p>I advise domestic and international MS CIS students on course choices, internships, and independent studies.</p>
-          <p>Starting in summer 2024, I managed the program in an interim role while our department searched for a director with a terminal degree. I’m glad to welcome Dr. Chen as our new program director and help with the transition.</p>
-          <div class="source-links"><a href="https://www.uwp.edu/learn/programs/mscis/">Explore the MS CIS program</a><router-link to="/contact">Contact me about advising</router-link></div>
+          <p>Starting in summer 2024, I managed the program in an interim role while our department searched for a director with a terminal degree. I’m helping our new program director with the transition.</p>
+          <div class="source-links"><router-link to="/contact">Contact me about advising</router-link></div>
         </section>
       </div>
     </div>

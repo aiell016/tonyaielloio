@@ -1,4 +1,4 @@
-Options -MultiViews
+Options -MultiViews -Indexes
 DirectoryIndex index.html
 ErrorDocument 404 /404.html
 RewriteEngine On
@@ -6,6 +6,14 @@ RewriteBase /
 
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://tony.aiello.io%{REQUEST_URI} [R=301,L]
+
+# Old build files remain in the shared webspace after SFTP uploads. Retire the
+# former bundle paths and withdrawn photos even when those files still exist.
+RewriteRule ^(?:js|css)/[^/]+\.[0-9a-f]{8,}\.(?:js|css)(?:\.map)?$ - [G,L,NC]
+RewriteRule ^img/[^/]+\.[0-9a-f]{8,}\.(?:png|jpe?g|gif|webp|svg)$ - [G,L,NC]
+RewriteRule ^media/(?:anthony-aiello-faculty|app-factory|radar-add-course|radar-course-list|radar-edit-account)\.webp$ - [G,L,NC]
+RewriteRule ^media/racine-lakefront\.webp$ /media/lakefront-sunrise.webp [R=301,L,NC]
+RewriteRule ^projects/app-factory(?:/index\.html|/)?$ /projects/student-software-portfolio/ [R=301,L,NC]
 
 # Apache serves the built directories through DirectoryIndex. Send explicit
 # index.html links to the same URL that Vue Router uses for the page.

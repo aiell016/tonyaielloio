@@ -1,3 +1,3 @@
 module.exports = {
-  linkedIn: 'https://www.linkedin.com/in/uwpanthonyaiello'
+  email: 'anthony@aiello.io'
 }
