@@ -16,7 +16,7 @@ The **Portfolio CI and deployment** workflow runs `npm ci`, `npm run lint`, and 
 ### One-time hosting setup
 
 1. In IONOS, check which webspace directory serves `tony.aiello.io`. Under **Hosting → SFTP & SSH → Manage**, create an SFTP user and assign that directory as its home. Copy the server name and username shown by IONOS. [IONOS account setup](https://www.ionos.com/help/hosting/setting-up-and-managing-ftp-access/creating-an-sftp/ssh-account/)
-2. In the [repository’s Actions secrets](https://github.com/aiell016/tonyaielloio/settings/secrets/actions), use **New repository secret** to enter each value.
+2. In GitHub, open **Settings → Environments → SFTPIonosTonyAielloio**. Under **Environment secrets**, use **Add environment secret** for each value below. GitHub makes these credentials available to the job that publishes the site. [Portfolio environments](https://github.com/aiell016/tonyaielloio/settings/environments)
 
 | Secret | Value |
 | --- | --- |
