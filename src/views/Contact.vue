@@ -1,73 +1,13 @@
 <template>
-  <div class="contact" v-responsive>
-    <h1>Contact</h1>
-
-<div class="center">
-               <h4>Contact me</h4>
-               <br />
-</div>
-
-<div class="center" v-responsive>
-            <br />
-            <p >Thank you for visiting my site and wanting to discuss more!<br />
-              I left a few ways to reach me.
-              <br /><br />
-              Thank you!
-              <br /><br />
-
-              Anthony <br /> <br />
-
-              <br />
-               <a href = "https://github.com/aiell016" >Github</a> <br />
-               <br />
-
-                <a href = "https://www.linkedin.com/in/anthonyaiello2024" >Linkedin</a> <br /><br />
-                <a href="mailto:anthony@aiello.io" >Email</a><br /><br />
-
-                </p>
-   
-             </div>
-
-              
-    
+  <div class="wrap inner-page">
+    <header class="page-intro"><p class="eyebrow">Get in touch</p><h1>Contact</h1><p>Have a project in mind, a question about a course, or an idea for students to work on with a community partner? I’d like to hear it.</p></header>
+    <div class="contact-list">
+      <div><h2>Email</h2><a href="mailto:anthony@aiello.io">anthony@aiello.io</a></div>
+      <div><h2>GitHub</h2><a href="https://github.com/aiell016">Browse my public repositories</a></div>
+      <div><h2>LinkedIn</h2><a href="https://www.linkedin.com/in/anthonyaiello2024">Visit my LinkedIn profile</a></div>
+    </div>
   </div>
 </template>
-
 <script>
-
-export default {
-  
-  mounted() {
-  let linkedinScript = document.createElement('script')
-  linkedinScript.setAttribute('src', 'https://platform.linkedin.com/badges/js/profile.js' )
-  document.head.appendChild(linkedinScript)
-  }
-  
-}
+export default { name: 'PortfolioContact' }
 </script>
-
-<style scoped>
-
-.center {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-}
-
-#center {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-}
-
-.left {
-    justify-content: left;
-    text-align: left;
-}
-
-.p {
-    display: flex;
-    justify-content: left;
-}
-
-</style>

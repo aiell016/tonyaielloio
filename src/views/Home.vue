@@ -1,67 +1,51 @@
 <template>
-
-  <div class="home w-5" v-responsive>
-    <HelloWorld msg="Welcome" />
-    <h1>Welcome</h1>
-
-        <div v-responsive >
-
-          <p> Thank you for visiting!</p>
-          <p> <em>∃ P=(p1​,p2​,…,pn​) </em> <br />
-
-           <br />There exists a collection Projects here<br />
-          <br />
-          <br />If you want to find out how to get started in the exciting field of Computer Science, go here: <br />
-          <br />
-          <a href="https://www.uwp.edu/learn/programs/computersciencemajor.cfm" target="new">https://www.uwp.edu/learn/programs/computersciencemajor.cfm</a> <br />
-          <br />Already have your degree? Consider upgrading your skills to meet today's challenges in Technology! Read more here:<br />
-          <br /><a href="https://www.uwp.edu/learn/programs/mscis.cfm" target="new">https://www.uwp.edu/learn/programs/mscis.cfm</a> <br />
-          <br />Our region is growing as a technology, AI, and Data Centers are currently being built! <br />
-          <br />Earn your degree at UW-Parkside and gain the skills needed for tomorrow's workforce! <br />
-          <br />
-          <br />If you want to chat, that's cool too. Use the nifty contact form. <br />
-          <br />- Anthony -
-          </p>
-          
+  <div class="wrap home-page">
+    <section class="hero" aria-labelledby="home-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Software developer &amp; educator</p>
+        <h1 id="home-title">From code to the <em>classroom.</em></h1>
+        <p>I’m Tony Aiello. I build software and community websites, and I design hands-on courses in computer science and management information systems.</p>
+        <div class="actions">
+          <router-link to="/projects" class="button primary">Explore projects</router-link>
+          <router-link to="/teaching" class="button secondary">Teaching &amp; course design</router-link>
         </div>
-
-
-<div class = "w-5" v-responsive>
-    <img src="../assets/study.jpg" height=80% width=80% >
-</div>
-
- </div>
-
-
+      </div>
+      <figure class="hero-photo">
+        <img src="/media/racine-lakefront.webp" alt="Sunrise reflecting off Lake Michigan below a bank of clouds in Racine." width="1600" height="720" fetchpriority="high">
+        <figcaption>Lake Michigan at sunrise <span>Racine, Wisconsin</span></figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="featured-title" class="section">
+      <div class="section-head"><h2 id="featured-title">Selected work</h2><router-link to="/projects" class="text-link">View project archive</router-link></div>
+      <div class="cards">
+        <project-card :project="volga" />
+        <article class="work-card">
+          <router-link :to="{ path: '/teaching', hash: '#java' }" class="card-link">
+            <div class="card-visual teaching-art" aria-hidden="true"><java-trace /></div>
+            <div class="card-copy"><p class="eyebrow">Teaching · Computer science</p><h3 class="card-title">Inside the first Java lab</h3><p>Students predict what a program will print, compare their reasoning, then run it. Try a short trace from the classroom example.</p></div>
+          </router-link>
+        </article>
+        <project-card :project="mission" />
+      </div>
+    </section>
+    <section class="classroom-strip" aria-labelledby="classroom-title">
+      <div><p class="eyebrow">Course design</p><h2 id="classroom-title">Beyond the first program</h2></div>
+      <div class="strip-links">
+        <router-link :to="{ path: '/teaching', hash: '#linux' }"><strong>Building a Linux administration lab</strong><span>From individual containers to physical machines</span></router-link>
+        <router-link :to="{ path: '/teaching', hash: '#systems-analysis' }"><strong>Designing systems with a community client</strong><span>From a first conversation to a testable requirement</span></router-link>
+      </div>
+    </section>
+  </div>
 </template>
-
-
-<style scoped>
-
-.home {
-  background-size: auto;
-  background-repeat: no-repeat;
-
+<script>
+import projects from '../data/projects.json'
+import ProjectCard from '../components/ProjectCard.vue'
+import JavaTrace from '../components/JavaTrace.vue'
+export default {
+  name: 'PortfolioHome',
+  components: { ProjectCard, JavaTrace },
+  data() {
+    return { volga: projects.find(p => p.slug === 'project-volga'), mission: projects.find(p => p.slug === 'mission-got-your-six') }
+  }
 }
-
-.imageholder {
-
- height: 600px;
- width: 1100px;
-
- background-repeat: no-repeat;
-}
-
-
-.p {
-    display: flex;
-    justify-content: left;
-}
-
-.left {
-    display: flex;
-    justify-content: left;
-    text-align: left;
-}
-
-</style>
+</script>

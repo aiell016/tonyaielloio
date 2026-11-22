@@ -1,20 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    
-    <link rel="icon" href="hotglobe2.ico">
-    <link rel="favicon" href="hotglobe2.ico">
-
-    <title>Anthony M Aiello Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#18283f">
+    <link rel="icon" href="/hotglobe2.ico">
+    <% const opts = htmlWebpackPlugin.options; const page = opts.page; %>
+    <title><%- page.title %></title>
+    <meta name="description" content="<%- page.description %>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%- page.title %>">
+    <meta property="og:description" content="<%- page.description %>">
+    <meta property="og:image" content="<%- opts.siteUrl %>/media/<%- page.image || 'racine-lakefront.webp' %>">
+    <% if (opts.canonical) { %>
+    <link rel="canonical" href="<%- opts.canonical %>">
+    <meta property="og:url" content="<%- opts.canonical %>">
+    <% } else { %>
+    <meta name="robots" content="noindex">
+    <% } %>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but this page doesn't work without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
+    <noscript>
+      <main>
+        <h1><%- page.heading %></h1>
+        <p><%- page.description %></p>
+        <p>Enable JavaScript to explore the galleries and classroom examples.</p>
+        <nav aria-label="Portfolio"><a href="/">Home</a> · <a href="/projects">Projects</a> · <a href="/teaching">Teaching</a> · <a href="mailto:anthony@aiello.io">Email Anthony</a></nav>
+      </main>
+    </noscript>
   </body>
 </html>
