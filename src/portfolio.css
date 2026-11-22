@@ -59,7 +59,6 @@ img { display: block; max-width: 100%; }
 .hero-photo { position: relative; min-height: 24rem; overflow: hidden; background: var(--navy); }
 .hero-photo > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; }
 .hero-photo figcaption { position: absolute; bottom: 0; left: 0; right: 0; padding: 3.4rem 1.5rem 1rem; color: white; background: linear-gradient(transparent,rgba(8,18,32,.92)); font-weight: 650; }
-.hero-photo figcaption span { display: block; font-weight: 400; font-size: .9rem; }
 .section { margin-block: clamp(3.5rem, 6vw, 6rem); }
 .section-head { margin-bottom: 1.6rem; flex-wrap: wrap; align-items: baseline; }
 .text-link, .back-link { font-weight: 660; text-underline-offset: .22em; text-decoration-thickness: 1px; }
@@ -75,6 +74,7 @@ img { display: block; max-width: 100%; }
 .card-copy { padding-block: 1.15rem .5rem; }
 .card-title { margin: .45rem 0 .6rem; font-size: 1.45rem; font-weight: 650; letter-spacing: -.035em; }
 .card-copy > p:last-child { color: var(--secondary); }
+.text-card { border-top: 2px solid var(--blue); }
 .teaching-art { color: white; background: var(--navy); border-color: var(--navy); font: italic clamp(2rem, 4vw, 3.75rem)/1.1 'Instrument Serif', Georgia, serif; }
 .classroom-strip { margin: 1rem 0 5rem; border-block: 1px solid var(--rule); padding: 2.7rem 0; display: grid; grid-template-columns: 1fr 1.15fr; align-items: start; gap: 2rem; }
 .classroom-strip h2 { margin-top: .7rem; }
@@ -85,7 +85,6 @@ img { display: block; max-width: 100%; }
 .site-footer { background: var(--navy); color: white; }
 .footer-inner { padding-block: 1.75rem; gap: 1.2rem; flex-wrap: wrap; }
 .footer-name { font-size: 1.2rem; font-weight: 700; }
-.footer-location { margin-right: auto; }
 .footer-inner a { color: white; }
 .inner-page { padding-block: clamp(2.8rem, 6vw, 5.75rem) clamp(4rem, 8vw, 7rem); }
 .page-intro { max-width: 58rem; margin-bottom: 2.75rem; }
@@ -110,7 +109,7 @@ img { display: block; max-width: 100%; }
 .gallery-grid figure > a { padding: 1rem; display: flex; justify-content: center; background: #e7eced; border: 1px solid var(--rule); }
 .gallery-grid img { height: auto; width: auto; object-fit: contain; max-height: 40rem; }
 .gallery-grid .portrait-shot img { max-height: 31rem; }
-.gallery-grid figcaption, .bio-photo figcaption { font-size: .94rem; padding-top: .5rem; color: var(--secondary); }
+.gallery-grid figcaption { font-size: .94rem; padding-top: .5rem; color: var(--secondary); }
 .teaching-layout { display: grid; grid-template-columns: minmax(12.5rem,.65fr) minmax(0,2fr); gap: clamp(2rem, 7vw, 7.5rem); border-top: 1px solid var(--rule); padding-top: 2.25rem; }
 .teaching-index { display: grid; align-self: start; align-content: start; position: sticky; top: 1rem; }
 .teaching-index > span { margin-bottom: .5rem; }
@@ -124,9 +123,7 @@ img { display: block; max-width: 100%; }
 code { font-family: var(--mono); }
 .example blockquote { margin: .75rem 0 1.05rem; font: italic 1.8rem/1.15 'Instrument Serif', Georgia, serif; }
 .requirements dt { font-weight: 680; margin-top: .6rem; }
-.bio-layout { display: grid; grid-template-columns: 1.12fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: start; }
 .prose p { margin: 1rem 0; }
-.bio-photo img { width: 100%; height: auto; }
 .education { max-width: 60rem; margin-top: 3.7rem; }
 .degree, .skill-list section, .contact-list > div { border-top: 1px solid var(--rule); display: grid; grid-template-columns: minmax(7rem,.65fr) minmax(0,1.6fr); gap: 2rem; padding: 1.6rem 0; }
 .degree { grid-template-columns: 5rem 1fr; }
@@ -141,7 +138,7 @@ code { font-family: var(--mono); }
 .research-feature h2 { max-width: 20ch; margin-top: .6rem; }
 .research-feature a { color: white; }
 .research-feature p:not(.eyebrow) { max-width: 55ch; font-size: 1.08rem; }
-.research-feature .text-link, .project-context p, .course-group h3 + dl, .contact-extra { margin-top: .75rem; }
+.research-feature .text-link, .project-context p, .course-group h3 + dl { margin-top: .75rem; }
 .teaching-cases section > p + p, .teaching-cases section > .text-link, .teaching-cases section > .source-links { margin-top: .85rem; }
 .research-content section > h3 { margin: 1.65rem 0 .65rem; }
 .research-content section > p { max-width: 67ch; }
@@ -155,9 +152,8 @@ code { font-family: var(--mono); }
 .course-group { margin: 1.6rem 0; }
 .course-list { border-top: 1px solid var(--rule); }
 .course-list > div { padding: .65rem 0; border-bottom: 1px solid var(--rule); }
-.course-list dt { display: flex; align-items: baseline; gap: .85rem; font-weight: 660; }
-.course-list dt span { color: var(--blue-dark); font-size: .94rem; flex: 0 0 5.4rem; }
-.course-list dd { margin: .2rem 0 0 6.25rem; }
+.course-list dt { font-weight: 660; }
+.course-list dd { margin: .2rem 0 0; }
 .education > p, .project-context p { max-width: 68ch; font-size: 1.08rem; }
 .education > .text-link { margin-top: .75rem; }
 .degree.service-row { grid-template-columns: minmax(9.5rem, .6fr) minmax(0, 1.6fr); }
@@ -168,7 +164,6 @@ code { font-family: var(--mono); }
 .service-history li + li { margin-top: .6rem; }
 .service-history strong { margin-right: .5rem; }
 .contact-list p { margin-bottom: .65rem; max-width: 56ch; }
-.contact-extra { display: block; }
 .archive-paths { display: grid; grid-template-columns: .9fr 1fr 1fr; gap: 1.8rem; border-block: 1px solid var(--rule); padding: 1.5rem 0; margin-bottom: 2.25rem; }
 .archive-paths h2, .project-context h2 { font-size: clamp(1.6rem, 2.5vw, 2.25rem); }
 .archive-paths a { font-weight: 670; }
@@ -187,7 +182,6 @@ code { font-family: var(--mono); }
 @media (max-width: 680px) {
   .research-feature, .archive-paths, .degree.service-row { grid-template-columns: 1fr; gap: 1rem; }
   .research-feature h2 { max-width: none; }
-  .course-list dd { margin-left: 0; }
   .header-inner { display: grid; grid-template-columns: 1fr auto; min-height: 4.1rem; gap: .45rem 1rem; padding: .55rem 0; }
   .menu-toggle { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; padding: .35rem .85rem; border: 1px solid #8391a0; border-radius: .25rem; background: transparent; color: var(--ink); font-family: inherit; font-size: 1rem; font-weight: 650; cursor: pointer; }
   .main-nav { display: none; grid-column: 1 / -1; }
@@ -198,7 +192,7 @@ code { font-family: var(--mono); }
   .hero-copy h1 { max-width: 14ch; font-size: clamp(2.65rem, 10vw, 3.6rem); }
   .hero-photo { min-height: clamp(12rem, 48vw, 18rem); }
   .hero-photo figcaption { padding-inline: 1.2rem; }
-  .classroom-strip, .bio-layout, .teaching-layout { grid-template-columns: 1fr; gap: 1.65rem; }
+  .classroom-strip, .teaching-layout { grid-template-columns: 1fr; gap: 1.65rem; }
   .teaching-index { position: static; padding-bottom: 1.35rem; border-bottom: 1px solid var(--rule); }
   .skill-list section, .contact-list > div { grid-template-columns: 1fr; gap: .45rem; }
   .home-page .cards { grid-template-columns: 1fr; }

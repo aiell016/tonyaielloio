@@ -35,13 +35,8 @@
     "title": "On the Radar",
     "group": "Applications",
     "intro": "A course-planning prototype that uses a radar chart to show which requirements a student’s course choices cover.",
-    "story": "I worked on the team that built the Vue version for students, advisors, and department administrators. We used MongoDB, Express, Vue, and Node.js. A later team continued the project in Angular. These screenshots preserve the version our team worked on.",
-    "links": [
-      {
-        "label": "Open the planning prototype",
-        "url": "https://deployotr.aiello.io/"
-      }
-    ],
+    "story": "I worked on the team that built the Vue version for students, advisors, and department administrators. We used MongoDB, Express, Vue, and Node.js. A later team continued the project in Angular. The screenshot shows the version our team worked on.",
+    "links": [],
     "images": [
       {
         "file": "radar-planner.webp",
@@ -49,33 +44,12 @@
         "alt": "Desktop dashboard showing a radar chart next to the course-planning controls.",
         "width": 1578,
         "height": 580
-      },
-      {
-        "file": "radar-add-course.webp",
-        "caption": "Add a course",
-        "alt": "Mobile form with fields for adding a course to the planner.",
-        "width": 169,
-        "height": 300
-      },
-      {
-        "file": "radar-course-list.webp",
-        "caption": "Course list",
-        "alt": "Mobile course list with expandable rows for individual courses.",
-        "width": 169,
-        "height": 300
-      },
-      {
-        "file": "radar-edit-account.webp",
-        "caption": "Edit an account",
-        "alt": "Mobile account-editing dialog over the planning application.",
-        "width": 169,
-        "height": 300
       }
     ],
     "detail": {
       "title": "One plan, several viewpoints",
-      "body": "A list can tell a student which courses they picked. The radar chart was our way of showing which general education requirements those choices covered. The small-screen views show how an administrator could enter courses and maintain accounts behind the planning dashboard.",
-      "related": "app-factory"
+      "body": "A list can tell a student which courses they picked. The radar chart was our way of showing which general education requirements those choices covered.",
+      "related": "student-software-portfolio"
     }
   },
   {
@@ -108,7 +82,7 @@
     ],
     "detail": {
       "title": "Keeping a community project online",
-      "body": "I met Nick’s project as a student intern at the App Factory. His fundraising and events brought veterans and first responders together, and the site gave people a way to find that work. Former classmates built the first version, and more people joined in 2021. Maintaining the domain and hosting has let the project outlast any one student team.",
+      "body": "I met Nick while I was a student intern. His fundraising and events brought veterans and first responders together, and the site gave people a way to find that work. Former classmates built the first version, and more people joined in 2021. Maintaining the domain and hosting has let the project outlast any one student team.",
       "related": "ccsc-midwest"
     }
   },
@@ -153,8 +127,8 @@
     ],
     "detail": {
       "title": "A website that changes with its host",
-      "body": "Dr. Zaid Altahat assigned me the first conference build in spring 2018. The host campus and dates changed each year. Someone submitting a paper needed a different set of details from someone looking for a workshop or directions on arrival. The three screenshots show how the conference website handled those recurring jobs across successive editions.",
-      "related": "app-factory"
+      "body": "The host campus and dates changed each year. Someone submitting a paper needed a different set of details from someone looking for a workshop or directions on arrival. The three screenshots show how the conference website handled those recurring jobs across successive editions.",
+      "related": "student-software-portfolio"
     }
   },
   {
@@ -162,13 +136,8 @@
     "title": "Nature’s Best Shea Butter",
     "group": "Client & community",
     "intro": "An early MIS team project building a storefront for a local entrepreneur.",
-    "story": "Our MIS 220 team worked with a client who needed a place to present her shea butter products. We organized her catalog in Weebly. It was one of my first chances to design around what a real business owner needed. I now bring community projects into Systems Analysis and Design.",
-    "links": [
-      {
-        "label": "Visit the storefront",
-        "url": "https://naturesbestshea.weebly.com/"
-      }
-    ],
+    "story": "Our MIS class project team worked with a client who needed a place to present her shea butter products. We organized her catalog in Weebly. It was one of my first chances to design around what a real business owner needed. I now bring community projects into Systems Analysis and Design.",
+    "links": [],
     "images": [
       {
         "file": "natures-best.webp",
@@ -223,26 +192,13 @@
     }
   },
   {
-    "slug": "app-factory",
-    "title": "The App Factory website",
+    "slug": "student-software-portfolio",
+    "title": "Student software portfolio",
     "group": "Client & community",
     "intro": "An undergraduate software engineering project documenting apps built by student development teams.",
-    "story": "The site began in Software Engineering I and II. We used WordPress on a Linux, Apache, MySQL, and PHP stack in an Amazon EC2 instance. The archive includes project screenshots and profiles of the people who worked on them.",
-    "links": [
-      {
-        "label": "Visit the site archive",
-        "url": "https://afw.aiello.io/"
-      }
-    ],
-    "images": [
-      {
-        "file": "app-factory.webp",
-        "caption": "Team website",
-        "alt": "The archived App Factory homepage with student team members and project navigation.",
-        "width": 1068,
-        "height": 522
-      }
-    ],
+    "story": "The site began in Software Engineering I and II. We used WordPress on a Linux, Apache, MySQL, and PHP stack in an Amazon EC2 instance. The site featured project screenshots and profiles of the people who worked on them.",
+    "links": [],
+    "images": [],
     "detail": {
       "title": "Putting student software on the web",
       "body": "A visitor could look at an app screenshot and then see the student programmers and designers behind it. Building that record gave our Software Engineering team a concrete hosting assignment, too. The application and database ran on a Linux server in Amazon EC2, so delivering a WordPress site also meant making the underlying services work together.",
@@ -288,10 +244,6 @@
       {
         "label": "Visit the mix archive",
         "url": "https://djtonya.net/"
-      },
-      {
-        "label": "Read the Wisconsin LGBTQ History Project interview",
-        "url": "https://www.wislgbthistory.com/blog/tony-dj-tonya-aiello-spinning-the-sounds-of-freedom"
       }
     ],
     "images": [
@@ -305,7 +257,7 @@
     ],
     "detail": {
       "title": "Preserving a piece of Milwaukee music history",
-      "body": "The recordings have a history outside the website. I spent two decades as the house DJ at La Cage, and the archive includes work from Milwaukee PrideFest. In August 2026, Michail Takach wrote about that part of my life for the Wisconsin LGBTQ History Project. The interview gives the mixes a time, a place, and a dance floor.",
+      "body": "I spent two decades as the house DJ at La Cage. The archive brings those recordings together with my work from Milwaukee PrideFest.",
       "related": "professional-dj-store"
     }
   },
@@ -314,7 +266,7 @@
     "title": "Barnacle Bud’s",
     "group": "Web design",
     "intro": "A hand-coded restaurant website with original artwork and icons for a web design course.",
-    "story": "Our Art 377 brief asked us to redesign an independent restaurant’s website. I chose a friend’s restaurant in Bay View. I made the artwork and icons by hand and wrote the HTML and CSS for the site.",
+    "story": "Our web design assignment asked us to redesign an independent restaurant’s website. I chose a friend’s restaurant in Bay View. I made the artwork and icons by hand and wrote the HTML and CSS for the site.",
     "links": [
       {
         "label": "Explore the class project",
@@ -341,7 +293,7 @@
     "title": "Gear Blabs",
     "group": "Web design",
     "intro": "My first WordPress blog, built around the sound and lighting equipment I knew from live shows.",
-    "story": "For Art 477, I had to design a blog to a set of specifications. I used sound systems, stage lighting, and shows as the subject. That gave me a familiar collection of material to organize while learning a new publishing tool.",
+    "story": "For a web design course, I had to design a blog to a set of specifications. I used sound systems, stage lighting, and shows as the subject. That gave me a familiar collection of material to organize while learning a new publishing tool.",
     "links": [
       {
         "label": "Visit the blog archive",
@@ -359,7 +311,7 @@
     ],
     "detail": {
       "title": "Giving a blog a subject I knew",
-      "body": "I could draw on the lighting rigs, audio equipment, and performances I already knew from live production. The brief was a mock blog for Art 477, so the point was to learn how a publishing system handles successive articles and images. A photograph of a show could lead into a post about the equipment that made it possible.",
+      "body": "I could draw on the lighting rigs, audio equipment, and performances I already knew from live production. The brief was a mock blog for class, so the point was to learn how a publishing system handles successive articles and images. A photograph of a show could lead into a post about the equipment that made it possible.",
       "related": "professional-dj-store"
     }
   },
@@ -412,7 +364,7 @@
     "title": "Save the Tigers!",
     "group": "Web design",
     "intro": "A conservation website with original visual assets, written from scratch in HTML and CSS.",
-    "story": "For this Art 377 project, I researched the Bengal tiger and turned the findings into a short educational website. I made the graphics in Illustrator and Photoshop, then implemented the design by hand.",
+    "story": "For this web design project, I researched the Bengal tiger and turned the findings into a short educational website. I made the graphics in Illustrator and Photoshop, then implemented the design by hand.",
     "links": [
       {
         "label": "Explore the class project",

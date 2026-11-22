@@ -4,7 +4,7 @@ const pages = {
   '/': {
     title: 'Anthony Aiello | Software, Teaching & AI Research',
     heading: 'Welcome to Tony Aiello’s portfolio!',
-    description: 'Explore Anthony Aiello’s AI learning-assistant research, faculty publications, CS and MIS classrooms, and software projects in Wisconsin.'
+    description: 'Explore Anthony Aiello’s AI learning-assistant research, faculty publications, CS and MIS classrooms, and software projects.'
   },
   '/projects': {
     title: 'Software & Community Projects | Anthony Aiello', heading: 'Projects',
@@ -12,7 +12,7 @@ const pages = {
   },
   '/teaching': {
     title: 'Teaching & Course Design | Anthony Aiello', heading: 'Teaching & course design',
-    description: 'Explore Java labs, the Linux courses I co-teach with Matt, our computer science lab manager, and my work with CS, MIS and graduate CIS students at UW–Parkside.'
+    description: 'Explore my first Java lab, the Linux courses I co-teach, and my work with computer science, MIS, and graduate CIS students.'
   },
   '/research': {
     title: 'AI Chatbots & Faculty Publications | Anthony Aiello', heading: 'Research & publications',
@@ -20,8 +20,7 @@ const pages = {
   },
   '/about': {
     title: 'About Anthony Aiello | Developer & Educator', heading: 'About Anthony',
-    description: 'From Milwaukee sound engineering to enterprise IT, two Parkside degrees, graduate advising, campus service and teaching.',
-    image: 'anthony-aiello-faculty.webp'
+    description: 'My path from sound engineering and enterprise IT to teaching computer science, advising graduate students, and studying how students learn.'
   },
   '/skills': {
     title: 'Technical Skills | Anthony Aiello', heading: 'Technical skills',
@@ -37,7 +36,7 @@ for (const project of projects) {
     title: project.title + ' | Anthony Aiello',
     heading: project.title,
     description: project.intro,
-    image: project.images[0].file
+    image: project.images[0] && project.images[0].file
   }
 }
 const notFound = {

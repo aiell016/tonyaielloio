@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="<%- page.title %>">
     <meta property="og:description" content="<%- page.description %>">
-    <meta property="og:image" content="<%- opts.siteUrl %>/media/<%- page.image || 'racine-lakefront.webp' %>">
+    <meta property="og:image" content="<%- opts.siteUrl %>/media/<%- page.image || 'lakefront-sunrise.webp' %>">
     <% if (opts.canonical) { %>
     <link rel="canonical" href="<%- opts.canonical %>">
     <meta property="og:url" content="<%- opts.canonical %>">
@@ -46,7 +46,7 @@
         <% } %>
         <p>Enable JavaScript to explore the galleries and classroom examples.</p>
         <nav aria-label="Portfolio"><a href="/">Home</a> · <a href="/projects">Projects</a> · <a href="/teaching">Teaching</a> · <a href="/research">Research &amp; publications</a> · <a href="/about">About</a> · <a href="/skills">Skills</a> · <a href="/contact">Contact</a></nav>
-        <p><a href="<%- opts.profile.linkedIn %>">Anthony Aiello on LinkedIn</a></p>
+        <p><a href="mailto:<%- opts.profile.email %>"><%- opts.profile.email %></a></p>
       </main>
     </noscript>
   </body>

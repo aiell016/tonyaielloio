@@ -14,7 +14,7 @@
     <section class="project-context" aria-labelledby="project-focus">
       <h2 id="project-focus">{{ project.detail.title }}</h2><p>{{ project.detail.body }}</p>
     </section>
-    <section class="gallery" aria-labelledby="screenshots">
+    <section v-if="project.images.length" class="gallery" aria-labelledby="screenshots">
       <div class="section-head"><h2 id="screenshots">Original screenshots</h2></div>
       <div class="gallery-grid">
         <figure v-for="(image, index) in project.images" :key="image.file" :class="{ 'lead-shot': index === 0, 'portrait-shot': image.height > image.width }">

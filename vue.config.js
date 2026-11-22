@@ -5,6 +5,7 @@ const profile = require('./src/data/profile')
 
 // One shared Vue bundle, with a real entry document for each shareable URL.
 module.exports = {
+  assetsDir: 'assets',
   productionSourceMap: false,
   chainWebpack(config) {
     const html = config.plugin('html')

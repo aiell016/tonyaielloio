@@ -17,9 +17,7 @@
     <footer class="site-footer">
       <div class="wrap footer-inner">
         <span class="footer-name">Anthony Aiello</span>
-        <span class="footer-location">Racine, Wisconsin</span>
-        <a :href="profile.linkedIn" aria-label="Anthony Aiello on LinkedIn">LinkedIn</a>
-        <a href="mailto:anthony@aiello.io">anthony@aiello.io</a>
+        <a :href="'mailto:' + profile.email">{{ profile.email }}</a>
       </div>
     </footer>
   </div>

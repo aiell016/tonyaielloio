@@ -1,7 +1,7 @@
 <template>
   <article class="work-card">
-    <router-link :to="{ name: 'project', params: { slug: project.slug } }" class="card-link">
-      <div class="card-visual" :class="'art-' + project.slug">
+    <router-link :to="{ name: 'project', params: { slug: project.slug } }" class="card-link" :class="{ 'text-card': !image }">
+      <div v-if="image" class="card-visual" :class="'art-' + project.slug">
         <img :src="'/media/' + image.file" :alt="image.alt" :width="image.width" :height="image.height" loading="lazy" decoding="async">
       </div>
       <div class="card-copy">

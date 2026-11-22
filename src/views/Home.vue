@@ -4,15 +4,15 @@
       <div class="hero-copy">
         <p class="eyebrow">Software developer &amp; educator</p>
         <h1 id="home-title">From code to the <em>classroom.</em></h1>
-        <p>Welcome! I’m Tony Aiello, and I’m glad you stopped by. As a lecturer at UW–Parkside, I design hands-on courses in computer science and management information systems and supervise independent studies. Come explore the software I’ve built, <router-link to="/teaching#java">see how we get started in Computer Science I</router-link>, or meet the team behind our chatbot study.</p>
+        <p>Welcome! I’m Tony Aiello, and I’m glad you stopped by. I teach computer science and management information systems, design hands-on courses, and supervise independent studies. Come explore the software I’ve built, <router-link to="/teaching#java">see how we get started in Computer Science I</router-link>, or meet the team behind our chatbot study.</p>
         <div class="actions">
           <router-link to="/research" class="button primary">Research &amp; publications</router-link>
           <router-link to="/projects" class="button secondary">Explore projects</router-link>
         </div>
       </div>
       <figure class="hero-photo">
-        <img src="/media/racine-lakefront.webp" alt="Sunrise reflecting off Lake Michigan below a bank of clouds in Racine." width="1600" height="720" fetchpriority="high">
-        <figcaption>Lake Michigan at sunrise <span>Racine, Wisconsin</span></figcaption>
+        <img src="/media/lakefront-sunrise.webp" alt="Sunrise reflecting off Lake Michigan below a bank of clouds." width="1600" height="720" fetchpriority="high">
+        <figcaption>Lake Michigan at sunrise</figcaption>
       </figure>
     </section>
     <section class="research-feature" aria-labelledby="home-research-title">
@@ -25,8 +25,8 @@
         <project-card :project="volga" />
         <article class="work-card">
           <router-link :to="{ path: '/teaching', hash: '#java' }" class="card-link">
-            <p class="card-visual teaching-art">CSCI 241</p>
-            <div class="card-copy"><p class="eyebrow">Computer Science I</p><h3 class="card-title">Inside the first Java lab</h3><p>Students set up Java and run the Doodle lab to check that their laptops are ready for the course.</p></div>
+            <p class="card-visual teaching-art">Computer Science I</p>
+            <div class="card-copy"><p class="eyebrow">Teaching</p><h3 class="card-title">Inside the first Java lab</h3><p>Students set up Java and run the Doodle lab to check that their laptops are ready for the course.</p></div>
           </router-link>
         </article>
         <project-card :project="mission" />

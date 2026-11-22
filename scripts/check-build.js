@@ -16,14 +16,20 @@ assert(fs.existsSync(path.join(dist, '404.html')), 'Missing error page')
 for (const route of Object.keys(pages)) {
   const html = fs.readFileSync(path.join(dist, route.slice(1), 'index.html'), 'utf8')
   assert(html.includes('href="' + siteUrl + route + '"'), 'Wrong canonical URL for ' + route)
-  assert(html.includes('href="' + profile.linkedIn + '"'), 'Missing permanent LinkedIn link on ' + route)
+  assert(html.includes('href="mailto:' + profile.email + '"'), 'Missing personal contact address on ' + route)
+  const shareImage = html.match(/<meta property="og:image" content="([^"]+)"/)
+  assert(shareImage && shareImage[1].startsWith(siteUrl + '/media/'), 'Missing portfolio share image for ' + route)
+  assert(fs.existsSync(path.join(dist, new URL(shareImage[1]).pathname)), 'Missing share image file for ' + route)
   const scripts = Array.from(html.matchAll(/<script\b[^>]*\bsrc="(\/[^"]+)"/g), match => match[1])
   assert(scripts.length > 0, 'Missing Vue bundle for ' + route)
-  for (const url of scripts) assert(fs.existsSync(path.join(dist, url.slice(1))), 'Missing script ' + url)
+  for (const url of scripts) {
+    assert(url.startsWith('/assets/'), 'Script uses a retired asset path on ' + route)
+    assert(fs.existsSync(path.join(dist, url.slice(1))), 'Missing script ' + url)
+  }
 }
 for (const project of projects) {
   assert(project.detail && project.detail.body && slugs.includes(project.detail.related) && project.detail.related !== project.slug, 'Missing project detail or related project for ' + project.slug)
-  assert(project.images.length > 0, 'No images for ' + project.slug)
+  assert(Array.isArray(project.images), 'Missing image list for ' + project.slug)
   for (const image of project.images) {
     assert(image.alt && image.width > 0 && image.height > 0, 'Missing image description or dimensions for ' + image.file)
     assert(fs.existsSync(path.join(dist, 'media', image.file)), 'Missing screenshot ' + image.file)
@@ -37,4 +43,4 @@ for (const paper of publications) {
   assert(bibliography.includes('https://doi.org/' + paper.doi), 'Missing DOI for ' + paper.title)
   assert(bibliography.includes(paper.authors.join(', ')), 'Missing author list for ' + paper.title)
 }
-process.stdout.write('Verified route documents, bundles, gallery images, project links, publications, and profile links.\n')
+process.stdout.write('Verified route documents, bundles, share and gallery images, project links, publications, and contact email.\n')

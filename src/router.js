@@ -61,7 +61,7 @@ router.afterEach(to => {
     description: meta.description,
     'og:title': meta.title,
     'og:description': meta.description,
-    'og:image': siteUrl + '/media/' + (meta.image || 'racine-lakefront.webp'),
+    'og:image': siteUrl + '/media/' + (meta.image || 'lakefront-sunrise.webp'),
     'og:url': canonical,
     robots: meta === notFound ? 'noindex' : null
   }
