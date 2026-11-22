@@ -9,7 +9,6 @@
       <nav class="teaching-index" aria-label="Teaching cases">
         <span class="eyebrow">On this page</span>
         <router-link :to="{ path: '/teaching', hash: '#java' }">Computer Science I</router-link>
-        <router-link :to="{ path: '/teaching', hash: '#linux' }">Teaching Linux with Matt</router-link>
         <router-link to="#accessible-materials">Accessible lab materials</router-link>
         <router-link :to="{ path: '/teaching', hash: '#systems-analysis' }">Systems analysis &amp; design</router-link>
         <router-link to="#learning-assistants">Learning assistants &amp; gamification</router-link>
@@ -29,20 +28,9 @@
           </div>
           <router-link to="/projects/project-volga" class="text-link">See Project Volga, my first site after CS I</router-link>
         </section>
-        <section id="linux" tabindex="-1" aria-labelledby="linux-title">
-          <p class="eyebrow">CSCI 275 · CSCI 435 / CIS 635</p>
-          <h2 id="linux-title">Teaching Linux with Matt</h2>
-          <p>Matt, our computer science lab manager, and I have co-taught Linux Concepts and Linux System Administration since 2019.</p>
-          <p>When UW System changes ended remote access to our lab, students could no longer log in over SSH. We moved to containers that students could run on their own computers. Matt developed the Docker labs, and I changed how I delivered the exercises and how students used them.</p>
-          <div class="lab-stages">
-            <div><h3>On their own computers</h3><p>In Linux System Administration, students spent the first four weeks working in Docker containers.</p></div>
-            <div><h3>In the lab</h3><p>Students then worked on four shared physical machines on the lab’s private network.</p></div>
-          </div>
-          <div class="example"><h3>A question to try</h3><p>Two users need to edit files in a shared directory. What would you check before changing permissions, and how would you verify the result as each user?</p></div>
-        </section>
         <section id="accessible-materials" tabindex="-1" aria-labelledby="accessibility-title">
           <h2 id="accessibility-title">Accessible lab materials</h2>
-          <p>As we adapt how students receive and use their labs, the instructions we share online need to work for students who use a screen reader or navigate with a keyboard.</p>
+          <p>The lab instructions we share online need to work for students who use a screen reader or navigate with a keyboard.</p>
           <p>The U.S. Department of Justice’s web and mobile accessibility rule under Title II of the Americans with Disabilities Act (ADA) uses the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA as its standard. UW System Administrative Policy 655 applies that standard to digital course materials and takes effect April 26, 2027.</p>
           <div class="source-links"><a href="https://www.wisconsin.edu/uw-policies/uw-system-administrative-policies/accessibility-of-web-content-and-mobile-applications/">UW System Administrative Policy 655</a><a href="https://www.ada.gov/resources/2024-03-08-web-rule/">U.S. Department of Justice guide to the rule</a></div>
         </section>
@@ -69,7 +57,7 @@
             <h3>{{ group.area }}</h3>
             <dl class="course-list">
               <div v-for="course in group.courses" :key="course[0]">
-                <dt><span>{{ course[0] }}</span>{{ course[1] }}</dt><dd>{{ course[2] }}</dd>
+                <dt v-bind="course[0] === 'CSCI 275' ? { id: 'linux', tabindex: -1 } : {}"><span>{{ course[0] }}</span>{{ course[1] }}</dt><dd>{{ course[2] }}</dd>
               </div>
             </dl>
           </div>
@@ -77,7 +65,7 @@
         </section>
         <section id="advising" tabindex="-1" aria-labelledby="advising-title">
           <h2 id="advising-title">Graduate advising &amp; independent work</h2>
-          <p>I advise domestic and international MS CIS students on course choices, internships, and independent studies. A problem a student encounters at work can become a question they investigate over a semester of independent study.</p>
+          <p>I advise domestic and international MS CIS students on course choices, internships, and independent studies.</p>
           <p>Starting in summer 2024, I managed the program in an interim role while our department searched for a director with a terminal degree. I’m glad to welcome Dr. Chen as our new program director and help with the transition.</p>
           <div class="source-links"><a href="https://www.uwp.edu/learn/programs/mscis/">Explore the MS CIS program</a><router-link to="/contact">Contact me about advising</router-link></div>
         </section>

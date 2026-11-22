@@ -35,7 +35,6 @@
     <section class="classroom-strip" aria-labelledby="classroom-title">
       <div><p class="eyebrow">Course design</p><h2 id="classroom-title">Beyond the first program</h2></div>
       <div class="strip-links">
-        <router-link :to="{ path: '/teaching', hash: '#linux' }"><strong>Teaching Linux with Matt</strong><span>How our labs changed when remote access ended</span></router-link>
         <router-link :to="{ path: '/teaching', hash: '#systems-analysis' }"><strong>Designing systems with a community client</strong><span>From a first conversation to a testable requirement</span></router-link>
       </div>
     </section>
