@@ -1,0 +1,36 @@
+[
+  {
+    "area": "Computer science",
+    "courses": [
+      ["CSCI 105", "Introduction to Computers", "A robotics activity gives students a physical way to see their instructions run."],
+      ["CSCI 130", "Introduction to Programming", "Students use Python to turn a problem into a sequence of steps they can run and inspect."],
+      ["CSCI 241", "Computer Science I", "Java, code tracing, discussion worksheets, paired work and a weekly lab."],
+      ["CSCI 275", "Linux Concepts and Scripting", "The Linux command line, files, permissions and shell scripts."],
+      ["CSCI 279", "Basic Information Security", "An introduction to how people and systems protect information."],
+      ["CSCI 435", "Linux System Administration / UNIX System Administration", "My faculty record lists both titles. The graduate cross-list is CIS 635."],
+      ["CSCI 490", "Special Topics in Computer Science", "A course whose subject varies by offering."],
+      ["CSCI 493", "Internship", "Supervised undergraduate work in a professional setting."],
+      ["CSCI 495", "Computer Science Seminar", "Students discuss the ethical and social consequences of computing."],
+      ["CSCI 499", "Independent Study", "An individual computing project supervised by a faculty member."]
+    ]
+  },
+  {
+    "area": "Management information systems",
+    "courses": [
+      ["MIS 320", "Management Information Systems", "How information systems support the work and decisions of a business."],
+      ["MIS 322", "Business Programming II", "Using programming to solve business problems."],
+      ["MIS 328", "Database Management Systems", "Designing and querying a database that represents the business accurately."],
+      ["MIS 425", "Systems Analysis and Design", "Students work from a community partner’s needs to requirements they can validate."]
+    ]
+  },
+  {
+    "area": "Graduate computer and information systems",
+    "courses": [
+      ["CIS 625", "Systems Analysis and Design", "The graduate cross-list of MIS 425 brings another level of analysis to a client project."],
+      ["CIS 635", "Linux System Administration", "The graduate cross-list of CSCI 435 extends the systems administration sequence."],
+      ["CIS 690", "Special Topics in CIS", "My Cloud Computing offering used Amazon Web Services."],
+      ["CIS 793", "Internship", "I supervise graduate students as they connect workplace experience with their studies."],
+      ["CIS 799", "Independent Study", "I advise a student on an individually defined graduate project."]
+    ]
+  }
+]

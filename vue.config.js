@@ -1,4 +1,6 @@
 const { pages, notFound, siteUrl } = require('./src/data/pages')
+const publications = require('./src/data/publications.json')
+const profile = require('./src/data/profile')
 
 // One shared Vue bundle, with a real entry document for each shareable URL.
 module.exports = {
@@ -9,7 +11,8 @@ module.exports = {
     const [defaults] = html.get('args')
     function pageOptions(path, page, filename) {
       return Object.assign({}, defaults, {
-        filename, page, siteUrl, canonical: path === null ? null : siteUrl + path
+        filename, page, siteUrl, canonical: path === null ? null : siteUrl + path,
+        publications: path === '/research' ? publications : [], profile
       })
     }
     html.tap(() => [pageOptions('/', pages['/'], 'index.html')])

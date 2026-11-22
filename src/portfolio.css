@@ -149,6 +149,45 @@ details[open] summary { margin-bottom: .35rem; }
 .skill-list h2, .contact-list h2 { font-size: clamp(1.55rem, 2.5vw, 2.15rem); }
 .contact-list { max-width: 54rem; }
 .contact-list a { align-self: center; font-weight: 620; overflow-wrap: anywhere; }
+.research-feature { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(1.4rem, 5vw, 5rem); margin-top: 1.55rem; padding: clamp(1.5rem, 3.5vw, 3.5rem); background: var(--navy); color: white; }
+.research-feature .eyebrow { color: #bbd7f4; }
+.research-feature h2 { max-width: 20ch; margin-top: .6rem; }
+.research-feature a { color: white; }
+.research-feature p:not(.eyebrow) { max-width: 55ch; font-size: 1.08rem; }
+.research-feature .text-link, .project-context p, .course-group h3 + dl, .contact-extra { margin-top: .75rem; }
+.teaching-cases section > p + p, .teaching-cases section > .text-link, .teaching-cases section > .source-links { margin-top: .85rem; }
+.research-content section > h3 { margin: 1.65rem 0 .65rem; }
+.research-content section > p { max-width: 67ch; }
+.publication-list { list-style: none; margin: 0; padding: 0; }
+.publication-list li { padding: 1.4rem 0; border-bottom: 1px solid var(--rule); scroll-margin-top: 1.5rem; }
+.publication-list h3 { margin: .45rem 0 .8rem; font-size: clamp(1.3rem, 2vw, 1.75rem); }
+.publication-list p { margin-top: .5rem; max-width: 70ch; }
+.author-line, .pub-venue { color: var(--ink); }
+.source-links { display: flex; flex-wrap: wrap; gap: .45rem 1.25rem; margin-top: .75rem; }
+.source-links a, .related-project a { overflow-wrap: anywhere; font-weight: 650; }
+.course-group { margin: 1.6rem 0; }
+.course-list { border-top: 1px solid var(--rule); }
+.course-list > div { padding: .65rem 0; border-bottom: 1px solid var(--rule); }
+.course-list dt { display: flex; align-items: baseline; gap: .85rem; font-weight: 660; }
+.course-list dt span { color: var(--blue-dark); font-size: .94rem; flex: 0 0 5.4rem; }
+.course-list dd { margin: .2rem 0 0 6.25rem; }
+.education > p, .project-context p { max-width: 68ch; font-size: 1.08rem; }
+.education > .text-link { margin-top: .75rem; }
+.degree.service-row { grid-template-columns: minmax(9.5rem, .6fr) minmax(0, 1.6fr); }
+.service-row p { margin-top: 0; }
+.service-history { padding: 0; margin: 0; list-style: none; }
+.service-history li + li { margin-top: .6rem; }
+.service-history strong { margin-right: .5rem; }
+.contact-list p { margin-bottom: .65rem; max-width: 56ch; }
+.contact-extra { display: block; }
+.archive-paths { display: grid; grid-template-columns: .9fr 1fr 1fr; gap: 1.8rem; border-block: 1px solid var(--rule); padding: 1.5rem 0; margin-bottom: 2.25rem; }
+.archive-paths h2, .project-context h2 { font-size: clamp(1.6rem, 2.5vw, 2.25rem); }
+.archive-paths a { font-weight: 670; }
+.archive-paths p { margin-top: .45rem; }
+.archive-heading { margin-bottom: .85rem; }
+.project-context { margin: 2rem 0; max-width: 70ch; }
+.related-project { margin-top: 2.25rem; border-top: 1px solid var(--rule); padding-top: 1.2rem; }
+.related-project .eyebrow { margin-bottom: .25rem; }
 @media (max-width: 850px) {
   .main-nav { column-gap: .95rem; }
   .hero-copy { padding: 2.2rem 1.8rem; }
@@ -158,6 +197,9 @@ details[open] summary { margin-bottom: .35rem; }
   .teaching-art pre { font-size: .7rem; }
 }
 @media (max-width: 680px) {
+  .research-feature, .archive-paths, .degree.service-row { grid-template-columns: 1fr; gap: 1rem; }
+  .research-feature h2 { max-width: none; }
+  .course-list dd { margin-left: 0; }
   .header-inner { display: grid; grid-template-columns: 1fr auto; min-height: 4.1rem; gap: .45rem 1rem; padding: .55rem 0; }
   .menu-toggle { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; padding: .35rem .85rem; border: 1px solid #8391a0; border-radius: .25rem; background: transparent; color: var(--ink); font-family: inherit; font-size: 1rem; font-weight: 650; cursor: pointer; }
   .main-nav { display: none; grid-column: 1 / -1; }

@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Projects from './views/Projects.vue'
 import Project from './views/Project.vue'
 import Teaching from './views/Teaching.vue'
+import Research from './views/Research.vue'
 import About from './views/About.vue'
 import Skills from './views/Skills.vue'
 import Contact from './views/Contact.vue'
@@ -24,6 +25,7 @@ const router = new Router({
       props: route => ({ project: projects.find(item => item.slug === route.params.slug) })
     },
     { path: '/teaching', name: 'teaching', component: Teaching },
+    { path: '/research', name: 'research', component: Research },
     { path: '/about', name: 'about', component: About },
     { path: '/skills', name: 'skills', component: Skills },
     { path: '/contact', name: 'contact', component: Contact },

@@ -25,8 +25,16 @@
       <main>
         <h1><%- page.heading %></h1>
         <p><%- page.description %></p>
+        <% if (opts.publications.length) { %>
+        <h2>Faculty publications</h2>
+        <ol><% for (const paper of opts.publications) { %>
+          <li><a href="https://doi.org/<%- paper.doi %>"><%- paper.title %></a><br>
+            <%- paper.authors.join(', ') %>. <cite><%- paper.venue %></cite>, <%- paper.year %>, pp. <%- paper.pages %>.</li>
+        <% } %></ol>
+        <% } %>
         <p>Enable JavaScript to explore the galleries and classroom examples.</p>
-        <nav aria-label="Portfolio"><a href="/">Home</a> · <a href="/projects">Projects</a> · <a href="/teaching">Teaching</a> · <a href="mailto:anthony@aiello.io">Email Anthony</a></nav>
+        <nav aria-label="Portfolio"><a href="/">Home</a> · <a href="/projects">Projects</a> · <a href="/teaching">Teaching</a> · <a href="/research">Research &amp; publications</a> · <a href="/about">About</a> · <a href="/skills">Skills</a> · <a href="/contact">Contact</a></nav>
+        <p><a href="<%- opts.profile.linkedIn %>">Anthony Aiello on LinkedIn</a></p>
       </main>
     </noscript>
   </body>

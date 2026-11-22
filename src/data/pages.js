@@ -2,29 +2,34 @@ const projects = require('./projects.json')
 const siteUrl = 'https://tony.aiello.io'
 const pages = {
   '/': {
-    title: 'Anthony Aiello | Software Development & Teaching',
+    title: 'Anthony Aiello | Software, Teaching & AI Research',
     heading: 'Anthony Aiello',
-    description: 'Software projects, community websites, and hands-on course design in computer science and management information systems by Anthony Aiello in Wisconsin.'
+    description: 'Explore Anthony Aiello’s AI learning-assistant research, faculty publications, CS and MIS classrooms, and software projects in Wisconsin.'
   },
   '/projects': {
     title: 'Software & Community Projects | Anthony Aiello', heading: 'Projects',
-    description: 'Explore software prototypes, client websites, and early web design work with original screenshots and project archives.'
+    description: 'Explore 14 early software and web projects, from a Vue course planner to community websites, alongside later work in classroom design and AI research.'
   },
   '/teaching': {
     title: 'Teaching & Course Design | Anthony Aiello', heading: 'Teaching & course design',
-    description: 'Inside three of my courses: tracing Java programs, administering Linux systems, and translating a community partner’s request into testable requirements.'
+    description: 'Explore Java, Linux and community-client labs, plus the undergraduate computer science, MIS and graduate CIS courses I teach at UW–Parkside.'
+  },
+  '/research': {
+    title: 'AI Chatbots & Faculty Publications | Anthony Aiello', heading: 'Research & publications',
+    description: 'Read Anthony Aiello’s three IEEE publications, meet the 11 coauthors of the 2025 AIELA chatbot study, and explore his computing education research collaborations.'
   },
   '/about': {
     title: 'About Anthony Aiello | Developer & Educator', heading: 'About Anthony',
-    description: 'From Milwaukee sound and lighting systems to software development and the computer science classroom. Read about my background and education.'
+    description: 'From Milwaukee sound engineering to enterprise IT, two Parkside degrees, graduate advising, campus service and teaching.',
+    image: 'anthony-aiello-faculty.webp'
   },
   '/skills': {
     title: 'Technical Skills | Anthony Aiello', heading: 'Technical skills',
-    description: 'The programming, systems, database, and design skills behind my software projects and teaching.'
+    description: 'See how I use Unix and Linux administration, secure software development, database design and classroom research across my projects and teaching.'
   },
   '/contact': {
     title: 'Contact Anthony Aiello', heading: 'Contact',
-    description: 'Get in touch about a software project, community partnership, or teaching collaboration.'
+    description: 'Contact Anthony Aiello about research collaborations, MS CIS advising, internships, community projects and software development.'
   }
 }
 for (const project of projects) {
