@@ -17,7 +17,7 @@
       <div class="degree"><span class="year">2018</span><div><h3>Bachelor of Science in Computer Science</h3><p>At UW–Parkside I earned a Web Development minor and certificates in Cybersecurity and Linux System Administration. Artificial intelligence, astronomy, calculus, data structures, and physics were among my favorite classes.</p><a href="https://www.uwp.edu/learn/programs/computersciencemajor/" class="text-link">Computer Science program</a></div></div>
     </section>
     <section class="education" aria-labelledby="service-title">
-      <h2 id="service-title">Campus service</h2>
+      <h2 id="service-title">Campus and professional service</h2>
       <div class="degree service-row"><h3>Student organizations</h3><div><p>I’ve advised Girls Who Code, Computer Club, and Tabletop. Computer Club gives students room to explore an interest beyond a course, whether that means a coding challenge, a robotics activity, or a game night.</p></div></div>
       <div class="degree service-row"><h3>College service</h3><div><p>I served on the search and screen committee for the Small Business Development Center director.</p></div></div>
       <div class="degree service-row"><h3>Department search committees</h3><div><ul class="service-history">
@@ -27,6 +27,7 @@
         <li><strong>2020</strong> Computer Science faculty search and screen committee and a separate faculty search and screen committee.</li>
         <li><strong>2018</strong> Computer Science faculty search and screen committee.</li>
       </ul></div></div>
+      <router-link to="/research#peer-review" class="text-link">See my conference peer review by year</router-link>
     </section>
     <section class="education" aria-labelledby="background-study">
       <h2 id="background-study">What I’m working on now</h2>
