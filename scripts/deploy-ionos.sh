@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-: "${IONOS_SFTP_HOST:?Add the IONOS_SFTP_HOST repository secret}"
-: "${IONOS_SFTP_USER:?Add the IONOS_SFTP_USER repository secret}"
-: "${IONOS_SFTP_PASSWORD:?Add the IONOS_SFTP_PASSWORD repository secret}"
+: "${IONOS_SFTP_HOST:?Set IONOS_SFTP_HOST in the SFTPIonosTonyAielloio GitHub environment}"
+: "${IONOS_SFTP_USER:?Set IONOS_SFTP_USER in the SFTPIonosTonyAielloio GitHub environment}"
+: "${IONOS_SFTP_PASSWORD:?Set IONOS_SFTP_PASSWORD in the SFTPIonosTonyAielloio GitHub environment}"
 [[ -f dist/index.html && -f dist/.htaccess && -f dist/teaching/index.html ]] || {
   echo "The production build is incomplete." >&2
   exit 1
