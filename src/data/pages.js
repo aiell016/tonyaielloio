@@ -12,7 +12,7 @@ const pages = {
   },
   '/teaching': {
     title: 'Teaching & Course Design | Anthony Aiello', heading: 'Teaching & course design',
-    description: 'Explore Java, Linux and community-client labs, plus the undergraduate computer science, MIS and graduate CIS courses I teach at UW–Parkside.'
+    description: 'Explore Java labs, the Linux courses I co-teach with Matt, our computer science lab manager, and my work with CS, MIS and graduate CIS students at UW–Parkside.'
   },
   '/research': {
     title: 'AI Chatbots & Faculty Publications | Anthony Aiello', heading: 'Research & publications',

@@ -8,7 +8,7 @@
     <section class="archive-paths" aria-labelledby="later-work">
       <h2 id="later-work">Projects after graduation</h2>
       <div><router-link to="/research#aiela">AIELA chatbot research</router-link><p>From a Raspberry Pi prototype to an 11-author study of how students used a web assistant in class.</p></div>
-      <div><router-link to="/teaching">Classroom &amp; course design</router-link><p>Java tracing exercises, a Linux administration lab, and community-client work in undergraduate and graduate courses.</p></div>
+      <div><router-link to="/teaching">Classroom &amp; course design</router-link><p>Java tracing exercises, the Linux courses I co-teach with Matt, our computer science lab manager, and community-client projects.</p></div>
     </section>
     <h2 class="archive-heading">Software &amp; web projects</h2>
     <nav aria-label="Filter projects" class="filters">

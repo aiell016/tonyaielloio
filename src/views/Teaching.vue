@@ -9,7 +9,8 @@
       <nav class="teaching-index" aria-label="Teaching cases">
         <span class="eyebrow">On this page</span>
         <router-link :to="{ path: '/teaching', hash: '#java' }">Computer Science I</router-link>
-        <router-link :to="{ path: '/teaching', hash: '#linux' }">Linux system administration</router-link>
+        <router-link :to="{ path: '/teaching', hash: '#linux' }">Teaching Linux with Matt</router-link>
+        <router-link to="#accessible-materials">Accessible lab materials</router-link>
         <router-link :to="{ path: '/teaching', hash: '#systems-analysis' }">Systems analysis &amp; design</router-link>
         <router-link to="#learning-assistants">Learning assistants &amp; gamification</router-link>
         <router-link to="#course-history">Courses taught</router-link>
@@ -20,6 +21,7 @@
           <p class="eyebrow">CSCI 241 · Computer Science I</p>
           <h2 id="java-title">Inside the first Java lab</h2>
           <p>In discussion, I give students a small piece of Java and ask them to trace it on paper. They compare values with a partner before we run the program together. When two people predict different outputs, we have a specific line of code to talk about.</p>
+          <p>In fall 2026, we used both BlueJ and Visual Studio Code (VS Code) for our Java labs in Computer Science I.</p>
           <div class="example">
             <h3>Try a loop trace</h3><p>Write down the value of <code>total</code> after each pass. What appears on the last line of the console?</p>
             <java-trace />
@@ -28,14 +30,21 @@
           <router-link to="/projects/project-volga" class="text-link">See Project Volga, my first site after CS I</router-link>
         </section>
         <section id="linux" tabindex="-1" aria-labelledby="linux-title">
-          <p class="eyebrow">CSCI 435 / CIS 635 · Linux System Administration</p>
-          <h2 id="linux-title">From containers to four physical machines</h2>
-          <p>I designed the first four weeks around Docker so each student could practice on a Linux system from their own laptop. Then we moved to four physical machines on a private lab network. The same administrative decisions now had consequences for the next person who used the machine.</p>
+          <p class="eyebrow">CSCI 275 · CSCI 435 / CIS 635</p>
+          <h2 id="linux-title">Teaching Linux with Matt</h2>
+          <p>Matt, our computer science lab manager, and I have co-taught Linux Concepts and Linux System Administration since 2019.</p>
+          <p>When UW System changes ended remote access to our lab, students could no longer log in over SSH. We moved to containers that students could run on their own computers. Matt developed the Docker labs, and I changed how I delivered the exercises and how students used them.</p>
           <div class="lab-stages">
-            <div><h3>Personal container</h3><p>Inspect ownership and permissions, change a setting, and reproduce the result in a fresh environment.</p></div>
-            <div><h3>Shared machine</h3><p>Document the starting state, coordinate changes with classmates, and verify the resulting system together.</p></div>
+            <div><h3>On their own computers</h3><p>In Linux System Administration, students spent the first four weeks working in Docker containers.</p></div>
+            <div><h3>In the lab</h3><p>Students then worked on four shared physical machines on the lab’s private network.</p></div>
           </div>
-          <div class="example"><h3>A lab question</h3><p>Two users need to edit files in a shared directory. What would you check before changing permissions, and how would you verify the result as each user?</p></div>
+          <div class="example"><h3>A question to try</h3><p>Two users need to edit files in a shared directory. What would you check before changing permissions, and how would you verify the result as each user?</p></div>
+        </section>
+        <section id="accessible-materials" tabindex="-1" aria-labelledby="accessibility-title">
+          <h2 id="accessibility-title">Accessible lab materials</h2>
+          <p>As we adapt how students receive and use their labs, the instructions we share online need to work for students who use a screen reader or navigate with a keyboard.</p>
+          <p>The U.S. Department of Justice’s web and mobile accessibility rule under Title II of the Americans with Disabilities Act (ADA) uses the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA as its standard. UW System Administrative Policy 655 applies that standard to digital course materials and takes effect April 26, 2027.</p>
+          <div class="source-links"><a href="https://www.wisconsin.edu/uw-policies/uw-system-administrative-policies/accessibility-of-web-content-and-mobile-applications/">UW System Administrative Policy 655</a><a href="https://www.ada.gov/resources/2024-03-08-web-rule/">U.S. Department of Justice guide to the rule</a></div>
         </section>
         <section id="systems-analysis" tabindex="-1" aria-labelledby="mis-title">
           <p class="eyebrow">MIS 425 / CIS 625 · Systems Analysis &amp; Design</p>
