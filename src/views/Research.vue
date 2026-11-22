@@ -20,7 +20,7 @@
           <h3>What the students told us</h3>
           <p>After two classroom demonstrations, students reported feeling comfortable with the web assistant and found it useful for worksheets. Working through a misconception was a different matter. Students rated the human learning assistants more highly for help understanding a concept. The surveys captured first impressions. A semester-long study could tell us whether students’ preferences change as they gain experience.</p>
           <h3 id="who-did-the-work" tabindex="-1">Who did the work</h3>
-          <p>I managed AIELA as an independent study. That semester I taught 24 credits and also supervised student internships without additional pay. Teaching took most of my time, so my role in the hands-on research and in writing the paper was limited. My coauthors did most of that work.</p>
+          <p>I managed AIELA as an independent study. That semester I taught 24 credits and volunteered to supervise student internships when no other faculty member was available. Teaching took most of my time, so my role in the hands-on research and in writing the paper was limited. My coauthors did most of that work.</p>
           <p>I was one of the <strong>{{ publications[0].authors.length }} coauthors</strong>. Ten of us listed the University of Wisconsin–Parkside on the paper. Dr. Vijayalakshmi Ramasamy listed Georgia Southern University. Most of the authors now work at AbbVie.</p>
           <p>Our earlier study also brought in Dr. Peter J. Clarke at Florida International University. The two papers below credit each team in publication order.</p>
           <a class="text-link" :href="publications[0].record">Read the study abstract at Georgia Southern</a>
