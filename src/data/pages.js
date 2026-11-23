@@ -15,8 +15,8 @@ const categories = [
     description: 'Visit Anthony Aiello’s web design projects, including an early DJ equipment store, a music archive and hand-coded websites.' }
 ]
 const pages = [
-  { path: '/', template: 'home', title: 'Anthony “Tony” Aiello | Computer Science Educator & Developer',
-    description: 'Explore Anthony “Tony” Aiello’s software projects, computer science and MIS teaching, and published research on AI chatbots and human learning assistants.' },
+  { path: '/', template: 'home', title: 'Anthony “Tony” Aiello | Software, Systems & Applied AI Portfolio',
+    description: 'Tony Aiello helps solve problems using computer science, tech, and AI tools. Explore his software projects, course design, and published research on classroom chatbots.' },
   { path: '/projects/', template: 'projects', title: 'Software Projects & Community Websites | Tony Aiello', heading: 'Project archive', projects,
     description: 'Visit Tony Aiello’s software and web projects, from an online bookstore and course planner to nonprofit sites. Browse the screenshots and read each case study.' },
   { path: '/teaching/', template: 'teaching', title: 'Computer Science & MIS Teaching and Course Design | Tony Aiello',
@@ -27,8 +27,8 @@ const pages = [
     description: 'Meet Anthony Aiello and follow his path from Milwaukee sound engineering and enterprise IT to software development, teaching and graduate advising.' },
   { path: '/skills/', template: 'skills', title: 'Software Development, Linux & Technical Skills | Tony Aiello',
     description: 'Explore Tony Aiello’s experience in software development, Linux administration, databases, cloud computing and web design through projects and teaching examples.' },
-  { path: '/contact/', template: 'contact', title: 'Contact Tony Aiello | Research, Teaching & Software Projects',
-    description: 'Get in touch with Anthony Aiello about computing education research, community software projects, internships or graduate advising.' }
+  { path: '/contact/', template: 'contact', title: 'Contact Tony Aiello | Professional & Project Inquiries',
+    description: 'Contact Anthony Aiello for professional inquiries, computing education research, community software projects, internships or graduate advising.' }
 ]
 for (const category of categories.slice(1)) {
   pages.push({ ...category, template: 'projects', title: category.heading + ' | Tony Aiello',
