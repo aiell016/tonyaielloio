@@ -4,11 +4,8 @@ on:
   pull_request:
     branches: [master]
   push:
-    branches: [master, portfolio-teaching-refresh]
+    branches: [master]
   workflow_dispatch:
-  schedule:
-    # Refresh the copyright in the static HTML for readers with JavaScript disabled.
-    - cron: '7 0 1 1 *'
 
 permissions:
   contents: read
@@ -19,7 +16,7 @@ concurrency:
 
 jobs:
   build:
-    name: Build and test
+    name: Build original portfolio
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
@@ -28,12 +25,22 @@ jobs:
           persist-credentials: false
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
         with:
-          node-version: 24
+          node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run lint
-      - run: npm test
-      - name: Package the tested site, including the Apache configuration
+      - run: npm run build
+      - name: Configure Apache for Vue Router
+        run: |
+          cp .htaccess dist/.htaccess
+          cat >> dist/.htaccess <<'APACHE'
+
+          # The original portfolio uses Vue Router in history mode.
+          Options -Indexes
+          RewriteRule ^(?:about|projects|skills|contact)/?$ /index.html [L]
+          APACHE
+          test -s dist/index.html
+          test -s dist/hotglobe2.ico
+      - name: Package the original site, including the Apache configuration
         if: github.ref == 'refs/heads/master'
         run: tar -czf "$RUNNER_TEMP/portfolio.tar.gz" -C dist .
       - name: Save the production build
