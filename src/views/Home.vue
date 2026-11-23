@@ -4,7 +4,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Software developer &amp; educator</p>
         <h1 id="home-title">From code to the <em>classroom.</em></h1>
-        <p>Welcome! I’m Tony Aiello, and I’m glad you stopped by. I teach computer science and management information systems, design hands-on courses, and supervise independent studies. Come explore the software I’ve built, <router-link to="/teaching#java">see how we get started in Computer Science I</router-link>, or meet the team behind our chatbot study.</p>
+        <p>Welcome! I’m Tony Aiello, and I’m glad you stopped by. I teach computer science and management information systems, design hands-on courses, and supervise independent studies. Come explore the software I’ve built, <router-link to="/teaching#java">see how we get started in Computer Science I</router-link>, or meet the team behind our research on chatbots and privacy policies.</p>
         <div class="actions">
           <router-link to="/research" class="button primary">Research &amp; publications</router-link>
           <router-link to="/projects" class="button secondary">Explore projects</router-link>
@@ -16,8 +16,8 @@
       </figure>
     </section>
     <section class="research-feature" aria-labelledby="home-research-title">
-      <div><p class="eyebrow">Featured research · IEEE SoutheastCon 2025</p><h2 id="home-research-title">Who do students turn to when they get stuck?</h2></div>
-      <div><p>I managed the independent study on AIELA, an AI-Enhanced Learning Assistant. Students tried the chatbot during class and described when it helped with a worksheet and when they wanted a human learning assistant to talk through a concept.</p><router-link to="/research#aiela" class="text-link">Meet the 11 authors and explore the findings</router-link></div>
+      <div><p class="eyebrow">Featured research</p><h2 id="home-research-title">Classroom chatbots and the fine print</h2></div>
+      <div><p>I managed a team of 10 researchers. Together we chose two projects that went on to be published. For AIELA, students told us when they wanted a chatbot’s help and when they wanted to talk to a human learning assistant. For AURRA, we used knowledge graphs to analyze privacy policies.</p><router-link to="/research" class="text-link">Explore both projects and meet the team</router-link></div>
     </section>
     <section aria-labelledby="featured-title" class="section">
       <div class="section-head"><h2 id="featured-title">Selected work</h2><router-link to="/projects" class="text-link">View project archive</router-link></div>

@@ -7,7 +7,7 @@
     </header>
     <section class="archive-paths" aria-labelledby="later-work">
       <h2 id="later-work">Projects after graduation</h2>
-      <div><router-link to="/research#aiela">AIELA chatbot research</router-link><p>From a Raspberry Pi prototype to an 11-author study of how students used a web assistant in class.</p></div>
+      <div><router-link to="/research">Independent study research</router-link><p>Explore our two published projects. <router-link to="/research#aiela">AIELA</router-link> studied human learning assistants and chatbots. <router-link to="/research#aurra">AURRA</router-link> used knowledge graphs to analyze privacy policies.</p></div>
       <div><router-link to="/teaching">Classroom &amp; course design</router-link><p>Java tracing exercises, the Linux courses I co-teach with our computer science lab manager, and community-client projects.</p></div>
     </section>
     <h2 class="archive-heading">Software &amp; web projects</h2>
