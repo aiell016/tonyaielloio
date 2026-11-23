@@ -17,7 +17,7 @@
     </section>
     <section class="research-feature" aria-labelledby="home-research-title">
       <div><p class="eyebrow">Featured research</p><h2 id="home-research-title">Classroom chatbots and the fine print</h2></div>
-      <div><p>I managed a team of 10 researchers. Together we chose two projects that went on to be published. For AIELA, students told us when they wanted a chatbot’s help and when they wanted to talk to a human learning assistant. For AURRA, we used knowledge graphs to analyze privacy policies.</p><router-link to="/research" class="text-link">Explore both projects and meet the team</router-link></div>
+      <div><p>I managed a team of 10 researchers, and we chose our questions together. Our AIELA paper explored when students wanted a chatbot’s help and when they wanted a human learning assistant. With AURRA, we used knowledge graphs to analyze privacy policies. Matthew Klug presented that work as a research poster.</p><router-link to="/research" class="text-link">Explore both projects and meet the team</router-link></div>
     </section>
     <section aria-labelledby="featured-title" class="section">
       <div class="section-head"><h2 id="featured-title">Selected work</h2><router-link to="/projects" class="text-link">View project archive</router-link></div>

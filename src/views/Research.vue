@@ -3,7 +3,7 @@
     <header class="page-intro">
       <p class="eyebrow">Computing education &amp; data privacy</p>
       <h1>Research &amp; publications</h1>
-      <p>When students get stuck on a programming problem, would they rather ask a chatbot or talk it through with a human learning assistant? Could a knowledge graph help us understand what a privacy policy says about our data? We chose those questions together as an independent study team. Both projects led to publications.</p>
+      <p>When students get stuck on a programming problem, would they rather ask a chatbot or talk it through with a human learning assistant? Could a knowledge graph help us understand what a privacy policy says about our data? We chose those questions together as an independent study team. We shared the AIELA findings in an IEEE paper and the AURRA work in a research poster.</p>
     </header>
     <div class="teaching-layout">
       <nav class="teaching-index" aria-label="Research sections">
@@ -28,7 +28,7 @@
           <p class="eyebrow">Knowledge graphs</p>
           <h2 id="aurra-title">Reading privacy policies with AURRA</h2>
           <p>With AURRA, our AI User-Driven Rights and Regulations Auditor, we used knowledge graphs to analyze privacy policies. A graph can connect the pieces of a statement that might otherwise be pages apart, such as what information a company collects and the reason it gives for collecting it.</p>
-          <p>Matthew Klug, Thomas Beaupre, Aaron Antreassian, and Charles Ray developed the auditor to check privacy policies against the General Data Protection Regulation (GDPR) and the Payment Card Industry Data Security Standard (PCI DSS).</p>
+          <p>Matthew Klug, Thomas Beaupre, Aaron Antreassian, and Charles Ray developed the auditor to check privacy policies against the General Data Protection Regulation (GDPR) and the Payment Card Industry Data Security Standard (PCI DSS). Matthew presented AURRA as a poster at a student showcase.</p>
         </section>
         <section id="who-did-the-work" tabindex="-1" aria-labelledby="team-title">
           <h2 id="team-title">Who did the work</h2>
