@@ -6,6 +6,9 @@ on:
   push:
     branches: [master, portfolio-teaching-refresh]
   workflow_dispatch:
+  schedule:
+    # Refresh the copyright in the static HTML for readers with JavaScript disabled.
+    - cron: '7 0 1 1 *'
 
 permissions:
   contents: read

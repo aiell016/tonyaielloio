@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "node scripts/build.js",
-    "lint": "node --check scripts/build.js && node --check scripts/check-build.js && node --check src/data/pages.js && node --check public/menu.js",
+    "lint": "node --check scripts/build.js && node --check scripts/check-build.js && node --check src/data/pages.js && node --check public/site.js",
     "serve": "npm run build && http-server dist -a 127.0.0.1 -p 8080 -c-1",
     "dev": "npm run serve",
     "test": "npm run build && node scripts/check-build.js"
