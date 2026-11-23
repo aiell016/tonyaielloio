@@ -1,49 +1,46 @@
 const projects = require('./projects.json')
+
 const siteUrl = 'https://tony.aiello.io'
-const pages = {
-  '/': {
-    title: 'Anthony Aiello | Software, Teaching & AI Research',
-    heading: 'Welcome to Tony Aiello’s portfolio!',
-    description: 'Explore Anthony Aiello’s AI learning-assistant research, faculty publications, CS and MIS classrooms, and software projects.'
-  },
-  '/projects': {
-    title: 'Software & Community Projects | Anthony Aiello', heading: 'Projects',
-    description: 'Explore 14 early software and web projects, from a Vue course planner to community websites, alongside later work in classroom design and AI research.'
-  },
-  '/teaching': {
-    title: 'Teaching & Course Design | Anthony Aiello', heading: 'Teaching & course design',
-    description: 'Explore my first Java lab, the Linux courses I co-teach, and my work with computer science, MIS, and graduate CIS students.'
-  },
-  '/research': {
-    title: 'AI Chatbots, Learning Assistants & Publications | Anthony Aiello', heading: 'Research & publications',
-    description: 'Anthony Aiello supervised the team of 10 behind the AIELA classroom chatbot study. Read the findings, meet the researchers, and explore his faculty publications.'
-  },
-  '/about': {
-    title: 'About Anthony Aiello | Developer & Educator', heading: 'About Anthony',
-    description: 'My path from sound engineering and enterprise IT to teaching computer science, advising graduate students, and studying how students learn.'
-  },
-  '/skills': {
-    title: 'Technical Skills | Anthony Aiello', heading: 'Technical skills',
-    description: 'See how I use Unix and Linux administration, secure software development, database design and classroom research across my projects and teaching.'
-  },
-  '/contact': {
-    title: 'Contact Anthony Aiello', heading: 'Contact',
-    description: 'Contact Anthony Aiello about research collaborations, MS CIS advising, internships, community projects and software development.'
-  }
+const navigation = [
+  ['/', 'Home'], ['/projects/', 'Projects'], ['/teaching/', 'Teaching'],
+  ['/research/', 'Research'], ['/about/', 'About'], ['/skills/', 'Skills'], ['/contact/', 'Contact']
+]
+const categories = [
+  { path: '/projects/', label: 'All projects' },
+  { path: '/projects/category/applications/', label: 'Applications', heading: 'Software applications',
+    description: 'Explore Anthony Aiello’s Project Volga bookstore and On the Radar course planner, with original screenshots and links to both applications.' },
+  { path: '/projects/category/community/', label: 'Client & community', heading: 'Client and community websites',
+    description: 'Explore websites for a veterans’ nonprofit, computing conferences, a musician and a local entrepreneur, with project histories and website links.' },
+  { path: '/projects/category/web-design/', label: 'Web design', heading: 'Web design projects',
+    description: 'Visit Anthony Aiello’s web design projects, including an early DJ equipment store, a music archive and hand-coded websites.' }
+]
+const pages = [
+  { path: '/', template: 'home', title: 'Anthony “Tony” Aiello | Computer Science Educator & Developer',
+    description: 'Explore Anthony “Tony” Aiello’s software projects, computer science and MIS teaching, and published research on AI chatbots and human learning assistants.' },
+  { path: '/projects/', template: 'projects', title: 'Software Projects & Community Websites | Tony Aiello', heading: 'Project archive', projects,
+    description: 'Visit Tony Aiello’s software and web projects, from an online bookstore and course planner to nonprofit sites. Browse the screenshots and read each case study.' },
+  { path: '/teaching/', template: 'teaching', title: 'Computer Science & MIS Teaching and Course Design | Tony Aiello',
+    description: 'See how Tony Aiello teaches programming, Linux, systems analysis and cloud computing, and advises graduate students in computer and information systems.' },
+  { path: '/research/', template: 'research', title: 'AI Chatbots, Learning Assistants & Faculty Publications | Anthony Aiello',
+    description: 'Read the AIELA classroom chatbot study, meet the team Anthony Aiello supervised, and explore his faculty publications on computing education and secure development.' },
+  { path: '/about/', template: 'about', title: 'About Anthony “Tony” Aiello | Educator & Developer',
+    description: 'Meet Anthony Aiello and follow his path from Milwaukee sound engineering and enterprise IT to software development, teaching and graduate advising.' },
+  { path: '/skills/', template: 'skills', title: 'Software Development, Linux & Technical Skills | Tony Aiello',
+    description: 'Explore Tony Aiello’s experience in software development, Linux administration, databases, cloud computing and web design through projects and teaching examples.' },
+  { path: '/contact/', template: 'contact', title: 'Contact Tony Aiello | Research, Teaching & Software Projects',
+    description: 'Get in touch with Anthony Aiello about computing education research, community software projects, internships or graduate advising.' }
+]
+for (const category of categories.slice(1)) {
+  pages.push({ ...category, template: 'projects', title: category.heading + ' | Tony Aiello',
+    projects: projects.filter(project => project.group === category.label) })
 }
 for (const project of projects) {
-  pages['/projects/' + project.slug] = {
-    title: project.title + ' | Anthony Aiello',
-    heading: project.title,
-    description: project.intro,
-    image: project.images[0] && project.images[0].file
-  }
+  pages.push({ path: '/projects/' + project.slug + '/', template: 'project', project,
+    title: (project.searchTitle || project.title) + ' | Tony Aiello',
+    description: project.searchDescription, image: project.images[0] })
 }
 const notFound = {
-  title: 'Page not found | Anthony Aiello', heading: 'Page not found',
-  description: 'Find a project or return to the portfolio homepage.'
+  path: '/404.html', template: 'not-found', title: 'Page not found | Tony Aiello',
+  description: 'Find a project, explore a course or return to Tony Aiello’s portfolio.'
 }
-function pageFor(path) {
-  return pages[path.replace(/\/+$/, '') || '/'] || notFound
-}
-module.exports = { pages, pageFor, notFound, siteUrl }
+module.exports = { siteUrl, pages, notFound, categories, navigation }

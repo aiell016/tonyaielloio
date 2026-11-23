@@ -1,13 +1,13 @@
 # Anthony Aiello’s portfolio
 
-A Vue portfolio of software projects, community websites, and course design in computer science and management information systems.
+A static HTML and CSS portfolio of software projects, community websites, teaching and research. Pages, project filters and screenshot links work with JavaScript disabled. A small script collapses the navigation on narrow screens.
 
 ```sh
 npm ci
 npm run serve
 ```
 
-Use `npm run lint` to check the source. `npm test` builds the production site and checks that every route has an entry document, that its JavaScript bundles exist, and that every project screenshot has a description and a corresponding image.
+Open `http://127.0.0.1:8080/` for a local preview. Run `npm run lint` for JavaScript syntax checks and `npm test` to build the site and check the actual HTML, project destinations, internal links, page metadata, sitemap and bibliography.
 
 ## GitHub Actions and IONOS
 
@@ -26,7 +26,7 @@ The **Portfolio CI and deployment** workflow runs `npm ci`, `npm run lint`, and 
 
 3. Merge the portfolio change into `master`, or open [the workflow](https://github.com/aiell016/tonyaielloio/actions/workflows/portfolio.yml), select **Run workflow**, and choose **master**. You can use the same button after saving or updating credentials.
 
-The upload verifies the IONOS host key and confirms the SFTP directory serves the portfolio by fetching a temporary file from the public domain. It uploads assets before HTML, keeps existing files outside the build, and checks the published home, research, teaching, and Project Volga pages against the build. To roll back a content change, revert its commit on `master` and let that build deploy.
+The upload verifies the IONOS host key and confirms the SFTP directory serves the portfolio by fetching a temporary file from the public domain. It uploads assets before HTML, keeps existing files outside the build, and checks the published home, research, teaching, project archive and Project Volga pages, sitemap and robots.txt against the build. To roll back a content change, revert its commit on `master` and let that build deploy.
 
 ## Manual publishing on Apache
 
@@ -34,6 +34,6 @@ The upload verifies the IONOS host key and confirms the SFTP directory serves th
 
 ## Update the portfolio
 
-Edit project descriptions, links, and screenshot descriptions in `src/data/projects.json`. Put web-ready images in `public/media/`. Course examples are in `src/views/Teaching.vue`. Titles and descriptions for the main pages are in `src/data/pages.js`.
+Edit project descriptions, links, and screenshot descriptions in `src/data/projects.json`. Put web-ready images in `public/media/`. The HTML templates in `src/templates/` use EJS at build time. Edit course examples in `src/templates/teaching.html` and page titles and descriptions in `src/data/pages.js`. For projects with multiple website destinations, set each screenshot’s `site` to the matching link’s `id`. The build generates canonical URLs, structured data, `sitemap.xml` and `robots.txt`.
 
 The faculty bibliography, course list, and public contact address are in `src/data/publications.json`, `src/data/courses.json`, and `src/data/profile.js`.

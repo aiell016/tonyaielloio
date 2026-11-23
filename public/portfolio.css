@@ -1,5 +1,31 @@
-@import '~@fontsource-variable/dm-sans/wght.css';
-@import '~@fontsource/instrument-serif/latin-400-italic.css';
+/* dm-sans-latin-ext-wght-normal */
+@font-face {
+  font-family: 'DM Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 1000;
+  src: url(/fonts/dm-sans-latin-ext-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+/* dm-sans-latin-wght-normal */
+@font-face {
+  font-family: 'DM Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 1000;
+  src: url(/fonts/dm-sans-latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* instrument-serif-latin-400-italic */
+@font-face {
+  font-family: 'Instrument Serif';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url(/fonts/instrument-serif-latin-400-italic.woff2) format('woff2');
+}
 
 :root {
   --ink: #111b2b;
@@ -30,7 +56,7 @@ h2 { font-size: clamp(1.85rem, 3.4vw, 3.15rem); letter-spacing: -.05em; font-wei
 h3 { font-size: 1.45rem; letter-spacing: -.035em; font-weight: 650; }
 img { display: block; max-width: 100%; }
 .wrap { width: min(100% - clamp(2rem, 8vw, 8rem), 82rem); margin-inline: auto; }
-#app { display: flex; min-height: 100vh; flex-direction: column; }
+body { display: flex; min-height: 100vh; flex-direction: column; }
 #main { flex: 1; }
 .skip-link { position: absolute; z-index: 10; left: 1rem; top: -5rem; padding: .6rem 1rem; background: white; }
 .skip-link:focus { top: .4rem; }
@@ -42,7 +68,7 @@ img { display: block; max-width: 100%; }
 .menu-toggle { display: none; }
 .main-nav { display: flex; flex-wrap: wrap; column-gap: clamp(.75rem, 2.4vw, 2.4rem); }
 .main-nav a { display: inline-flex; min-height: 2.75rem; align-items: center; border-bottom: 2px solid transparent; color: var(--ink); text-decoration: none; font-weight: 550; }
-.main-nav a.router-link-active, .main-nav a:hover { color: var(--blue); border-color: var(--blue); }
+.main-nav a[aria-current], .main-nav a:hover { color: var(--blue); border-color: var(--blue); }
 .hero { display: grid; grid-template-columns: 1.03fr 1fr; align-items: stretch; margin-block: clamp(1.8rem, 4.5vw, 4.4rem) 0; border: 1px solid #bec8cf; }
 .hero-copy { background: #e8eff3; padding: clamp(2rem, 4.5vw, 4.7rem); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .eyebrow, .year, .result-count { font-size: .875rem; font-weight: 680; }
@@ -73,7 +99,12 @@ img { display: block; max-width: 100%; }
 .art-mission-got-your-six, .art-ccsc-midwest, .art-gear-blabs, .art-dj-tonya { background: #d7e1df; }
 .card-copy { padding-block: 1.15rem .5rem; }
 .card-title { margin: .45rem 0 .6rem; font-size: 1.45rem; font-weight: 650; letter-spacing: -.035em; }
-.card-copy > p:last-child { color: var(--secondary); }
+.card-description, .card-copy > p:last-child { color: var(--secondary); }
+.card-title a { color: var(--ink); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+.card-title a:hover { color: var(--blue); }
+.card-visit { display: inline-block; margin-top: .6rem; }
+.breadcrumbs { margin-bottom: 1.5rem; font-size: .95rem; }
+.sr-only { position: absolute; height: 1px; width: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .text-card { border-top: 2px solid var(--blue); }
 .teaching-art { color: white; background: var(--navy); border-color: var(--navy); font: italic clamp(2rem, 4vw, 3.75rem)/1.1 'Instrument Serif', Georgia, serif; }
 .classroom-strip { margin: 1rem 0 5rem; border-block: 1px solid var(--rule); padding: 2.7rem 0; display: grid; grid-template-columns: 1fr 1.15fr; align-items: start; gap: 2rem; }
@@ -95,7 +126,7 @@ img { display: block; max-width: 100%; }
 .filters a.selected { background: var(--navy); border-color: var(--navy); color: white; }
 .filters a:hover { box-shadow: inset 0 0 0 1px currentColor; }
 .result-count { margin: .95rem 0 1.3rem; color: var(--secondary); }
-.archive-cards .card-link { padding-bottom: .7rem; border-bottom: 1px solid var(--rule); }
+.archive-cards .work-card { padding-bottom: .7rem; border-bottom: 1px solid var(--rule); }
 .back-link { display: inline-block; margin-bottom: 1.5rem; }
 .detail-intro { margin-bottom: 2rem; }
 .detail-notes { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 1.5rem 4rem; border-block: 1px solid var(--rule); padding: 1.6rem 0; }
@@ -183,9 +214,9 @@ code { font-family: var(--mono); }
   .research-feature, .archive-paths, .degree.service-row { grid-template-columns: 1fr; gap: 1rem; }
   .research-feature h2 { max-width: none; }
   .header-inner { display: grid; grid-template-columns: 1fr auto; min-height: 4.1rem; gap: .45rem 1rem; padding: .55rem 0; }
-  .menu-toggle { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; padding: .35rem .85rem; border: 1px solid #8391a0; border-radius: .25rem; background: transparent; color: var(--ink); font-family: inherit; font-size: 1rem; font-weight: 650; cursor: pointer; }
-  .main-nav { display: none; grid-column: 1 / -1; }
-  .main-nav.open { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .15rem .65rem; border-top: 1px solid var(--rule); padding: .35rem 0; }
+  .menu-ready .menu-toggle { display: inline-flex; align-items: center; justify-content: center; min-height: 2.75rem; padding: .35rem .85rem; border: 1px solid #8391a0; border-radius: .25rem; background: transparent; color: var(--ink); font-family: inherit; font-size: 1rem; font-weight: 650; cursor: pointer; }
+  .menu-ready .main-nav:not(.open) { display: none; }
+  .main-nav { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: .15rem .65rem; border-top: 1px solid var(--rule); padding: .35rem 0; }
   .main-nav a { min-height: 2.75rem; font-size: 1rem; }
   .hero { grid-template-columns: 1fr; }
   .hero-copy { padding: 2rem clamp(1.25rem, 6vw, 2.5rem); }
