@@ -1,14 +1,13 @@
 <template>
   <div class="wrap inner-page">
     <header class="page-intro">
-      <p class="eyebrow">Computing education &amp; data privacy</p>
+      <p class="eyebrow">Computing education</p>
       <h1>Research &amp; publications</h1>
-      <p>When students get stuck on a programming problem, would they rather ask a chatbot or talk it through with a human learning assistant? Could a knowledge graph help us understand what a privacy policy says about our data? We chose those questions together as an independent study team. We shared the AIELA findings in an IEEE paper and the AURRA work in a research poster.</p>
+      <p>When students get stuck on a programming problem, would they rather ask a chatbot or talk it through with a human learning assistant? Our independent study team took that question into the classroom. The AIELA findings appeared in the proceedings of IEEE SoutheastCon 2025.</p>
     </header>
     <div class="teaching-layout">
       <nav class="teaching-index" aria-label="Research sections">
         <router-link to="#aiela">AIELA · Learning assistants and chatbots</router-link>
-        <router-link to="#aurra">AURRA · Privacy policies and knowledge graphs</router-link>
         <router-link to="#who-did-the-work">Who did the work</router-link>
         <router-link to="#publications">Faculty publications</router-link>
         <router-link to="#peer-review">Conference peer review</router-link>
@@ -24,15 +23,10 @@
           <p>After two classroom demonstrations, students reported feeling comfortable with the web assistant and found it useful for worksheets. Working through a misconception was a different matter. Students rated the human learning assistants more highly for help understanding a concept. The surveys captured first impressions. A semester-long study could tell us whether students’ preferences change as they gain experience.</p>
           <router-link class="text-link" to="#aiela-2025">Read the AIELA paper and see all 11 authors</router-link>
         </section>
-        <section id="aurra" tabindex="-1" aria-labelledby="aurra-title">
-          <p class="eyebrow">Knowledge graphs</p>
-          <h2 id="aurra-title">Reading privacy policies with AURRA</h2>
-          <p>With AURRA, our AI User-Driven Rights and Regulations Auditor, we used knowledge graphs to analyze privacy policies. A graph can connect the pieces of a statement that might otherwise be pages apart, such as what information a company collects and the reason it gives for collecting it.</p>
-          <p>Matthew Klug, Thomas Beaupre, Aaron Antreassian, and Charles Ray developed the auditor to check privacy policies against the General Data Protection Regulation (GDPR) and the Payment Card Industry Data Security Standard (PCI DSS). Matthew presented AURRA as a poster at a student showcase.</p>
-        </section>
         <section id="who-did-the-work" tabindex="-1" aria-labelledby="team-title">
           <h2 id="team-title">Who did the work</h2>
-          <p>I managed a team of 10 researchers for this independent study. That semester I taught 24 credits and volunteered to supervise student internships when no other faculty member was available. The team did most of the hands-on AIELA research, and I wrote very little of the paper.</p>
+          <p>I managed a team of 10 researchers. We chose our research topics together. I supervised both the classroom chatbot study and our work using knowledge graphs to analyze privacy policies.</p>
+          <p>That semester I taught 24 credits and volunteered to supervise student internships when no other faculty member was available. The team did most of the hands-on AIELA research, and I wrote very little of the paper.</p>
           <p>Dr. Vijayalakshmi Ramasamy from Georgia Southern University collaborated on the AIELA study. Most of the paper’s authors now work at AbbVie. Our earlier learning-assistant study also included Dr. Peter J. Clarke from Florida International University.</p>
         </section>
         <section id="publications" tabindex="-1" aria-labelledby="publications-title">

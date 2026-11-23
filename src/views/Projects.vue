@@ -7,7 +7,7 @@
     </header>
     <section class="archive-paths" aria-labelledby="later-work">
       <h2 id="later-work">Projects after graduation</h2>
-      <div><router-link to="/research">Independent study research</router-link><p>Read our <router-link to="/research#aiela">AIELA study</router-link> on human learning assistants and chatbots, or explore <router-link to="/research#aurra">AURRA</router-link>, the knowledge-graph project Matthew Klug presented as a research poster.</p></div>
+      <div><router-link to="/research#aiela">AIELA classroom research</router-link><p>I supervised the team that studied when students wanted help from a chatbot and when they preferred a human learning assistant.</p></div>
       <div><router-link to="/teaching">Classroom &amp; course design</router-link><p>Java tracing exercises, the Linux courses I co-teach with our computer science lab manager, and community-client projects.</p></div>
     </section>
     <h2 class="archive-heading">Software &amp; web projects</h2>

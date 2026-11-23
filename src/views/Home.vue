@@ -4,7 +4,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Software developer &amp; educator</p>
         <h1 id="home-title">From code to the <em>classroom.</em></h1>
-        <p>Welcome! I’m Tony Aiello, and I’m glad you stopped by. I teach computer science and management information systems, design hands-on courses, and supervise independent studies. Come explore the software I’ve built, <router-link to="/teaching#java">see how we get started in Computer Science I</router-link>, or meet the team behind our research on chatbots and privacy policies.</p>
+        <p>Welcome! I’m Tony Aiello, and I’m glad you stopped by. I teach computer science and management information systems, design hands-on courses, and supervise independent studies. Come explore the software I’ve built, <router-link to="/teaching#java">see how we get started in Computer Science I</router-link>, or meet the team behind our chatbot study.</p>
         <div class="actions">
           <router-link to="/research" class="button primary">Research &amp; publications</router-link>
           <router-link to="/projects" class="button secondary">Explore projects</router-link>
@@ -16,8 +16,8 @@
       </figure>
     </section>
     <section class="research-feature" aria-labelledby="home-research-title">
-      <div><p class="eyebrow">Featured research</p><h2 id="home-research-title">Classroom chatbots and the fine print</h2></div>
-      <div><p>I managed a team of 10 researchers, and we chose our questions together. Our AIELA paper explored when students wanted a chatbot’s help and when they wanted a human learning assistant. With AURRA, we used knowledge graphs to analyze privacy policies. Matthew Klug presented that work as a research poster.</p><router-link to="/research" class="text-link">Explore both projects and meet the team</router-link></div>
+      <div><p class="eyebrow">Featured research · IEEE SoutheastCon 2025</p><h2 id="home-research-title">Who do students turn to when they get stuck?</h2></div>
+      <div><p>I supervised a team of 10 researchers. Together we chose to study how students use chatbots and human learning assistants. Students found the AIELA chatbot useful for worksheets. When they needed to talk through a concept, they preferred a person.</p><router-link to="/research#aiela" class="text-link">Explore the AIELA study and meet the team</router-link></div>
     </section>
     <section aria-labelledby="featured-title" class="section">
       <div class="section-head"><h2 id="featured-title">Selected work</h2><router-link to="/projects" class="text-link">View project archive</router-link></div>
