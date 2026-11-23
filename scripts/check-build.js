@@ -51,6 +51,12 @@ for (const page of [...pages, notFound]) {
   titles.add(page.title)
   descriptions.add(page.description)
   assert(all('meta').some(tag => attr(tag, 'name') === 'description' && attr(tag, 'content') === page.description))
+  const footer = all('footer')[0]
+  const year = new Date().getUTCFullYear()
+  assert(footer && content(footer).includes('© ' + year + ' Aiello.io'), 'Missing copyright credit on ' + page.path)
+  const footerNodes = elements(footer)
+  assert(footerNodes.some(node => attr(node, 'id') === 'copyright-year' && content(node) === String(year)))
+  assert(footerNodes.some(node => node.tagName === 'a' && attr(node, 'href') === 'https://aiello.io/' && content(node) === 'Aiello.io'))
   assert(hrefs.includes('mailto:' + profile.email))
   const canonical = all('link').find(tag => attr(tag, 'rel') === 'canonical')
   const shareImage = all('meta').find(tag => attr(tag, 'property') === 'og:image')

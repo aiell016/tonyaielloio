@@ -16,3 +16,12 @@ header.addEventListener('keydown', event => {
 })
 button.hidden = false
 header.classList.add('menu-ready')
+
+const copyrightYear = document.getElementById('copyright-year')
+function refreshCopyrightYear() {
+  const now = new Date()
+  copyrightYear.textContent = String(now.getFullYear())
+  const midnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1)
+  window.setTimeout(refreshCopyrightYear, midnight - now)
+}
+refreshCopyrightYear()

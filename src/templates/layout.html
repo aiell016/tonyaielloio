@@ -22,7 +22,7 @@
   <link rel="icon" href="/hotglobe2.ico">
   <link rel="stylesheet" href="/portfolio.css">
   <% if (structuredData) { %><script type="application/ld+json"><%- structuredData %></script><% } %>
-  <script src="/menu.js" defer></script>
+  <script src="/site.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -41,6 +41,7 @@
   <footer class="site-footer"><div class="wrap footer-inner">
     <span class="footer-name"><%= profile.name %></span>
     <a href="mailto:<%= profile.email %>"><%= profile.email %></a>
+    <span>© <time id="copyright-year"><%= new Date().getUTCFullYear() %></time> <a href="https://aiello.io/">Aiello.io</a></span>
   </div></footer>
 </body>
 </html>
