@@ -68,10 +68,12 @@ mirror --reverse --transfer-all --no-perms --no-symlinks $work/pages .
 put dist/.htaccess -o .htaccess
 put dist/index.html -o index.html"
 
-for route in '' 'research/' 'teaching/' 'projects/project-volga/'; do
-  if ! fetch_page "$site/${route}?verify=$proof" || ! cmp -s "dist/${route}index.html" "$work/response"; then
+for route in '' 'projects/' 'research/' 'teaching/' 'projects/project-volga/' 'robots.txt' 'sitemap.xml'; do
+  file="dist/$route"
+  if [[ -d "$file" ]]; then file+="index.html"; fi
+  if ! fetch_page "$site/${route}?verify=$proof" || ! cmp -s "$file" "$work/response"; then
     echo "The public URL $site/$route did not return its tested build." >&2
     exit 1
   fi
 done
-echo "Verified the home page, research, teaching and Project Volga on $site."
+echo "Verified the portfolio pages, project archive, robots.txt and sitemap on $site."

@@ -28,7 +28,9 @@
       "title": "Following a book through the store",
       "body": "The page shows book jackets, a category list, and a cart. In the first semester I could lay those out and make the store look convincing. In the second semester I had to make sure the book a shopper selected in the catalog was the one that appeared in the cart. It is still an example I can show students who wonder where their first programming course might lead.",
       "related": "natures-best"
-    }
+    },
+    "searchTitle": "Project Volga Online Bookstore",
+    "searchDescription": "Explore the online bookstore Tony Aiello built across two semesters after Computer Science I. Visit Project Volga and see the original storefront."
   },
   {
     "slug": "on-the-radar",
@@ -36,7 +38,12 @@
     "group": "Applications",
     "intro": "A course-planning prototype that uses a radar chart to show which requirements a student’s course choices cover.",
     "story": "I worked on the team that built the Vue version for students, advisors, and department administrators. We used MongoDB, Express, Vue, and Node.js. A later team continued the project in Angular. The screenshot shows the version our team worked on.",
-    "links": [],
+    "links": [
+      {
+        "label": "Open the course planner",
+        "url": "https://deployotr.aiello.io/"
+      }
+    ],
     "images": [
       {
         "file": "radar-planner.webp",
@@ -50,7 +57,9 @@
       "title": "One plan, several viewpoints",
       "body": "A list can tell a student which courses they picked. The radar chart was our way of showing which general education requirements those choices covered.",
       "related": "student-software-portfolio"
-    }
+    },
+    "searchTitle": "On the Radar Academic Course Planner",
+    "searchDescription": "Explore On the Radar, a Vue and MongoDB course-planning prototype. See how the team used a radar chart to show which requirements a student’s choices would cover."
   },
   {
     "slug": "mission-got-your-six",
@@ -84,7 +93,9 @@
       "title": "Keeping a community project online",
       "body": "I met Nick while I was a student intern. His fundraising and events brought veterans and first responders together, and the site gave people a way to find that work. Former classmates built the first version, and more people joined in 2021. Maintaining the domain and hosting has let the project outlast any one student team.",
       "related": "ccsc-midwest"
-    }
+    },
+    "searchTitle": "Mission Got Your Six Veterans Website",
+    "searchDescription": "Visit Mission Got Your Six, a veteran-led nonprofit website supporting veterans and first responders. See Tony Aiello’s account of the project and its original design."
   },
   {
     "slug": "ccsc-midwest",
@@ -94,12 +105,19 @@
     "story": "In spring 2018 I took on the first site for the Consortium for Computing Sciences in Colleges Midwest conference. Our work continued across three events. Each edition brought together the program, calls for papers, registration, and directions for a different host campus.",
     "links": [
       {
+        "label": "View the archived 2018 conference highlights",
+        "url": "https://ccscmw2019.aiello.io/conference-home#:~:text=CCSC%3AMW%202018%20Conference",
+        "id": "2018"
+      },
+      {
         "label": "View the 2019 conference archive",
-        "url": "https://ccscmw2019.aiello.io/"
+        "url": "https://ccscmw2019.aiello.io/",
+        "id": "2019"
       },
       {
         "label": "View the 2020 conference archive",
-        "url": "https://ccscmwtwenty.aiello.io/"
+        "url": "https://ccscmwtwenty.aiello.io/",
+        "id": "2020"
       }
     ],
     "images": [
@@ -108,28 +126,33 @@
         "caption": "2018 conference",
         "alt": "The 2018 Midwest Conference homepage with a campus photograph behind the conference title.",
         "width": 1582,
-        "height": 739
+        "height": 739,
+        "site": "2018"
       },
       {
         "file": "ccsc-2019.webp",
         "caption": "2019 conference",
         "alt": "The 2019 conference homepage featuring Benedictine University.",
         "width": 1580,
-        "height": 638
+        "height": 638,
+        "site": "2019"
       },
       {
         "file": "ccsc-2020.webp",
         "caption": "2020 conference",
         "alt": "The 2020 Midwest Conference header and calls for submissions.",
         "width": 1600,
-        "height": 751
+        "height": 751,
+        "site": "2020"
       }
     ],
     "detail": {
       "title": "A website that changes with its host",
       "body": "The host campus and dates changed each year. Someone submitting a paper needed a different set of details from someone looking for a workshop or directions on arrival. The three screenshots show how the conference website handled those recurring jobs across successive editions.",
       "related": "student-software-portfolio"
-    }
+    },
+    "searchTitle": "CCSC Midwest Conference Websites, 2018–2020",
+    "searchDescription": "Explore three CCSC Midwest computing conference websites from 2018 to 2020, with screenshots and links to the appropriate conference archive for each year."
   },
   {
     "slug": "natures-best",
@@ -137,7 +160,12 @@
     "group": "Client & community",
     "intro": "An early MIS team project building a storefront for a local entrepreneur.",
     "story": "Our MIS class project team worked with a client who needed a place to present her shea butter products. We organized her catalog in Weebly. It was one of my first chances to design around what a real business owner needed. I now bring community projects into Systems Analysis and Design.",
-    "links": [],
+    "links": [
+      {
+        "label": "Visit the Nature’s Best storefront",
+        "url": "https://naturesbestshea.weebly.com/"
+      }
+    ],
     "images": [
       {
         "file": "natures-best.webp",
@@ -154,8 +182,9 @@
     "detail": {
       "title": "Making a catalog work for its owner",
       "body": "Our assignment was to give the entrepreneur a storefront that could hold her product line. The homepage put the founder’s introduction next to a photograph of her shea butter. Years later, when I teach systems analysis, I ask students to find out what the person who will run the business needs the system to do.",
-      "related": "rainbow-of-dreams"
-    }
+      "related": "project-volga"
+    },
+    "searchDescription": "Visit the Nature’s Best Shea Butter storefront and see how an MIS student team organized a real client’s catalog in Weebly."
   },
   {
     "slug": "anne-morse-hambrock",
@@ -188,8 +217,10 @@
     "detail": {
       "title": "Buying an album or booking a performance",
       "body": "Someone who wanted to hear Anne play the harp could browse albums and individual tracks. A couple planning a wedding or an organizer booking a speaker needed a booking path, including payments and deposits. The homepage and catalog show how those different reasons for visiting fit under one artist’s name.",
-      "related": "chi-steppin"
-    }
+      "related": "dj-tonya"
+    },
+    "searchTitle": "Anne Morse-Hambrock’s Music Website",
+    "searchDescription": "Explore the website and music storefront for harpist and performer Anne Morse-Hambrock, from the original homepage screenshots to her current website."
   },
   {
     "slug": "student-software-portfolio",
@@ -197,13 +228,19 @@
     "group": "Client & community",
     "intro": "An undergraduate software engineering project documenting apps built by student development teams.",
     "story": "The site began in Software Engineering I and II. We used WordPress on a Linux, Apache, MySQL, and PHP stack in an Amazon EC2 instance. The site featured project screenshots and profiles of the people who worked on them.",
-    "links": [],
+    "links": [
+      {
+        "label": "Visit the student project archive",
+        "url": "https://afw.aiello.io/"
+      }
+    ],
     "images": [],
     "detail": {
       "title": "Putting student software on the web",
       "body": "A visitor could look at an app screenshot and then see the student programmers and designers behind it. Building that record gave our Software Engineering team a concrete hosting assignment, too. The application and database ran on a Linux server in Amazon EC2, so delivering a WordPress site also meant making the underlying services work together.",
       "related": "on-the-radar"
-    }
+    },
+    "searchDescription": "Visit the student software project archive and see how Tony Aiello’s software engineering team used WordPress and Amazon EC2 to showcase student-built apps."
   },
   {
     "slug": "professional-dj-store",
@@ -211,7 +248,12 @@
     "group": "Web design",
     "intro": "One of the first online stores I designed for a Milwaukee sound and lighting business.",
     "story": "Custom Designed Lighting, Sound & Video supplied the clubs and venues where this gear went to work. This storefront predates my formal UX training. The script logo, drop shadows, and dense product listings are part of why I kept it. They make a good starting point for a conversation about how web design has changed.",
-    "links": [],
+    "links": [
+      {
+        "label": "Visit the archived DJ store",
+        "url": "https://web.archive.org/web/20160511133112/http://www.professionaldjstore.com/cart/zc/"
+      }
+    ],
     "images": [
       {
         "file": "dj-store-home.webp",
@@ -232,7 +274,9 @@
       "title": "From a Bay View counter to an online catalog",
       "body": "Custom Designed Lighting, Sound & Video was a Milwaukee business that designed and installed equipment for clubs and sports bars. The online shop grew out of its Bay View storefront. I knew what the gear did in a room; the design challenge was explaining the same equipment to someone who could only see a photograph and a price.",
       "related": "gear-blabs"
-    }
+    },
+    "searchTitle": "Professional DJ Store Web Design Archive",
+    "searchDescription": "Browse an archived Milwaukee DJ equipment store and see the original homepage and catalog that Tony Aiello designed for Custom Designed Lighting, Sound & Video."
   },
   {
     "slug": "dj-tonya",
@@ -259,7 +303,8 @@
       "title": "Preserving a piece of Milwaukee music history",
       "body": "I spent two decades as the house DJ at La Cage. The archive brings those recordings together with my work from Milwaukee PrideFest.",
       "related": "professional-dj-store"
-    }
+    },
+    "searchDescription": "Explore DJ Tonya’s Milwaukee mix archive, with music video mixes, mixtapes and footage from the DJ booth. Compare the early homepage with the current archive."
   },
   {
     "slug": "barnacle-buds",
@@ -286,7 +331,9 @@
       "title": "Designing for someone choosing a restaurant",
       "body": "The waterfront setting gave me a starting point, but a visitor also needed to find the menu. The archived homepage shows how I used the waterside photograph, food images, and hand-drawn navigation to put those two tasks together. Writing the HTML and CSS myself let me place each piece of artwork where it belonged.",
       "related": "save-the-tigers"
-    }
+    },
+    "searchTitle": "Barnacle Bud’s Restaurant Web Design",
+    "searchDescription": "Visit Tony Aiello’s hand-coded Barnacle Bud’s restaurant class project and see how original artwork, navigation and waterfront imagery shaped the site."
   },
   {
     "slug": "gear-blabs",
@@ -313,51 +360,9 @@
       "title": "Giving a blog a subject I knew",
       "body": "I could draw on the lighting rigs, audio equipment, and performances I already knew from live production. The brief was a mock blog for class, so the point was to learn how a publishing system handles successive articles and images. A photograph of a show could lead into a post about the equipment that made it possible.",
       "related": "professional-dj-store"
-    }
-  },
-  {
-    "slug": "rainbow-of-dreams",
-    "title": "Rainbow of Dreams Gifts",
-    "group": "Client & community",
-    "intro": "A WordPress and WooCommerce storefront for a Racine gift and craft-fair business.",
-    "story": "Pat and Patrick Shay sold gifts at regional shows. The website gave their products a browsable catalog and online storefront. In 2021, the owners joined their business with the Racine Marian Center. This screenshot preserves the earlier shop.",
-    "links": [],
-    "images": [
-      {
-        "file": "rainbow-gifts.webp",
-        "caption": "Gift catalog",
-        "alt": "The archived Rainbow of Dreams storefront with photographs of gifts arranged in a product grid.",
-        "width": 1581,
-        "height": 773
-      }
-    ],
-    "detail": {
-      "title": "A second storefront for a craft-fair business",
-      "body": "At a show, shoppers see items side by side and can ask the owners what they are looking at. Online, the product photos and catalog had to do more of that work. WordPress handled the pages and WooCommerce supplied the shopping tools. The archived grid shows the business before its move into a brick-and-mortar partnership.",
-      "related": "natures-best"
-    }
-  },
-  {
-    "slug": "chi-steppin",
-    "title": "Chi Steppin",
-    "group": "Client & community",
-    "intro": "An event website for a weekend of Chicago-style stepping and dance instruction.",
-    "story": "The organizers needed one place to explain the event, introduce the dance lessons, and share weekend details with attendees. The original design is preserved here.",
-    "links": [],
-    "images": [
-      {
-        "file": "chi-steppin.webp",
-        "caption": "Event homepage",
-        "alt": "The Chi Steppin event homepage with a bright navigation bar and venue photographs.",
-        "width": 1582,
-        "height": 749
-      }
-    ],
-    "detail": {
-      "title": "What a first-time attendee needed to know",
-      "body": "The weekend brought professional dance instruction and a private event together. People planning to attend needed to understand the style of dance, find the venue, and know that buying a ticket in advance was recommended. Those practical questions gave the event pages their structure.",
-      "related": "anne-morse-hambrock"
-    }
+    },
+    "searchTitle": "Gear Blabs Audio & Lighting Blog",
+    "searchDescription": "Explore Gear Blabs, Tony Aiello’s early WordPress blog about professional audio and lighting equipment, and visit the original blog archive."
   },
   {
     "slug": "save-the-tigers",
@@ -384,6 +389,8 @@
       "title": "Turning research into a small public site",
       "body": "The brief called for four or five pages about an endangered species. After researching Bengal tigers, I used Illustrator and Photoshop to make a consistent set of visual elements and built the pages in HTML and CSS. The illustrated navigation helped carry a reader from the opening photograph into the subject.",
       "related": "barnacle-buds"
-    }
+    },
+    "searchTitle": "Save the Tigers Conservation Website",
+    "searchDescription": "Visit Save the Tigers, Tony Aiello’s hand-coded conservation website. See how research and original visual assets became an HTML and CSS class project."
   }
 ]
