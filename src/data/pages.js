@@ -15,8 +15,8 @@ const pages = {
     description: 'Explore my first Java lab, the Linux courses I co-teach, and my work with computer science, MIS, and graduate CIS students.'
   },
   '/research': {
-    title: 'AI Chatbots & Faculty Publications | Anthony Aiello', heading: 'Research & publications',
-    description: 'Meet the 11 authors of the AIELA chatbot study, learn how Anthony Aiello managed the independent study, and read the three IEEE papers he coauthored.'
+    title: 'Learning Assistants, Privacy Policies & Publications | Anthony Aiello', heading: 'Research & publications',
+    description: 'Anthony Aiello managed a team of 10. Their published projects studied human learning assistants and chatbots (AIELA) and analyzed privacy policies with knowledge graphs (AURRA).'
   },
   '/about': {
     title: 'About Anthony Aiello | Developer & Educator', heading: 'About Anthony',
