@@ -13,6 +13,7 @@
         <router-link :to="{ path: '/teaching', hash: '#systems-analysis' }">Systems analysis &amp; design</router-link>
         <router-link to="#learning-assistants">Learning assistants &amp; gamification</router-link>
         <router-link to="#course-history">Courses taught</router-link>
+        <router-link to="#cloud-computing">Cloud Computing</router-link>
         <router-link to="#advising">Graduate advising</router-link>
       </nav>
       <div class="teaching-cases">
@@ -54,7 +55,7 @@
             <h3>{{ group.area }}</h3>
             <dl class="course-list">
               <div v-for="course in group.courses" :key="course[0]">
-                <dt v-bind="course[0] === 'Linux Concepts and Scripting' ? { id: 'linux', tabindex: -1 } : {}">{{ course[0] }}</dt><dd>{{ course[1] }}</dd>
+                <dt v-bind="course[2] ? { id: course[2], tabindex: -1 } : {}">{{ course[0] }}</dt><dd>{{ course[1] }}</dd>
               </div>
             </dl>
           </div>
