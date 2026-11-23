@@ -16,7 +16,7 @@ const pages = {
   },
   '/research': {
     title: 'Learning Assistants, Privacy Policies & Publications | Anthony Aiello', heading: 'Research & publications',
-    description: 'Anthony Aiello managed a team of 10. Their published projects studied human learning assistants and chatbots (AIELA) and analyzed privacy policies with knowledge graphs (AURRA).'
+    description: 'Anthony Aiello managed the team behind the AIELA paper on learning assistants and chatbots and the AURRA research poster on analyzing privacy policies with knowledge graphs.'
   },
   '/about': {
     title: 'About Anthony Aiello | Developer & Educator', heading: 'About Anthony',
