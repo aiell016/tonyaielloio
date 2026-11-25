@@ -1,0 +1,26 @@
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Anthony “Tony” Aiello</p>
+      <h1>Secure software.<br>Practical systems.</h1>
+      <p class="hero-summary">I’m an MS CIS graduate with a concentration in cybersecurity and secure software development. I’m looking for a computer science role where I can build reliable software and help keep the systems it runs on secure.</p>
+      <div class="actions">
+        <a class="button primary" href="/projects/">Explore my work</a>
+        <a class="button secondary" href="/contact/">Contact me</a>
+      </div>
+    </div>
+    <div class="hero-credential">
+      <strong>MS CIS</strong>
+      <span>Cybersecurity &amp; Secure Software Development</span>
+      <ul><li>Full-stack development</li><li>Linux &amp; cloud infrastructure</li><li>Secure systems design</li></ul>
+    </div>
+  </div>
+</div>
+<section class="wrap home-work" aria-labelledby="featured">
+  <div class="section-head"><h2 id="featured">Selected work</h2><a href="/projects/">All projects</a></div>
+  <div class="cards">
+    <% for (const slug of ['on-the-radar', 'project-volga', 'mission-got-your-six']) { %>
+      <%- include('card.html', { project: projects.find(item => item.slug === slug) }) %>
+    <% } %>
+  </div>
+</section>

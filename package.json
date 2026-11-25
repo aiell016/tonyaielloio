@@ -1,22 +1,18 @@
 {
-  "name": "AnthonyAielloio",
-  "version": "5.2.0",
+  "name": "tony-aiello-portfolio",
+  "version": "6.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "dev": "vue-cli-service serve",
-    "test": "vue-cli-service test"
-  },
-  "dependencies": {
-    "vue": "^2.6.12",
-    "vue-router": "^3.4.3"
+    "build": "node scripts/build.js",
+    "lint": "node --check scripts/build.js && node --check scripts/check-build.js && node --check src/data/pages.js && node --check public/site.js",
+    "serve": "npm run build && http-server dist -a 127.0.0.1 -p 8080 -c-1",
+    "dev": "npm run serve",
+    "test": "npm run build && node scripts/check-build.js"
   },
   "devDependencies": {
-    "@vue/cli-service": "^5.0.8",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.12"
+    "@fontsource-variable/dm-sans": "5.3.0",
+    "ejs": "3.1.10",
+    "http-server": "14.1.1",
+    "parse5": "7.3.0"
   }
 }

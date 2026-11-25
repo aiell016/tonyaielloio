@@ -1,0 +1,36 @@
+<% const project = page.project; const related = projects.find(item => item.slug === project.detail.related) %>
+<div class="wrap inner-page project-page">
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <% breadcrumbs.forEach((entry, index) => { %><% if (index) { %><span aria-hidden="true"> / </span><% } %><% if (index === breadcrumbs.length - 1) { %><span aria-current="page"><%= entry.name %></span><% } else { %><a href="<%= entry.path %>"><%= entry.name %></a><% } %><% }) %>
+  </nav>
+  <header class="page-intro detail-intro">
+    <p class="eyebrow"><%= project.group %></p><h1><%= project.title %></h1><p><%= project.intro %></p>
+  </header>
+  <div class="detail-notes">
+    <div><h2>About the project</h2><p><%= project.story %></p></div>
+    <div class="project-links">
+      <% for (const site of project.links) { %>
+      <a href="<%= site.url %>" class="text-link" target="_blank" rel="noopener noreferrer"><%= site.label %><span class="sr-only"> (opens in a new tab)</span></a>
+      <% } %>
+    </div>
+  </div>
+  <section class="project-context" aria-labelledby="project-focus">
+    <h2 id="project-focus"><%= project.detail.title %></h2><p><%= project.detail.body %></p>
+  </section>
+  <% if (project.images.length) { %>
+  <section class="gallery" aria-labelledby="screenshots">
+    <div class="section-head"><h2 id="screenshots">Original screenshots</h2></div>
+    <div class="gallery-grid">
+      <% project.images.forEach((image, index) => { const site = websiteFor(project, image) %>
+      <figure class="<%= index === 0 ? 'lead-shot' : '' %> <%= image.height > image.width ? 'portrait-shot' : '' %>">
+        <a href="<%= site.url %>" target="_blank" rel="noopener noreferrer" aria-label="<%= site.label %> (opens in a new tab)">
+          <img src="/media/<%= image.file %>" width="<%= image.width %>" height="<%= image.height %>" alt="<%= image.alt %>" loading="<%= index === 0 ? 'eager' : 'lazy' %>" decoding="async">
+        </a>
+        <figcaption><%= image.caption %> · <a href="/media/<%= image.file %>" aria-label="View full-size image of <%= image.caption %>">Full-size image</a></figcaption>
+      </figure>
+      <% }) %>
+    </div>
+  </section>
+  <% } %>
+  <nav class="related-project" aria-label="Related work"><p class="eyebrow">Related project</p><a href="/projects/<%= related.slug %>/"><%= related.title %></a></nav>
+</div>
