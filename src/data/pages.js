@@ -3,7 +3,7 @@ const projects = require('./projects.json')
 const siteUrl = 'https://tony.aiello.io'
 const navigation = [
   ['/', 'Home'], ['/projects/', 'Projects'], ['/skills/', 'Skills'],
-  ['/about/', 'About'], ['/contact/', 'Contact']
+  ['/about/', 'About'], ['/biography/', 'What Have I gotten Myself Into'], ['/contact/', 'Contact']
 ]
 const categories = [
   { path: '/projects/', label: 'All projects' },
@@ -21,6 +21,8 @@ const pages = [
     description: 'Explore Anthony Aiello’s full-stack applications, client websites, and web design projects through case studies and original screenshots.' },
   { path: '/about/', template: 'about', title: 'About Anthony Aiello | MS CIS Graduate',
     description: 'Learn about Anthony Aiello’s MS CIS concentration in cybersecurity and secure software development and his path from technical operations to software.' },
+  { path: '/biography/', template: 'biography', title: 'Anthony “Tony” Aiello | Biography',
+    description: 'A sourced biography of Anthony Aiello, from DJ Tonya and Milwaukee’s La Cage to audio engineering, software development, and research.' },
   { path: '/skills/', template: 'skills', title: 'Technical Skills | Anthony Aiello',
     description: 'Explore Anthony Aiello’s skills in software development, secure systems, Linux, AWS, databases, and Agile project delivery.' },
   { path: '/contact/', template: 'contact', title: 'Contact Anthony Aiello | Career Opportunities',
