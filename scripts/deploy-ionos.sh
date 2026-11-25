@@ -68,7 +68,7 @@ mirror --reverse --transfer-all --no-perms --no-symlinks $work/pages .
 put dist/.htaccess -o .htaccess
 put dist/index.html -o index.html"
 
-for route in '' 'projects/' 'skills/' 'about/' 'contact/' 'projects/project-volga/' 'robots.txt' 'sitemap.xml'; do
+for route in '' 'projects/' 'skills/' 'about/' 'biography/' 'contact/' 'projects/project-volga/' 'robots.txt' 'sitemap.xml'; do
   file="dist/$route"
   if [[ -d "$file" ]]; then file+="index.html"; fi
   if ! fetch_page "$site/${route}?verify=$proof" || ! cmp -s "$file" "$work/response"; then

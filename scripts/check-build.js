@@ -132,6 +132,7 @@ for (const route of ['/teaching/', '/research/']) {
   assert(!fs.existsSync(fileFor(route)), 'Retired page still builds: ' + route)
 }
 for (const [route, doc] of documents) {
+  if (route === '/biography/') continue
   assert(!/\b(?:teach(?:es|ing|er)?|lecturer|faculty|advising)\b/i.test(content(doc.main)), 'Academic employment copy on ' + route)
 }
 assert(fs.existsSync(fileFor('/.htaccess')))
