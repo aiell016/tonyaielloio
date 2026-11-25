@@ -1,0 +1,17 @@
+<div class="wrap inner-page">
+    <header class="page-intro">
+      <h1><%= page.heading %></h1>
+      <p>Browse full-stack applications, client sites, and web design projects. Select a project title for the case study or a screenshot to open the project website.</p>
+    </header>
+    <nav aria-label="Filter projects" class="filters">
+      <% for (const category of categories) { %>
+      <a href="<%= category.path %>"<% if (category.path === page.path) { %> class="selected" aria-current="page"<% } %>><%= category.label %></a>
+      <% } %>
+    </nav>
+    <p class="result-count" aria-live="polite"><%= page.projects.length %> projects</p>
+    <section aria-label="Project gallery" class="cards archive-cards">
+      <% for (const project of page.projects) { %>
+      <%- include('card.html', { project }) %>
+      <% } %>
+    </section>
+  </div>
